@@ -26,6 +26,19 @@
         max-width: 960px;
     }
     
+    /* Header Responsive */
+    .main-nav {
+        display: none;
+    }
+    
+    .social-icons {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
     .hero-content {
         flex-direction: column;
         text-align: center;
@@ -39,16 +52,18 @@
         margin: 0 auto;
     }
     
-    .about-content {
-        flex-direction: column;
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
     
-    .about-image {
-        margin-bottom: 40px;
+    .about-left {
+        flex-direction: row;
+        gap: 20px;
     }
     
-    .about-text {
-        padding-left: 0;
+    .experience-card, .expertise-card {
+        flex: 1;
     }
     
     .services-wrapper {
@@ -77,6 +92,16 @@
     .container {
         max-width: 720px;
         padding: 0 20px;
+    }
+    
+    .about-left {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
     
     .section-title h2 {
