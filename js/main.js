@@ -7,16 +7,244 @@
 ===================================
 */
 
+// Preloader Functionality
+const preloader = document.getElementById('preloader');
+const preloaderProgress = document.getElementById('preloaderProgress');
+
+// Simulate loading progress
+let progress = 0;
+const progressInterval = setInterval(() => {
+    progress += Math.random() * 10;
+    if (progress >= 100) {
+        progress = 100;
+        clearInterval(progressInterval);
+        setTimeout(() => {
+            preloader.classList.add('hidden');
+            document.body.classList.add('loaded');
+        }, 500);
+    }
+    preloaderProgress.style.width = `${progress}%`;
+}, 200);
+
+// Performance optimization - Lazy load images
+function lazyLoadImages() {
+    const lazyImages = document.querySelectorAll('img[data-src]');
+    
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+        
+        lazyImages.forEach(img => imageObserver.observe(img));
+    } else {
+        // Fallback for browsers that don't support IntersectionObserver
+        lazyImages.forEach(img => {
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+        });
+    }
+}
+
+// Animate skill bars when they come into view
+function initSkillBars() {
+    const skillBars = document.querySelectorAll('.skill-progress');
+    
+    if ('IntersectionObserver' in window) {
+        const skillObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBar = entry.target;
+                    const progress = skillBar.getAttribute('data-progress');
+                    skillBar.style.width = progress + '%';
+                    observer.unobserve(skillBar);
+                }
+            });
+        }, { threshold: 0.3 });
+        
+        skillBars.forEach(bar => skillObserver.observe(bar));
+    } else {
+        // Fallback for browsers that don't support IntersectionObserver
+        skillBars.forEach(bar => {
+            const progress = bar.getAttribute('data-progress');
+            bar.style.width = progress + '%';
+        });
+    }
+}
+
+// Initialize contact form animations and functionality
+function initContactForm() {
+    const contactForm = document.getElementById('contactForm');
+    const formSuccess = document.getElementById('formSuccess');
+    const formInputs = document.querySelectorAll('.form-group input, .form-group textarea');
+    
+    // Add focus animations to form inputs
+    formInputs.forEach(input => {
+        // Focus animations
+        input.addEventListener('focus', () => {
+            input.parentElement.classList.add('focused');
+        });
+        
+        input.addEventListener('blur', () => {
+            if (input.value.trim() === '') {
+                input.parentElement.classList.remove('focused');
+            }
+        });
+        
+        // If input has value on page load, add focused class
+        if (input.value.trim() !== '') {
+            input.parentElement.classList.add('focused');
+        }
+    });
+    
+    // Form submission with animation
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Animate button on submit
+            const submitButton = this.querySelector('button[type="submit"]');
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitButton.disabled = true;
+            
+            // Simulate form submission (replace with actual form submission)
+            setTimeout(() => {
+                formSuccess.classList.add('show');
+                submitButton.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
+                submitButton.disabled = false;
+                
+                // Reset form after successful submission
+                contactForm.reset();
+                formInputs.forEach(input => {
+                    input.parentElement.classList.remove('focused');
+                });
+                
+                // Hide success message after 3 seconds
+                setTimeout(() => {
+                    formSuccess.classList.remove('show');
+                }, 3000);
+            }, 1500);
+        });
+    }
+}
+
+// Initialize timeline animation
+function initTimeline() {
+    const timelineBlocks = document.querySelectorAll('.timeline-block');
+    const timelineProgressBar = document.getElementById('timelineProgressBar');
+    
+    if (!timelineBlocks.length || !timelineProgressBar) return;
+    
+    // Function to update timeline progress bar based on scroll position
+    function updateTimelineProgress() {
+        const timelineWrapper = document.querySelector('.timeline-wrapper');
+        if (!timelineWrapper) return;
+        
+        const timelineTop = timelineWrapper.offsetTop;
+        const timelineHeight = timelineWrapper.offsetHeight;
+        const scrollPosition = window.scrollY + window.innerHeight / 2;
+        
+        // Calculate progress percentage
+        let progress = 0;
+        
+        if (scrollPosition > timelineTop) {
+            progress = Math.min(100, ((scrollPosition - timelineTop) / timelineHeight) * 100);
+        }
+        
+        // Update progress bar height
+        timelineProgressBar.style.height = `${progress}%`;
+        
+        // Add active class to timeline blocks that are in view
+        timelineBlocks.forEach(block => {
+            const blockTop = block.offsetTop + timelineWrapper.offsetTop;
+            const blockHeight = block.offsetHeight;
+            
+            if (scrollPosition > blockTop && scrollPosition < blockTop + blockHeight) {
+                block.classList.add('active');
+            }
+        });
+    }
+    
+    // Initialize timeline progress
+    updateTimelineProgress();
+    
+    // Update timeline progress on scroll
+    window.addEventListener('scroll', updateTimelineProgress, { passive: true });
+}
+
+// Performance optimization - Defer non-critical JavaScript
+function deferNonCriticalJS() {
+    // Create a list of scripts to load after page load
+    const deferredScripts = [
+        // Add any third-party scripts that aren't critical for initial render
+        // Example: analytics, social media widgets, etc.
+        // { src: 'https://example.com/analytics.js', async: true, defer: true }
+    ];
+    
+    // Load deferred scripts after page load
+    if (deferredScripts.length > 0) {
+        window.addEventListener('load', () => {
+            deferredScripts.forEach(script => {
+                const scriptEl = document.createElement('script');
+                scriptEl.src = script.src;
+                if (script.async) scriptEl.async = true;
+                if (script.defer) scriptEl.defer = true;
+                document.body.appendChild(scriptEl);
+            });
+        });
+    }
+    
+    // Optimize event listeners by using passive listeners where possible
+    const supportsPassive = (function() {
+        let result = false;
+        try {
+            const opts = Object.defineProperty({}, 'passive', {
+                get: function() { result = true; return true; }
+            });
+            window.addEventListener('test', null, opts);
+            window.removeEventListener('test', null, opts);
+        } catch (e) {}
+        return result;
+    })();
+    
+    // Use passive listeners for touch and wheel events if supported
+    const passiveListenerOpt = supportsPassive ? { passive: true } : false;
+    document.addEventListener('touchstart', function(){}, passiveListenerOpt);
+    document.addEventListener('wheel', function(){}, passiveListenerOpt);
+}
+
+// Document Ready Function
 $(document).ready(function() {
     'use strict';
 
-    // Initialize AOS Animation Library
+    // Initialize AOS Animation Library with performance optimizations
     AOS.init({
         duration: 1000,
         once: true,
-        easing: 'ease-in-out',
-        mirror: false
+        mirror: false,
+        disable: 'mobile' // Disable animations on mobile for better performance
     });
+
+    // Initialize lazy loading
+    lazyLoadImages();
+    
+    // Initialize skill bars animation
+    initSkillBars();
+
+    // Initialize contact form animations
+    initContactForm();
+    
+    // Initialize timeline animations
+    initTimeline();
+    
+    // Apply performance optimizations
+    deferNonCriticalJS();
 
     // Scroll Progress Indicator
     const scrollProgress = document.getElementById('scrollProgress');

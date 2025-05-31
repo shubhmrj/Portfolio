@@ -16,6 +16,17 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo"></div>
+            <div class="preloader-bar">
+                <div class="preloader-progress" id="preloaderProgress"></div>
+            </div>
+            <div class="preloader-text">LOADING</div>
+        </div>
+    </div>
+    
     <!-- Scroll Progress Indicator -->
     <div class="scroll-progress" id="scrollProgress"></div>
     
@@ -178,6 +189,69 @@
     </section>
     <!-- About Section End -->
 
+    <!-- Skills Section Start -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>My Skills</h2>
+                <p>Technical expertise and proficiency</p>
+            </div>
+            
+            <div class="skills-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h4>Web Development</h4>
+                        <span>92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="92"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h4>UI/UX Design</h4>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h4>JavaScript</h4>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h4>React</h4>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h4>Node.js</h4>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section End -->
+
     <!-- Services Section Start -->
     <section id="services" class="services-section">
         <div class="container">
@@ -252,7 +326,7 @@
             <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="400">
                 <div class="portfolio-item" data-category="design development">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-1.jpg" alt="Portfolio Item 1">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="images/portfolio-1.jpg" alt="Portfolio Item 1" class="lazy-image">
                         <div class="portfolio-overlay">
                             <h3>SAAS Website</h3>
                             <p>UI/UX Design, Development</p>
@@ -262,7 +336,7 @@
                 </div>
                 <div class="portfolio-item" data-category="branding">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-2.jpg" alt="Portfolio Item 2">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="images/portfolio-2.jpg" alt="Portfolio Item 2" class="lazy-image">
                         <div class="portfolio-overlay">
                             <h3>Workout App</h3>
                             <p>Branding, Mobile App</p>
@@ -272,7 +346,7 @@
                 </div>
                 <div class="portfolio-item" data-category="development">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-3.jpg" alt="Portfolio Item 3">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="images/portfolio-3.jpg" alt="Portfolio Item 3" class="lazy-image">
                         <div class="portfolio-overlay">
                             <h3>Business Analytics</h3>
                             <p>Web Development</p>
@@ -322,49 +396,117 @@
                 <h2>My Resume</h2>
                 <p>Empowering Creativity Through Experience</p>
             </div>
-            <div class="resume-content" data-aos="fade-up" data-aos-delay="200">
-                <div class="resume-column">
-                    <h3>Education</h3>
-                    <div class="resume-item">
-                        <span class="year">2017-2020</span>
-                        <h4>Master in Computer Science</h4>
-                        <h5>Stanford University</h5>
-                        <p>Specialized in UI/UX design and web development with a focus on user-centered design principles.</p>
+            
+            <div class="timeline-wrapper" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-progress">
+                    <div class="timeline-progress-bar" id="timelineProgressBar"></div>
+                </div>
+                
+                <div class="timeline">
+                    <!-- Experience Timeline -->
+                    <div class="timeline-block" data-aos="fade-right">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2020 - Present</span>
+                            <h3>Senior UI/UX Designer</h3>
+                            <h4>Google Inc.</h4>
+                            <p>Leading UI/UX design for various web and mobile projects, collaborating with cross-functional teams to deliver exceptional user experiences.</p>
+                            <div class="timeline-skills">
+                                <span>UI/UX</span>
+                                <span>Figma</span>
+                                <span>Design Systems</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="resume-item">
-                        <span class="year">2014-2016</span>
-                        <h4>Bachelor in Computer Science</h4>
-                        <h5>MIT University</h5>
-                        <p>Focused on software engineering and web technologies, graduated with honors.</p>
+                    
+                    <div class="timeline-block" data-aos="fade-left">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2017 - 2020</span>
+                            <h3>Master in Computer Science</h3>
+                            <h4>Stanford University</h4>
+                            <p>Specialized in UI/UX design and web development with a focus on user-centered design principles and advanced interaction patterns.</p>
+                            <div class="timeline-skills">
+                                <span>HCI</span>
+                                <span>Research</span>
+                                <span>Design Thinking</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="resume-item">
-                        <span class="year">2010-2014</span>
-                        <h4>Diploma in Web Design</h4>
-                        <h5>Design Academy</h5>
-                        <p>Learned fundamental principles of web design, UI/UX, and digital marketing.</p>
+                    
+                    <div class="timeline-block" data-aos="fade-right">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2017 - 2020</span>
+                            <h3>UI/UX Designer</h3>
+                            <h4>Soft Tech</h4>
+                            <p>Designed user interfaces for web and mobile applications, conducted user research and usability testing to optimize user flows and experiences.</p>
+                            <div class="timeline-skills">
+                                <span>Sketch</span>
+                                <span>Prototyping</span>
+                                <span>User Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-block" data-aos="fade-left">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2014 - 2016</span>
+                            <h3>Bachelor in Computer Science</h3>
+                            <h4>MIT University</h4>
+                            <p>Focused on software engineering and web technologies, graduated with honors and received recognition for innovative projects.</p>
+                            <div class="timeline-skills">
+                                <span>Programming</span>
+                                <span>Algorithms</span>
+                                <span>Web Dev</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-block" data-aos="fade-right">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2014 - 2017</span>
+                            <h3>App Developer</h3>
+                            <h4>ModernTech</h4>
+                            <p>Developed mobile applications for iOS and Android platforms using React Native and other technologies, focusing on performance and user experience.</p>
+                            <div class="timeline-skills">
+                                <span>React Native</span>
+                                <span>JavaScript</span>
+                                <span>Mobile Dev</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-block" data-aos="fade-left">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2010 - 2014</span>
+                            <h3>Diploma in Web Design</h3>
+                            <h4>Design Academy</h4>
+                            <p>Learned fundamental principles of web design, UI/UX, and digital marketing, building a strong foundation for future specialization.</p>
+                            <div class="timeline-skills">
+                                <span>HTML/CSS</span>
+                                <span>Design</span>
+                                <span>UX Basics</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="resume-column">
-                    <h3>Experience</h3>
-                    <div class="resume-item">
-                        <span class="year">2020-Present</span>
-                        <h4>Senior UI/UX Designer</h4>
-                        <h5>Google Inc.</h5>
-                        <p>Leading UI/UX design for various web and mobile projects, collaborating with cross-functional teams.</p>
-                    </div>
-                    <div class="resume-item">
-                        <span class="year">2017-2020</span>
-                        <h4>UI/UX Designer</h4>
-                        <h5>Soft Tech (3 Years)</h5>
-                        <p>Designed user interfaces for web and mobile applications, conducted user research and usability testing.</p>
-                    </div>
-                    <div class="resume-item">
-                        <span class="year">2014-2017</span>
-                        <h4>App Developer</h4>
-                        <h5>ModernTech (3 Years)</h5>
-                        <p>Developed mobile applications for iOS and Android platforms using React Native and other technologies.</p>
-                    </div>
-                </div>
+            </div>
             </div>
         </div>
     </section>
@@ -568,21 +710,38 @@
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" id="name" placeholder="Your Name" required>
+                            <label for="name" class="form-label">Your Name</label>
+                            <div class="form-line"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" id="email" placeholder="Your Email" required>
+                            <label for="email" class="form-label">Your Email</label>
+                            <div class="form-line"></div>
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" id="subject" placeholder="Subject" required>
+                            <label for="subject" class="form-label">Subject</label>
+                            <div class="form-line"></div>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                            <label for="message" class="form-label">Your Message</label>
+                            <div class="form-line"></div>
                         </div>
                         <div class="form-button">
-                            <button type="submit" class="btn primary-btn">Send Message</button>
+                            <button type="submit" class="btn primary-btn">Send Message <i class="fas fa-paper-plane"></i></button>
                         </div>
                     </form>
+                    <div class="form-success-message" id="formSuccess">
+                        <div class="success-content">
+                            <div class="success-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>I'll get back to you as soon as possible.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
