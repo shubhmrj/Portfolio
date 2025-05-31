@@ -16,6 +16,34 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <!-- Floating Navigation Indicator -->
+    <div class="nav-indicator" id="navIndicator">
+        <a href="#home" class="nav-dot active" data-section="home">
+            <span class="nav-tooltip">Home</span>
+        </a>
+        <a href="#about" class="nav-dot" data-section="about">
+            <span class="nav-tooltip">About</span>
+        </a>
+        <a href="#services" class="nav-dot" data-section="services">
+            <span class="nav-tooltip">Services</span>
+        </a>
+        <a href="#portfolio" class="nav-dot" data-section="portfolio">
+            <span class="nav-tooltip">Portfolio</span>
+        </a>
+        <a href="#resume" class="nav-dot" data-section="resume">
+            <span class="nav-tooltip">Resume</span>
+        </a>
+        <a href="#contact" class="nav-dot" data-section="contact">
+            <span class="nav-tooltip">Contact</span>
+        </a>
+    </div>
+    
+    <!-- Particles Background -->
+    <div class="particles-container" id="particles-js"></div>
+    
     <!-- Header Section Start -->
     <header id="header" class="animate__animated animate__fadeIn">
         <div class="container">
@@ -100,27 +128,27 @@
     <section id="about" class="about-section">
         <div class="container">
             <div class="about-wrapper">
-                <div class="about-left" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="experience-card">
-                        <h2 class="experience-number">10<span class="plus">+</span></h2>
+                <div class="about-left" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="experience-card animate__animated animate__fadeIn animate__delay-1s">
+                        <h2 class="experience-number" id="experienceCounter">10<span class="plus">+</span></h2>
                         <h3 class="experience-title">Years Of<br>Experience</h3>
                     </div>
-                    <div class="expertise-card">
+                    <div class="expertise-card animate__animated animate__fadeIn animate__delay-1s">
                         <h3 class="expertise-title">UI/UX Design</h3>
-                        <p class="expertise-count">241 Projects</p>
+                        <p class="expertise-count" id="projectCounter">241 Projects</p>
                     </div>
                 </div>
                 
-                <div class="about-right" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="about-header">
+                <div class="about-right" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="about-header animate__animated animate__fadeIn animate__delay-1s">
                         <span class="about-label">ABOUT ME</span>
                         <h2 class="about-title">Boost Business Strategic<br>Solutions with Us</h2>
                     </div>
                     
-                    <p class="about-description">Business consulting consultants provide expert advice and guide businesses to help them improve their performance, efficiency, and organizational effectiveness.</p>
+                    <p class="about-description animate__animated animate__fadeIn animate__delay-1s">Business consulting consultants provide expert advice and guide businesses to help them improve their performance, efficiency, and organizational effectiveness.</p>
                     
                     <div class="about-features">
-                        <div class="feature-card">
+                        <div class="feature-card animate__animated animate__fadeInUp animate__delay-1s" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="500">
                             <div class="feature-icon">
                                 <i class="fas fa-chart-line"></i>
                             </div>
@@ -130,7 +158,7 @@
                             </div>
                         </div>
                         
-                        <div class="feature-card">
+                        <div class="feature-card animate__animated animate__fadeInUp animate__delay-1s" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="500">
                             <div class="feature-icon">
                                 <i class="fas fa-handshake"></i>
                             </div>
@@ -141,7 +169,7 @@
                         </div>
                     </div>
                     
-                    <div class="about-cta">
+                    <div class="about-cta animate__animated animate__fadeIn animate__delay-2s">
                         <a href="#about" class="btn read-more-btn">Read More About Me <i class="fas fa-arrow-down"></i></a>
                     </div>
                 </div>
@@ -596,14 +624,18 @@
     <!-- Back to Top Button -->
     <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
-    <!-- jQuery -->
+    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Typed.js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="https://unpkg.com/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+    <script src="js/main.js"></script>
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom JS -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
