@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Test</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: #fff;
+            padding: 20px;
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            gap: 30px;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 15px;
+        }
+        
+        .portfolio-item {
+            width: 300px;
+            height: 400px;
+            background-color: #1e293b;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .portfolio-image {
+            width: 100%;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            background-color: #0f172a;
+        }
+        
+        .portfolio-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .portfolio-info {
+            padding: 15px;
+            flex: 1;
+        }
+        
+        .portfolio-info h4 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .portfolio-info p {
+            font-size: 14px;
+            color: #cbd5e1;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 992px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 300px);
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .portfolio-grid {
+                grid-template-columns: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="portfolio-grid">
+        <!-- Portfolio Item 1 -->
+        <div class="portfolio-item">
+            <div class="portfolio-image">
+                <img src="/images/portfolio-1-600w.jpg" alt="SAAS Website" class="portfolio-img">
+            </div>
+            <div class="portfolio-info">
+                <h4>SAAS Website</h4>
+                <p>UI/UX Design, Development</p>
+            </div>
+        </div>
+        
+        <!-- Portfolio Item 2 -->
+        <div class="portfolio-item">
+            <div class="portfolio-image">
+                <img src="/images/portfolio-2-600w.jpg" alt="Workout App" class="portfolio-img">
+            </div>
+            <div class="portfolio-info">
+                <h4>Workout App</h4>
+                <p>Branding, Mobile App</p>
+            </div>
+        </div>
+        
+        <!-- Portfolio Item 3 -->
+        <div class="portfolio-item">
+            <div class="portfolio-image">
+                <img src="/images/portfolio-3-600w.jpg" alt="Business Analytics" class="portfolio-img">
+            </div>
+            <div class="portfolio-info">
+                <h4>Business Analytics</h4>
+                <p>Web Development</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

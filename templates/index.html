@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Image Optimization CSS -->
     <link rel="stylesheet" href="css/image-optimization.css">
-    <link rel="stylesheet" href="css/portfolio-fixed.css">
+    <link rel="stylesheet" href="css/portfolio-grid.css?v=1.0.1">
 </head>
 <body>
     <!-- Preloader -->
@@ -324,87 +324,45 @@
     </section>
     <!-- Services Section End -->
 
-    <!-- Portfolio Section Start -->
+    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio-section">
         <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h2>My Portfolio</h2>
-                <p>Transforming Ideas into Exceptional Results</p>
+            <div class="section-title text-center">
+                <h2>Portfolio</h2>
+                <p>Check out my latest work</p>
             </div>
-            <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="200">
+            
+            <div class="portfolio-filter">
                 <ul>
-                    <li class="active" data-filter="all">All</li>
+                    <li data-filter="all" class="active">All</li>
                     <li data-filter="design">Design</li>
                     <li data-filter="branding">Branding</li>
                     <li data-filter="development">Development</li>
                     <li data-filter="marketing">Marketing</li>
                 </ul>
             </div>
-            <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="400">
-                
-                {% set portfolio_items = [
-                    {
-                        'title': 'SAAS Website',
-                        'category': 'design development',
-                        'description': 'UI/UX Design, Development',
-                        'image': 'images/portfolio-1.jpg'
-                    },
-                    {
-                        'title': 'Workout App',
-                        'category': 'branding',
-                        'description': 'Branding, Mobile App',
-                        'image': 'images/portfolio-2.jpg'
-                    },
-                    {
-                        'title': 'Business Analytics',
-                        'category': 'development',
-                        'description': 'Web Development',
-                        'image': 'images/portfolio-3.jpg'
-                    },
-                    {
-                        'title': 'Dashboard Design',
-                        'category': 'design marketing',
-                        'description': 'UI/UX Design, Marketing',
-                        'image': 'images/portfolio-4.jpg'
-                    },
-                    {
-                        'title': 'Chatbots & AI Support',
-                        'category': 'branding development',
-                        'description': 'Branding, Development',
-                        'image': 'images/portfolio-5.jpg'
-                    },
-                    {
-                        'title': 'Content Marketing',
-                        'category': 'marketing',
-                        'description': 'Digital Marketing',
-                        'image': 'images/portfolio-6.jpg'
-                    }
-                ] %}
-
+            <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="200">
                 <!-- Portfolio Item 1 -->
-                <div class="portfolio-item" data-category="design development" data-aos="fade-up" data-aos-delay="100">
+                <div class="portfolio-item" data-category="design">
                     <div class="portfolio-image">
                         <img src="/images/portfolio-1-600w.jpg" alt="SAAS Website" class="portfolio-img">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-category">Design Dev</span>
+                            <span class="portfolio-category">Design</span>
                             <h3>SAAS Website</h3>
-                            <p>UI/UX Design, Development</p>
-                            <div class="portfolio-actions">
-                                <a href="#portfolio-modal-1" class="btn-view-project" data-portfolio-id="1">
-                                    <i class="fas fa-eye"></i> View Project
-                                </a>
-                            </div>
+                            <p>A modern SAAS website with a clean design</p>
+                            <a href="#" class="btn-view-project">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
                         </div>
                     </div>
                     <div class="portfolio-info">
                         <h4>SAAS Website</h4>
-                        <p>UI/UX Design, Development</p>
+                        <p>A modern SAAS website with a clean design</p>
                         <div class="portfolio-meta">
                             <div class="portfolio-tags">
                                 <span class="portfolio-tag">design</span>
-                                <span class="portfolio-tag">development</span>
                             </div>
-                            <a href="#portfolio-modal-1" class="portfolio-link-icon">
+                            <a href="#" class="portfolio-link-icon">
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
@@ -412,28 +370,26 @@
                 </div>
                 
                 <!-- Portfolio Item 2 -->
-                <div class="portfolio-item" data-category="branding" data-aos="fade-up" data-aos-delay="200">
+                <div class="portfolio-item" data-category="branding">
                     <div class="portfolio-image">
                         <img src="/images/portfolio-2-600w.jpg" alt="Workout App" class="portfolio-img">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-category">Brand</span>
+                            <span class="portfolio-category">Branding</span>
                             <h3>Workout App</h3>
-                            <p>Branding, Mobile App</p>
-                            <div class="portfolio-actions">
-                                <a href="#portfolio-modal-2" class="btn-view-project" data-portfolio-id="2">
-                                    <i class="fas fa-eye"></i> View Project
-                                </a>
-                            </div>
+                            <p>Mobile app for tracking workouts and fitness goals</p>
+                            <a href="#" class="btn-view-project">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
                         </div>
                     </div>
                     <div class="portfolio-info">
                         <h4>Workout App</h4>
-                        <p>Branding, Mobile App</p>
+                        <p>Mobile app for tracking workouts and fitness goals</p>
                         <div class="portfolio-meta">
                             <div class="portfolio-tags">
                                 <span class="portfolio-tag">branding</span>
                             </div>
-                            <a href="#portfolio-modal-2" class="portfolio-link-icon">
+                            <a href="#" class="portfolio-link-icon">
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
@@ -441,28 +397,26 @@
                 </div>
                 
                 <!-- Portfolio Item 3 -->
-                <div class="portfolio-item" data-category="development" data-aos="fade-up" data-aos-delay="300">
+                <div class="portfolio-item" data-category="development">
                     <div class="portfolio-image">
                         <img src="/images/portfolio-3-600w.jpg" alt="Business Analytics" class="portfolio-img">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-category">Dev</span>
+                            <span class="portfolio-category">Development</span>
                             <h3>Business Analytics</h3>
-                            <p>Web Development</p>
-                            <div class="portfolio-actions">
-                                <a href="#portfolio-modal-3" class="btn-view-project" data-portfolio-id="3">
-                                    <i class="fas fa-eye"></i> View Project
-                                </a>
-                            </div>
+                            <p>Web application for business analytics and reporting</p>
+                            <a href="#" class="btn-view-project">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
                         </div>
                     </div>
                     <div class="portfolio-info">
                         <h4>Business Analytics</h4>
-                        <p>Web Development</p>
+                        <p>Web application for business analytics and reporting</p>
                         <div class="portfolio-meta">
                             <div class="portfolio-tags">
                                 <span class="portfolio-tag">development</span>
                             </div>
-                            <a href="#portfolio-modal-3" class="portfolio-link-icon">
+                            <a href="#" class="portfolio-link-icon">
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
@@ -470,29 +424,26 @@
                 </div>
                 
                 <!-- Portfolio Item 4 -->
-                <div class="portfolio-item" data-category="design marketing" data-aos="fade-up" data-aos-delay="400">
+                <div class="portfolio-item" data-category="marketing">
                     <div class="portfolio-image">
-                        <img src="/images/portfolio-4-600w.jpg" alt="Dashboard Design" class="portfolio-img">
+                        <img src="/images/portfolio-4-600w.jpg" alt="Marketing Campaign" class="portfolio-img">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-category">Design Marketing</span>
-                            <h3>Dashboard Design</h3>
-                            <p>UI/UX Design, Marketing</p>
-                            <div class="portfolio-actions">
-                                <a href="#portfolio-modal-4" class="btn-view-project" data-portfolio-id="4">
-                                    <i class="fas fa-eye"></i> View Project
-                                </a>
-                            </div>
+                            <span class="portfolio-category">Marketing</span>
+                            <h3>Marketing Campaign</h3>
+                            <p>Digital marketing campaign for a new product launch</p>
+                            <a href="#" class="btn-view-project">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <h4>Dashboard Design</h4>
-                        <p>UI/UX Design, Marketing</p>
+                        <h4>Marketing Campaign</h4>
+                        <p>Digital marketing campaign for a new product launch</p>
                         <div class="portfolio-meta">
                             <div class="portfolio-tags">
-                                <span class="portfolio-tag">design</span>
                                 <span class="portfolio-tag">marketing</span>
                             </div>
-                            <a href="#portfolio-modal-4" class="portfolio-link-icon">
+                            <a href="#" class="portfolio-link-icon">
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
@@ -500,29 +451,26 @@
                 </div>
                 
                 <!-- Portfolio Item 5 -->
-                <div class="portfolio-item" data-category="branding development" data-aos="fade-up" data-aos-delay="500">
+                <div class="portfolio-item" data-category="development">
                     <div class="portfolio-image">
-                        <img src="/images/portfolio-5-600w.jpg" alt="Chatbots & AI Support" class="portfolio-img">
+                        <img src="/images/portfolio-5-600w.jpg" alt="E-commerce Platform" class="portfolio-img">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-category">Brand Dev</span>
-                            <h3>Chatbots & AI Support</h3>
-                            <p>Branding, Development</p>
-                            <div class="portfolio-actions">
-                                <a href="#portfolio-modal-5" class="btn-view-project" data-portfolio-id="5">
-                                    <i class="fas fa-eye"></i> View Project
-                                </a>
-                            </div>
+                            <span class="portfolio-category">Development</span>
+                            <h3>E-commerce Platform</h3>
+                            <p>Online store with payment processing and inventory management</p>
+                            <a href="#" class="btn-view-project">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <h4>Chatbots & AI Support</h4>
-                        <p>Branding, Development</p>
+                        <h4>E-commerce Platform</h4>
+                        <p>Online store with payment processing and inventory management</p>
                         <div class="portfolio-meta">
                             <div class="portfolio-tags">
-                                <span class="portfolio-tag">branding</span>
                                 <span class="portfolio-tag">development</span>
                             </div>
-                            <a href="#portfolio-modal-5" class="portfolio-link-icon">
+                            <a href="#" class="portfolio-link-icon">
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
@@ -530,28 +478,26 @@
                 </div>
                 
                 <!-- Portfolio Item 6 -->
-                <div class="portfolio-item" data-category="marketing" data-aos="fade-up" data-aos-delay="600">
+                <div class="portfolio-item" data-category="branding">
                     <div class="portfolio-image">
-                        <img src="/images/portfolio-6-600w.jpg" alt="Content Marketing" class="portfolio-img">
+                        <img src="/images/portfolio-6-600w.jpg" alt="Brand Identity" class="portfolio-img">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-category">Marketing</span>
-                            <h3>Content Marketing</h3>
-                            <p>Digital Marketing</p>
-                            <div class="portfolio-actions">
-                                <a href="#portfolio-modal-6" class="btn-view-project" data-portfolio-id="6">
-                                    <i class="fas fa-eye"></i> View Project
-                                </a>
-                            </div>
+                            <span class="portfolio-category">Branding</span>
+                            <h3>Brand Identity</h3>
+                            <p>Complete brand identity design for a startup</p>
+                            <a href="#" class="btn-view-project">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <h4>Content Marketing</h4>
-                        <p>Digital Marketing</p>
+                        <h4>Brand Identity</h4>
+                        <p>Complete brand identity design for a startup</p>
                         <div class="portfolio-meta">
                             <div class="portfolio-tags">
-                                <span class="portfolio-tag">marketing</span>
+                                <span class="portfolio-tag">branding</span>
                             </div>
-                            <a href="#portfolio-modal-6" class="portfolio-link-icon">
+                            <a href="#" class="portfolio-link-icon">
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>

@@ -577,3 +577,87 @@ werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on 
 2025-06-01 21:15:36,387 - __main__ - INFO - Starting Flask application
 2025-06-01 21:15:36,855 - __main__ - INFO - Starting Flask application
 2025-06-01 21:15:36,900 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:21:05,124 - __main__ - INFO - Home page accessed
+2025-06-01 21:21:05,246 - __main__ - INFO - Serving CSS file: portfolio-new.css
+2025-06-01 21:21:05,267 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 21:21:05,268 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 21:21:05,282 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 21:21:26,134 - __main__ - INFO - Starting Flask application
+2025-06-01 21:21:26,687 - __main__ - INFO - Starting Flask application
+2025-06-01 21:21:26,709 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:21:38,729 - __main__ - INFO - Home page accessed
+2025-06-01 21:21:38,875 - __main__ - INFO - Serving CSS file: portfolio-new.css
+2025-06-01 21:21:38,884 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 21:21:38,886 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 21:21:38,890 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 21:22:20,930 - __main__ - INFO - Starting Flask application
+2025-06-01 21:22:21,023 - __main__ - INFO - Starting Flask application
+2025-06-01 21:22:21,081 - __main__ - INFO - Starting Flask application
+2025-06-01 21:22:21,126 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:22:21,130 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:22:21,132 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:22:21,561 - __main__ - INFO - Starting Flask application
+2025-06-01 21:22:21,618 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:22:21,687 - __main__ - INFO - Starting Flask application
+2025-06-01 21:22:21,795 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:22:21,819 - __main__ - INFO - Starting Flask application
+2025-06-01 21:22:21,880 - __main__ - INFO - Starting Flask application
+2025-06-01 21:22:21,954 - __main__ - INFO - Starting Flask application
+2025-06-01 21:22:21,992 - __main__ - INFO - Starting Flask application
+2025-06-01 21:22:22,026 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:22:22,063 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:22:22,083 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:22:22,091 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:22:22,101 - __main__ - INFO - Starting Flask application
+2025-06-01 21:22:22,105 - __main__ - INFO - Starting Flask application
+2025-06-01 21:22:22,123 - __main__ - INFO - Starting Flask application
+2025-06-01 21:22:22,159 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:22:22,160 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:22:22,186 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:22:22,199 - __main__ - INFO - Starting Flask application
+2025-06-01 21:22:22,243 - __main__ - INFO - Starting Flask application
+2025-06-01 21:22:22,250 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:22:22,270 - __main__ - INFO - Starting Flask application
+2025-06-01 21:22:22,297 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:22:22,342 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:23:54,179 - __main__ - INFO - Starting Flask application
+2025-06-01 21:23:54,873 - __main__ - INFO - Starting Flask application
+2025-06-01 21:23:54,906 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:24:45,754 - __main__ - INFO - Home page accessed
+2025-06-01 21:24:45,859 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 21:24:45,861 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 21:24:45,877 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 21:32:37,390 - __main__ - INFO - Home page accessed
+2025-06-01 21:32:37,554 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-01 21:32:37,565 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 21:32:37,566 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 21:32:37,573 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 21:38:57,871 - __main__ - INFO - Home page accessed
+2025-06-01 21:38:58,041 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-01 21:38:58,048 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 21:38:58,051 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 21:38:58,054 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 21:39:02,127 - __main__ - INFO - Home page accessed
+2025-06-01 21:39:02,236 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 21:39:02,238 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 21:39:02,244 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 21:39:19,876 - __main__ - INFO - Starting Flask application
+2025-06-01 21:39:20,256 - __main__ - INFO - Starting Flask application
+2025-06-01 21:39:20,277 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:39:24,491 - __main__ - INFO - Home page accessed
+2025-06-01 21:39:24,571 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 21:39:24,573 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 21:39:24,583 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 21:39:55,543 - __main__ - INFO - Starting Flask application
+2025-06-01 21:39:55,948 - __main__ - INFO - Starting Flask application
+2025-06-01 21:39:55,964 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:40:31,993 - __main__ - INFO - Starting Flask application
+2025-06-01 21:40:32,496 - __main__ - INFO - Starting Flask application
+2025-06-01 21:40:32,511 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:40:51,281 - __main__ - INFO - Home page accessed
+2025-06-01 21:40:51,394 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-01 21:40:51,398 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 21:40:51,403 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 21:40:51,404 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 21:41:16,467 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-01 21:42:37,596 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
