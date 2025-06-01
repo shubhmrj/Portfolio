@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Portfolio</title>
+    
+    <!-- Resource Hints -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="Blog posts sharing insights on web development, design, and technology.">
+    <meta name="theme-color" content="#0e1630">
+    
+    <!-- Critical CSS inline -->
+    <style>
+        /* Critical CSS for above-the-fold content */
+        :root{--primary-color:#2196F3;--secondary-color:#673AB7;--dark-color:#0e1630;--light-color:#f4f7fc;--text-color:#6c757d;--white-color:#fff;--dark-blue:#1a237e;--box-shadow:0 5px 20px rgba(0,0,0,0.1)}
+        body{font-family:'Poppins',sans-serif;margin:0;padding:0;background-color:var(--dark-color);color:var(--light-color);overflow-x:hidden}
+        .container{width:100%;max-width:1200px;margin:0 auto;padding:0 15px}
+        .header{position:fixed;top:0;left:0;width:100%;z-index:1000;background-color:rgba(14,22,48,0.95);backdrop-filter:blur(10px);transition:all .3s ease}
+    </style>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"></noscript>
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="{{ url_for('static', filename='css/style.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></noscript>
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}"></noscript>
+    
+    <!-- Font Awesome Icons - Deferred -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></noscript>
+    
+    <!-- Animate.css for animations - Deferred -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></noscript>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo"></div>
+            <div class="preloader-bar">
+                <div class="preloader-progress" id="preloaderProgress"></div>
+            </div>
+            <div class="preloader-text">LOADING</div>
+        </div>
+    </div>
+    
+    <!-- Header Section Start -->
+    <header id="header" class="animate__animated animate__fadeIn">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="/"><span class="logo-icon">⬜</span> Portfolio</a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/#resume">Resume</a></li>
+                        <li><a href="/#pricing">Pricing</a></li>
+                        <li><a href="/blog" class="active">Blog</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+    
+    <!-- Blog Header Section Start -->
+    <section class="blog-header-section">
+        <div class="container">
+            <div class="blog-header-content">
+                <h1 class="animate__animated animate__fadeInUp">My Blog</h1>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">Insights & Thoughts on Digital Craftsmanship</p>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Header Section End -->
+    
+    <!-- Blog Content Section Start -->
+    <section class="blog-content-section">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card" data-aos="fade-up">
+                    <div class="blog-image">
+                        <img src="{{ url_for('static', filename='images/blog-1.jpg') }}" alt="Blog Post 1" loading="lazy">
+                        <div class="blog-date">
+                            <span class="day">15</span>
+                            <span class="month">Jun</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Web Development</div>
+                        <h2 class="blog-title">Modern JavaScript Frameworks Comparison</h2>
+                        <p class="blog-excerpt">An in-depth analysis of the most popular JavaScript frameworks in 2025, comparing React, Vue, Angular, and Svelte.</p>
+                        <div class="blog-meta">
+                            <div class="blog-author">
+                                <img src="{{ url_for('static', filename='images/author.jpg') }}" alt="Author">
+                                <span>By Shubham Raj</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 2 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image">
+                        <img src="{{ url_for('static', filename='images/blog-2.jpg') }}" alt="Blog Post 2" loading="lazy">
+                        <div class="blog-date">
+                            <span class="day">03</span>
+                            <span class="month">Jun</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">UI/UX Design</div>
+                        <h2 class="blog-title">Design Principles for Web Accessibility</h2>
+                        <p class="blog-excerpt">Exploring essential accessibility guidelines and how they can be implemented in modern web design without sacrificing aesthetics.</p>
+                        <div class="blog-meta">
+                            <div class="blog-author">
+                                <img src="{{ url_for('static', filename='images/author.jpg') }}" alt="Author">
+                                <span>By Shubham Raj</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 3 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <img src="{{ url_for('static', filename='images/blog-3.jpg') }}" alt="Blog Post 3" loading="lazy">
+                        <div class="blog-date">
+                            <span class="day">28</span>
+                            <span class="month">May</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Career</div>
+                        <h2 class="blog-title">Navigating Your Path as a Full-Stack Developer</h2>
+                        <p class="blog-excerpt">Tips and strategies for building a successful career as a full-stack developer in today's competitive tech landscape.</p>
+                        <div class="blog-meta">
+                            <div class="blog-author">
+                                <img src="{{ url_for('static', filename='images/author.jpg') }}" alt="Author">
+                                <span>By Shubham Raj</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination" data-aos="fade-up">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link next"><i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Content Section End -->
+    
+    <!-- Footer Section Start -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="/">Portfolio</a>
+                </div>
+                <p>Creating digital experiences that make a difference.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Portfolio. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    
+    <!-- JavaScript Dependencies - Deferred -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            
+            // Preloader
+            setTimeout(function() {
+                document.getElementById('preloader').classList.add('hidden');
+                setTimeout(function() {
+                    document.getElementById('preloader').style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

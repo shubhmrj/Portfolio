@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Portfolio</title>
+    
+    <!-- Critical CSS inline -->
+    <style>
+        :root{--primary-color:#2196F3;--secondary-color:#673AB7;--dark-color:#0e1630;--light-color:#f4f7fc;--text-color:#6c757d;--white-color:#fff;--dark-blue:#1a237e;--box-shadow:0 5px 20px rgba(0,0,0,0.1)}
+        body{font-family:'Poppins',sans-serif;margin:0;padding:0;background-color:var(--dark-color);color:var(--light-color);overflow-x:hidden;display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center}
+        .container{width:100%;max-width:1200px;margin:0 auto;padding:0 15px}
+        .error-page{display:flex;flex-direction:column;align-items:center;justify-content:center}
+        .error-code{font-size:120px;font-weight:700;color:var(--primary-color);margin:0;line-height:1}
+        .error-title{font-size:32px;margin:10px 0 20px}
+        .error-description{font-size:18px;color:var(--text-color);margin-bottom:30px;max-width:600px}
+        .btn{display:inline-block;padding:12px 30px;background-color:var(--primary-color);color:var(--white-color);text-decoration:none;border-radius:5px;font-weight:600;transition:all .3s ease;border:none;cursor:pointer}
+        .btn:hover{background-color:#1976D2;transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,0.1)}
+    </style>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"></noscript>
+</head>
+<body>
+    <div class="container">
+        <div class="error-page">
+            <h1 class="error-code">404</h1>
+            <h2 class="error-title">Page Not Found</h2>
+            <p class="error-description">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+            <a href="{{ url_for('index') }}" class="btn">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
