@@ -449,3 +449,131 @@ werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on 
 2025-06-01 20:08:21,166 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
 2025-06-01 20:08:21,169 - __main__ - INFO - Serving JS file: typed.js
 2025-06-01 20:08:22,300 - __main__ - WARNING - 404 error: /favicon.ico
+2025-06-01 20:18:11,373 - __main__ - INFO - Starting Flask application
+2025-06-01 20:18:11,921 - __main__ - INFO - Starting Flask application
+2025-06-01 20:18:11,940 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 20:18:18,068 - __main__ - INFO - Home page accessed
+2025-06-01 20:18:18,180 - __main__ - WARNING - 404 error: /static/css/image-optimization.css
+2025-06-01 20:18:18,180 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 20:18:18,182 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 20:18:18,184 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 20:18:46,630 - __main__ - INFO - Home page accessed
+2025-06-01 20:18:46,710 - __main__ - WARNING - 404 error: /static/css/image-optimization.css
+2025-06-01 20:18:46,716 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 20:18:46,727 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 20:18:46,729 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 20:22:31,567 - __main__ - INFO - Home page accessed
+2025-06-01 20:22:31,720 - __main__ - WARNING - 404 error: /static/css/portfolio-fixed.css
+2025-06-01 20:22:31,725 - __main__ - WARNING - 404 error: /static/css/image-optimization.css
+2025-06-01 20:22:31,731 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 20:22:31,732 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 20:22:31,735 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 20:24:40,984 - __main__ - INFO - Home page accessed
+2025-06-01 20:24:41,124 - __main__ - WARNING - 404 error: /static/css/portfolio-fixed.css
+2025-06-01 20:24:41,127 - __main__ - WARNING - 404 error: /static/css/image-optimization.css
+2025-06-01 20:24:41,131 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 20:24:41,134 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 20:24:41,135 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 20:26:02,266 - __main__ - INFO - Starting Flask application
+2025-06-01 20:26:02,834 - __main__ - INFO - Starting Flask application
+2025-06-01 20:26:02,948 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 20:26:33,946 - __main__ - INFO - Home page accessed
+2025-06-01 20:26:34,086 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-01 20:26:34,092 - __main__ - INFO - Serving CSS file: portfolio-fixed.css
+2025-06-01 20:26:34,096 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 20:26:34,096 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 20:26:34,101 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 20:27:21,720 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-01 20:33:49,921 - __main__ - INFO - Starting Flask application
+2025-06-01 20:33:50,417 - __main__ - INFO - Starting Flask application
+2025-06-01 20:33:50,447 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 20:34:20,573 - __main__ - INFO - Home page accessed
+2025-06-01 20:34:20,677 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 20:34:20,679 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 20:34:20,680 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 20:35:09,276 - __main__ - INFO - Home page accessed
+2025-06-01 20:35:09,449 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 20:35:09,453 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 20:35:09,456 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 20:36:28,712 - __main__ - INFO - Starting Flask application
+2025-06-01 20:36:29,313 - __main__ - INFO - Starting Flask application
+2025-06-01 20:36:29,338 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 20:40:49,154 - __main__ - INFO - Home page accessed
+2025-06-01 20:40:49,265 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 20:40:49,270 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 20:40:49,272 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 20:46:18,997 - __main__ - INFO - Starting Flask application
+2025-06-01 20:46:19,730 - __main__ - INFO - Starting Flask application
+2025-06-01 20:46:19,750 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 20:46:44,565 - __main__ - INFO - Home page accessed
+2025-06-01 20:46:44,680 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 20:46:44,681 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 20:46:44,683 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 20:49:50,438 - __main__ - INFO - Starting Flask application
+2025-06-01 20:49:50,869 - __main__ - INFO - Starting Flask application
+2025-06-01 20:49:50,885 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 20:54:21,055 - __main__ - INFO - Home page accessed
+2025-06-01 20:54:21,300 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 20:54:21,303 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 20:54:21,310 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 20:54:22,441 - __main__ - WARNING - Image not found: portfolio-7-600w.jpg
+2025-06-01 20:54:22,458 - __main__ - ERROR - Error serving image portfolio-7-600w.jpg: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 617, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 20:54:22,519 - __main__ - WARNING - 404 error: /images/portfolio-7-600w.jpg
+2025-06-01 20:54:38,611 - __main__ - INFO - Starting Flask application
+2025-06-01 20:54:39,257 - __main__ - INFO - Starting Flask application
+2025-06-01 20:54:39,277 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 20:54:49,261 - __main__ - INFO - Home page accessed
+2025-06-01 20:54:49,382 - __main__ - INFO - Serving CSS file: style.css
+2025-06-01 20:54:49,388 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-01 20:54:49,399 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-01 20:54:49,409 - __main__ - INFO - Serving CSS file: portfolio-fixed.css
+2025-06-01 20:54:49,565 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-01 20:54:49,581 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 20:54:49,582 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 20:54:49,583 - __main__ - INFO - Serving JS file: main.js
+2025-06-01 20:54:49,586 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 20:54:49,591 - __main__ - INFO - Serving JS file: typed.js
+2025-06-01 20:59:47,327 - __main__ - INFO - Starting Flask application
+2025-06-01 20:59:48,042 - __main__ - INFO - Starting Flask application
+2025-06-01 20:59:48,070 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:00:11,791 - __main__ - INFO - Home page accessed
+2025-06-01 21:00:11,890 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 21:00:11,891 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 21:00:11,895 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 21:00:13,077 - __main__ - WARNING - Image not found: portfolio-7-600w.jpg
+2025-06-01 21:00:13,085 - __main__ - ERROR - Error serving image portfolio-7-600w.jpg: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 617, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 21:00:13,088 - __main__ - WARNING - 404 error: /images/portfolio-7-600w.jpg
+2025-06-01 21:05:22,797 - __main__ - INFO - Starting Flask application
+2025-06-01 21:05:23,567 - __main__ - INFO - Starting Flask application
+2025-06-01 21:05:23,582 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 21:05:29,279 - __main__ - INFO - Home page accessed
+2025-06-01 21:05:29,368 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 21:05:29,368 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 21:05:29,377 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 21:06:03,938 - __main__ - INFO - Home page accessed
+2025-06-01 21:06:04,095 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 21:06:04,097 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 21:06:04,118 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 21:15:09,646 - __main__ - INFO - Home page accessed
+2025-06-01 21:15:09,809 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 21:15:09,810 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 21:15:09,817 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 21:15:36,387 - __main__ - INFO - Starting Flask application
+2025-06-01 21:15:36,855 - __main__ - INFO - Starting Flask application
+2025-06-01 21:15:36,900 - werkzeug - WARNING -  * Debugger is active!
