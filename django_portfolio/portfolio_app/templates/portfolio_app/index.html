@@ -1,0 +1,323 @@
+{% extends 'portfolio_app/base.html' %}
+{% load static %}
+
+{% block title %}Shubham Raj - Portfolio{% endblock %}
+
+{% block content %}
+    <!-- Hero Section Start -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="animate__animated animate__fadeInUp animate__delay-1s">HELLO</h1>
+                    <h2 class="hero-name animate__animated animate__fadeInUp animate__delay-1s">I'm Shubham Raj</h2>
+                    <h3 class="hero-title animate__animated animate__fadeInUp animate__delay-2s">A <span class="typing-text">Web Developer</span></h3>
+                    <p class="animate__animated animate__fadeInUp animate__delay-2s">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+                    <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-3s">
+                        <a href="#contact" class="btn primary-btn">Hire Me</a>
+                        <a href="#portfolio" class="btn secondary-btn">View Portfolio</a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="{% static 'images/hero-image.jpg' %}" alt="Hero Image" class="animate__animated animate__zoomIn animate__delay-1s" loading="eager" fetchpriority="high" width="500" height="600">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Stats Section Start -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-wrapper" data-aos="fade-up" data-aos-duration="800">
+                <div class="stat-item">
+                    <h3>{{ stats.projects_completed }}</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <h3>{{ stats.happy_clients }}</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3>{{ stats.hours_worked }}</h3>
+                    <p>Hours Worked</p>
+                </div>
+                <div class="stat-item">
+                    <h3>{{ stats.awards_won }}</h3>
+                    <p>Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Stats Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>About Me</h2>
+                <p>Discover My Story</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="{% static 'images/about-image.jpg' %}" alt="About Me">
+                </div>
+                <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+                    <h3>{{ about.title }}</h3>
+                    <p>{{ about.description }}</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <h4>Name:</h4>
+                            <p>{{ about.name }}</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Email:</h4>
+                            <p>{{ about.email }}</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Phone:</h4>
+                            <p>{{ about.phone }}</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>From:</h4>
+                            <p>{{ about.location }}</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Freelance:</h4>
+                            <p>{{ about.freelance_status }}</p>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="{{ about.cv_url }}" class="btn primary-btn" download>Download CV</a>
+                        <a href="#contact" class="btn secondary-btn">Hire Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Skills Section Start -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>My Skills</h2>
+                <p>Technical expertise and proficiency</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-left" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>Professional Skills</h3>
+                    <p>I've honed my skills in various technologies and frameworks to deliver high-quality solutions.</p>
+                    
+                    <div class="skills-wrapper">
+                        {% for skill in skills %}
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>{{ skill.name }}</h4>
+                                <p>{{ skill.percentage }}%</p>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="{{ skill.percentage }}"></div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="skills-right" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="skills-image">
+                        <img src="{% static 'images/skills-image.jpg' %}" alt="Skills Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section End -->
+
+    <!-- Services Section Start -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>My Services</h2>
+                <p>What I Offer</p>
+            </div>
+            <div class="services-wrapper">
+                {% for service in services %}
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="{{ service.icon }}"></i>
+                    </div>
+                    <h3>{{ service.title }}</h3>
+                    <p>{{ service.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>My Portfolio</h2>
+                <p>Transforming Ideas into Exceptional Results</p>
+            </div>
+            <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="200">
+                <ul>
+                    <li class="active" data-filter="all">All</li>
+                    {% for category in portfolio_categories %}
+                    <li data-filter="{{ category.slug }}">{{ category.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="400">
+                {% for item in portfolio_items %}
+                <div class="portfolio-item" data-category="{{ item.categories_as_string }}">
+                    <div class="portfolio-image">
+                        <img src="{{ item.image.url }}" alt="{{ item.title }}">
+                        <div class="portfolio-overlay">
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.subtitle }}</p>
+                            <a href="{{ item.link }}" class="portfolio-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Resume Section Start -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>My Resume</h2>
+                <p>Empowering Creativity Through Experience</p>
+            </div>
+            
+            <div class="timeline-wrapper" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-progress">
+                    <div class="timeline-progress-bar" id="timelineProgressBar"></div>
+                </div>
+                
+                <div class="timeline">
+                    <!-- Experience Timeline -->
+                    {% for experience in experiences %}
+                    <div class="timeline-block" data-aos="{% cycle 'fade-right' 'fade-left' %}">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">{{ experience.start_date }} - {{ experience.end_date }}</span>
+                            <h3>{{ experience.title }}</h3>
+                            <h4>{{ experience.company }}</h4>
+                            <p>{{ experience.description }}</p>
+                            <div class="timeline-skills">
+                                {% for skill in experience.skills.all %}
+                                <span>{{ skill.name }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+                    <!-- Education Timeline -->
+                    {% for education in educations %}
+                    <div class="timeline-block" data-aos="{% cycle 'fade-right' 'fade-left' %}">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">{{ education.start_date }} - {{ education.end_date }}</span>
+                            <h3>{{ education.degree }}</h3>
+                            <h4>{{ education.institution }}</h4>
+                            <p>{{ education.description }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Resume Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Contact Me</h2>
+                <p>Get in Touch for Collaboration</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>{{ contact.location }}</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>{{ contact.email }}</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>{{ contact.phone }}</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Website</h3>
+                            <p>{{ contact.website }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left" data-aos-duration="1000">
+                    <form id="contactForm" method="post" action="{% url 'contact' %}">
+                        {% csrf_token %}
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" id="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Your message has been sent successfully!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+{% endblock %}
