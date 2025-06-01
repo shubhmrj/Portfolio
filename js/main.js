@@ -7,24 +7,25 @@
 ===================================
 */
 
-// Preloader Functionality
+// Preloader Functionality - Optimized for faster loading
 const preloader = document.getElementById('preloader');
-const preloaderProgress = document.getElementById('preloaderProgress');
 
-// Simulate loading progress
-let progress = 0;
-const progressInterval = setInterval(() => {
-    progress += Math.random() * 10;
-    if (progress >= 100) {
-        progress = 100;
-        clearInterval(progressInterval);
-        setTimeout(() => {
-            preloader.classList.add('hidden');
-            document.body.classList.add('loaded');
-        }, 500);
+// Hide preloader as soon as content is loaded
+window.addEventListener('load', () => {
+    // Only wait a minimal time to ensure animations are ready
+    setTimeout(() => {
+        preloader.classList.add('hidden');
+        document.body.classList.add('loaded');
+    }, 100);
+});
+
+// Fallback in case load event doesn't fire
+setTimeout(() => {
+    if (preloader && !preloader.classList.contains('hidden')) {
+        preloader.classList.add('hidden');
+        document.body.classList.add('loaded');
     }
-    preloaderProgress.style.width = `${progress}%`;
-}, 200);
+}, 2000); // Max 2 second wait
 
 // Performance optimization - Lazy load images
 function lazyLoadImages() {
@@ -518,27 +519,11 @@ $(document).ready(function() {
             });
         }
     });
-
+    
     // Number Counter Animation for About Section
     function startCounterAnimation() {
         const experienceCounter = document.getElementById('experienceCounter');
         const projectCounter = document.getElementById('projectCounter');
-        
-        if (experienceCounter) {
-            const experienceTarget = 10;
-            let experienceCount = 0;
-            const experienceSpeed = 100;
-            
-            const experienceTimer = setInterval(() => {
-                experienceCount++;
-                experienceCounter.textContent = experienceCount + '+';
-                
-                if (experienceCount >= experienceTarget) {
-                    clearInterval(experienceTimer);
-                    experienceCounter.innerHTML = experienceTarget + '<span class="plus">+</span>';
-                }
-            }, experienceSpeed);
-        }
         
         if (projectCounter) {
             const projectTarget = 241;
