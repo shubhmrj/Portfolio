@@ -7,56 +7,24 @@
 ===================================
 */
 
-// Preloader Functionality - Optimized for faster loading
+// Preloader Functionality
 const preloader = document.getElementById('preloader');
 const preloaderProgress = document.getElementById('preloaderProgress');
 
-// Use requestAnimationFrame for smoother progress animation
+// Simulate loading progress
 let progress = 0;
-let lastTimestamp = 0;
-
-function updatePreloader(timestamp) {
-    if (!lastTimestamp) lastTimestamp = timestamp;
-    const elapsed = timestamp - lastTimestamp;
-    
-    if (elapsed > 30) { // Update roughly every 30ms for smoother animation
-        // Accelerated loading progress - faster near the end
-        const increment = progress < 80 ? Math.random() * 30 : Math.random() * 10;
-        progress += increment;
-        
-        if (progress >= 100) {
-            progress = 100;
-            // Hide preloader immediately when progress reaches 100%
-            setTimeout(() => {
-                preloader.classList.add('hidden');
-                document.body.classList.add('loaded');
-            }, 100); // Minimal delay for transition effect
-        } else {
-            requestAnimationFrame(updatePreloader);
-        }
-        
-        if (preloaderProgress) {
-            preloaderProgress.style.width = `${progress}%`;
-        }
-        
-        lastTimestamp = timestamp;
-    } else {
-        requestAnimationFrame(updatePreloader);
+const progressInterval = setInterval(() => {
+    progress += Math.random() * 10;
+    if (progress >= 100) {
+        progress = 100;
+        clearInterval(progressInterval);
+        setTimeout(() => {
+            preloader.classList.add('hidden');
+            document.body.classList.add('loaded');
+        }, 500);
     }
-}
-
-// Start preloader animation
-if (preloader && preloaderProgress) {
-    requestAnimationFrame(updatePreloader);
-}
-
-// Hide preloader if it takes too long (failsafe)
-setTimeout(() => {
-    if (preloader && !preloader.classList.contains('hidden')) {
-        preloader.classList.add('hidden');
-        document.body.classList.add('loaded');
-    }
-}, 1500); // Force hide after 1.5 seconds max
+    preloaderProgress.style.width = `${progress}%`;
+}, 200);
 
 // Performance optimization - Lazy load images
 function lazyLoadImages() {
@@ -68,14 +36,10 @@ function lazyLoadImages() {
                 if (entry.isIntersecting) {
                     const img = entry.target;
                     img.src = img.dataset.src;
-                    img.classList.add('loaded');
                     img.removeAttribute('data-src');
                     imageObserver.unobserve(img);
                 }
             });
-        }, {
-            rootMargin: '100px 0px', // Load images 100px before they enter viewport
-            threshold: 0.1 // Trigger when at least 10% of the image is visible
         });
         
         lazyImages.forEach(img => imageObserver.observe(img));
@@ -83,21 +47,9 @@ function lazyLoadImages() {
         // Fallback for browsers that don't support IntersectionObserver
         lazyImages.forEach(img => {
             img.src = img.dataset.src;
-            img.classList.add('loaded');
             img.removeAttribute('data-src');
         });
     }
-    
-    // Force load all images after 3 seconds if they haven't loaded yet
-    setTimeout(() => {
-        lazyImages.forEach(img => {
-            if (img.dataset.src) {
-                img.src = img.dataset.src;
-                img.classList.add('loaded');
-                img.removeAttribute('data-src');
-            }
-        });
-    }, 3000);
 }
 
 // Animate skill bars when they come into view
@@ -229,15 +181,16 @@ function initTimeline() {
 // Performance optimization - Defer non-critical JavaScript
 function deferNonCriticalJS() {
     // Create a list of scripts to load after page load
-    const scripts = [
-        // Add your non-critical third-party scripts here
-        // Example: { src: 'https://example.com/script.js', async: true, defer: true }
+    const deferredScripts = [
+        // Add any third-party scripts that aren't critical for initial render
+        // Example: analytics, social media widgets, etc.
+        // { src: 'https://example.com/analytics.js', async: true, defer: true }
     ];
     
-    // Load scripts after page is fully loaded
-    if (scripts.length > 0) {
+    // Load deferred scripts after page load
+    if (deferredScripts.length > 0) {
         window.addEventListener('load', () => {
-            scripts.forEach(script => {
+            deferredScripts.forEach(script => {
                 const scriptEl = document.createElement('script');
                 scriptEl.src = script.src;
                 if (script.async) scriptEl.async = true;
@@ -245,47 +198,6 @@ function deferNonCriticalJS() {
                 document.body.appendChild(scriptEl);
             });
         });
-    }
-    
-    // Initialize particles.js with optimized settings for better performance
-    if (typeof particlesJS !== 'undefined') {
-        // Delay particles.js initialization slightly for faster initial page load
-        setTimeout(() => {
-            particlesJS('particles-js', {
-                particles: {
-                    number: { value: 50, density: { enable: true, value_area: 800 } }, // Reduced from default 80
-                    color: { value: '#2196F3' },
-                    shape: { type: 'circle' },
-                    opacity: { value: 0.5, random: false },
-                    size: { value: 3, random: true },
-                    line_linked: {
-                        enable: true,
-                        distance: 150,
-                        color: '#2196F3',
-                        opacity: 0.3,
-                        width: 1
-                    },
-                    move: {
-                        enable: true,
-                        speed: 2, // Reduced from default 6 for better performance
-                        direction: 'none',
-                        random: false,
-                        straight: false,
-                        out_mode: 'out',
-                        bounce: false
-                    }
-                },
-                interactivity: {
-                    detect_on: 'canvas',
-                    events: {
-                        onhover: { enable: true, mode: 'grab' },
-                        onclick: { enable: false }, // Disabled for better performance
-                        resize: true
-                    }
-                },
-                retina_detect: false // Disabled for better performance
-            });
-        }, 500);
     }
     
     // Optimize event listeners by using passive listeners where possible
@@ -305,8 +217,6 @@ function deferNonCriticalJS() {
     const passiveListenerOpt = supportsPassive ? { passive: true } : false;
     document.addEventListener('touchstart', function(){}, passiveListenerOpt);
     document.addEventListener('wheel', function(){}, passiveListenerOpt);
-    document.addEventListener('scroll', function(){}, passiveListenerOpt);
-    document.addEventListener('touchmove', function(){}, passiveListenerOpt);
 }
 
 // Document Ready Function
@@ -315,30 +225,11 @@ $(document).ready(function() {
 
     // Initialize AOS Animation Library with performance optimizations
     AOS.init({
-        duration: 800, // Reduced from 1000 for faster animations
+        duration: 1000,
         once: true,
         mirror: false,
-        disable: 'phone', // Disable animations on mobile for better performance
-        throttleDelay: 99, // Reduced throttle delay
-        offset: 120, // Trigger animations earlier
-        delay: 0 // Remove delays for faster initial load
+        disable: 'mobile' // Disable animations on mobile for better performance
     });
-    
-    // Initialize Typed.js for dynamic text animation
-    const typingElement = document.querySelector('.typing-text');
-    if (typingElement) {
-        new Typed('.typing-text', {
-            strings: ['Web Developer', 'UI/UX Designer', 'Data Analyst', 'Freelancer'],
-            typeSpeed: 80,
-            backSpeed: 40,
-            backDelay: 2000,
-            loop: true,
-            showCursor: true,
-            cursorChar: '|'
-        });
-    } else {
-        console.warn('Typing text element not found');
-    }
 
     // Initialize lazy loading
     lazyLoadImages();
