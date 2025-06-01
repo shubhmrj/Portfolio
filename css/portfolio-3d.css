@@ -1,0 +1,134 @@
+/* 3D Portfolio Viewer Styles */
+
+#portfolio-3d-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 40px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] #portfolio-3d-container {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.portfolio-3d-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+
+.portfolio-3d-controls button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.portfolio-3d-controls button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-3d-info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .portfolio-3d-info {
+  background-color: rgba(30, 30, 30, 0.9);
+  color: var(--light-color);
+}
+
+.portfolio-3d-info h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.portfolio-3d-info p {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.portfolio-3d-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.portfolio-3d-tags span {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.portfolio-3d-link {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.portfolio-3d-link:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #portfolio-3d-container {
+    height: 400px;
+  }
+  
+  .portfolio-3d-info {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  #portfolio-3d-container {
+    height: 350px;
+  }
+  
+  .portfolio-3d-info {
+    max-width: calc(100% - 40px);
+    top: auto;
+    bottom: 80px;
+  }
+}

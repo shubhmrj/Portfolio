@@ -1,0 +1,451 @@
+2025-06-01 19:31:00,438 - __main__ - INFO - Starting Flask application
+2025-06-01 19:31:00,458 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:31:00,466 - werkzeug - INFO -  * Debugger PIN: 383-080-055
+2025-06-01 19:31:00,592 - __main__ - INFO - Starting Flask application
+2025-06-01 19:31:00,651 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:31:00,664 - werkzeug - INFO -  * Debugger PIN: 484-122-228
+2025-06-01 19:31:05,461 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:31:05,463 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:31:05,565 - werkzeug - INFO -  * Detected change in 'e:\\Portfolio\\app.py', reloading
+2025-06-01 19:31:06,163 - __main__ - INFO - Starting Flask application
+2025-06-01 19:31:06,202 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:31:06,204 - werkzeug - INFO -  * Debugger PIN: 383-080-055
+2025-06-01 19:31:06,559 - __main__ - INFO - Starting Flask application
+2025-06-01 19:31:06,582 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:31:06,590 - werkzeug - INFO -  * Debugger PIN: 484-122-228
+2025-06-01 19:31:20,598 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:31:20,600 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:31:21,402 - __main__ - INFO - Starting Flask application
+2025-06-01 19:31:21,423 - werkzeug - INFO -  * Detected change in 'e:\\Portfolio\\app.py', reloading
+2025-06-01 19:31:21,468 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:31:21,486 - werkzeug - INFO -  * Debugger PIN: 484-122-228
+2025-06-01 19:31:21,974 - __main__ - INFO - Starting Flask application
+2025-06-01 19:31:22,017 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:31:22,025 - werkzeug - INFO -  * Debugger PIN: 383-080-055
+2025-06-01 19:32:15,648 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:32:15,650 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:32:15,795 - werkzeug - INFO -  * Detected change in 'e:\\Portfolio\\app.py', reloading
+2025-06-01 19:32:16,204 - __main__ - INFO - Starting Flask application
+2025-06-01 19:32:16,242 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:32:16,252 - werkzeug - INFO -  * Debugger PIN: 383-080-055
+2025-06-01 19:32:16,436 - __main__ - INFO - Starting Flask application
+2025-06-01 19:32:16,485 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:32:16,489 - werkzeug - INFO -  * Debugger PIN: 484-122-228
+2025-06-01 19:32:59,188 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:32:59,190 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:32:59,897 - werkzeug - INFO -  * Detected change in 'e:\\Portfolio\\app.py', reloading
+2025-06-01 19:33:00,287 - __main__ - INFO - Starting Flask application
+2025-06-01 19:33:00,305 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:33:00,311 - werkzeug - INFO -  * Debugger PIN: 383-080-055
+2025-06-01 19:33:00,325 - __main__ - INFO - Starting Flask application
+2025-06-01 19:33:00,361 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:33:00,365 - werkzeug - INFO -  * Debugger PIN: 484-122-228
+2025-06-01 19:33:08,644 - __main__ - WARNING - 404 error: /
+2025-06-01 19:33:08,677 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-01 19:33:08,787 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:08] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-06-01 19:33:08,789 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:08] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-06-01 19:33:08,818 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:08] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=c6mDEw7uqQVoepeUvDuU HTTP/1.1" 200 -
+2025-06-01 19:33:08,887 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:08] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-06-01 19:33:09,542 - __main__ - WARNING - 404 error: /
+2025-06-01 19:33:09,568 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-01 19:33:09,609 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:09] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-06-01 19:33:09,624 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:09] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-06-01 19:33:09,698 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:09] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=c6mDEw7uqQVoepeUvDuU HTTP/1.1[0m" 304 -
+2025-06-01 19:33:09,740 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:09] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-06-01 19:33:09,793 - __main__ - WARNING - 404 error: /
+2025-06-01 19:33:09,803 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-01 19:33:09,840 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:09] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-06-01 19:33:09,844 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:09] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-06-01 19:33:09,909 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:09] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=c6mDEw7uqQVoepeUvDuU HTTP/1.1[0m" 304 -
+2025-06-01 19:33:09,947 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:09] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-06-01 19:33:09,985 - __main__ - WARNING - 404 error: /
+2025-06-01 19:33:10,002 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-01 19:33:10,059 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-06-01 19:33:10,063 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-06-01 19:33:10,126 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=c6mDEw7uqQVoepeUvDuU HTTP/1.1[0m" 304 -
+2025-06-01 19:33:10,177 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-06-01 19:33:10,347 - __main__ - WARNING - 404 error: /
+2025-06-01 19:33:10,371 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-01 19:33:10,423 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-06-01 19:33:10,440 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-06-01 19:33:10,534 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=c6mDEw7uqQVoepeUvDuU HTTP/1.1[0m" 304 -
+2025-06-01 19:33:10,564 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-06-01 19:33:10,670 - __main__ - WARNING - 404 error: /
+2025-06-01 19:33:10,680 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-01 19:33:10,717 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-06-01 19:33:10,721 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-06-01 19:33:10,786 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=c6mDEw7uqQVoepeUvDuU HTTP/1.1[0m" 304 -
+2025-06-01 19:33:10,823 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-06-01 19:33:10,873 - __main__ - WARNING - 404 error: /
+2025-06-01 19:33:10,890 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-01 19:33:10,948 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-06-01 19:33:10,950 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:10] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-06-01 19:33:11,021 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:11] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=c6mDEw7uqQVoepeUvDuU HTTP/1.1[0m" 304 -
+2025-06-01 19:33:11,067 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:33:11] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-06-01 19:33:41,184 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:33:41,186 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:33:42,039 - werkzeug - INFO -  * Detected change in 'e:\\Portfolio\\app.py', reloading
+2025-06-01 19:33:42,419 - __main__ - INFO - Starting Flask application
+2025-06-01 19:33:42,440 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:33:42,443 - werkzeug - INFO -  * Debugger PIN: 484-122-228
+2025-06-01 19:33:42,508 - __main__ - INFO - Starting Flask application
+2025-06-01 19:33:42,533 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:33:42,533 - werkzeug - INFO -  * Debugger PIN: 383-080-055
+2025-06-01 19:34:20,800 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:34:20,802 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:34:21,104 - werkzeug - INFO -  * Detected change in 'e:\\Portfolio\\app.py', reloading
+2025-06-01 19:34:21,669 - __main__ - INFO - Starting Flask application
+2025-06-01 19:34:21,715 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:34:21,723 - werkzeug - INFO -  * Debugger PIN: 383-080-055
+2025-06-01 19:34:22,239 - __main__ - INFO - Starting Flask application
+2025-06-01 19:34:22,265 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:34:22,268 - werkzeug - INFO -  * Debugger PIN: 484-122-228
+2025-06-01 19:34:44,544 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:34:44,547 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:34:45,108 - werkzeug - INFO -  * Detected change in 'e:\\Portfolio\\app.py', reloading
+2025-06-01 19:34:45,603 - __main__ - INFO - Starting Flask application
+2025-06-01 19:34:45,626 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:34:45,630 - werkzeug - INFO -  * Debugger PIN: 383-080-055
+2025-06-01 19:34:45,903 - __main__ - INFO - Starting Flask application
+2025-06-01 19:34:45,940 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:34:45,943 - werkzeug - INFO -  * Debugger PIN: 484-122-228
+2025-06-01 19:35:23,604 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\utils\\template_filters.py', reloading
+2025-06-01 19:35:23,606 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\utils\\template_filters.py', reloading
+2025-06-01 19:35:24,198 - werkzeug - INFO -  * Detected change in 'e:\\Portfolio\\utils\\template_filters.py', reloading
+2025-06-01 19:35:24,802 - __main__ - INFO - Starting Flask application
+2025-06-01 19:35:24,825 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:35:24,829 - werkzeug - INFO -  * Debugger PIN: 383-080-055
+2025-06-01 19:35:24,868 - __main__ - INFO - Starting Flask application
+2025-06-01 19:35:24,885 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:35:24,891 - werkzeug - INFO -  * Debugger PIN: 484-122-228
+2025-06-01 19:36:21,510 - __main__ - INFO - Home page accessed
+2025-06-01 19:36:21,559 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:36:21] "GET / HTTP/1.1" 200 -
+2025-06-01 19:36:21,643 - __main__ - WARNING - 404 error: /static/css/image-optimization.css
+2025-06-01 19:36:21,653 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:36:21] "[33mGET /static/css/image-optimization.css HTTP/1.1[0m" 404 -
+2025-06-01 19:36:21,656 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-01 19:36:21,656 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 19:36:21,659 - __main__ - INFO - Serving CSS file: style.css
+2025-06-01 19:36:21,662 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-01 19:36:21,670 - __main__ - WARNING - Image not found: hero-image.jpg
+2025-06-01 19:36:21,673 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:36:21] "[33mGET /static/js/image-optimization.js HTTP/1.1[0m" 404 -
+2025-06-01 19:36:21,703 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\.venv\\Lib\\site-packages\\werkzeug\\exceptions.py', reloading
+2025-06-01 19:36:21,686 - __main__ - ERROR - Error serving image hero-image.jpg: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 439, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:36:21,688 - __main__ - INFO - Serving JS file: typed.js
+2025-06-01 19:36:21,704 - __main__ - INFO - Serving JS file: main.js
+2025-06-01 19:36:21,705 - __main__ - WARNING - 404 error: /images/hero-image.jpg
+2025-06-01 19:36:21,718 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:36:21] "[33mGET /images/hero-image.jpg HTTP/1.1[0m" 404 -
+2025-06-01 19:36:21,947 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:36:21] "[36mGET /js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2025-06-01 19:36:21,953 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:36:21] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2025-06-01 19:36:21,953 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:36:21] "[36mGET /js/typed.js HTTP/1.1[0m" 304 -
+2025-06-01 19:36:21,953 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:36:21] "[36mGET /css/responsive.css HTTP/1.1[0m" 304 -
+2025-06-01 19:36:21,959 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:36:21] "[36mGET /css/style.css HTTP/1.1[0m" 304 -
+2025-06-01 19:36:23,522 - __main__ - INFO - Starting Flask application
+2025-06-01 19:36:23,582 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:36:23,592 - werkzeug - INFO -  * Debugger PIN: 484-122-228
+2025-06-01 19:36:28,132 - __main__ - WARNING - Image not found: portfolio-2-900w.webp
+2025-06-01 19:36:28,137 - __main__ - WARNING - Image not found: portfolio-1-900w.webp
+2025-06-01 19:36:28,138 - __main__ - ERROR - Error serving image portfolio-2-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 439, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:36:28,139 - __main__ - WARNING - Image not found: portfolio-3-900w.webp
+2025-06-01 19:36:28,142 - __main__ - ERROR - Error serving image portfolio-1-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 439, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:36:28,144 - __main__ - WARNING - 404 error: /images/portfolio-2-900w.webp
+2025-06-01 19:36:28,147 - __main__ - WARNING - Image not found: portfolio-4-900w.webp
+2025-06-01 19:36:28,148 - __main__ - ERROR - Error serving image portfolio-3-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 439, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:36:28,148 - __main__ - WARNING - Image not found: portfolio-5-900w.webp
+2025-06-01 19:36:28,152 - __main__ - WARNING - Image not found: portfolio-6-900w.webp
+2025-06-01 19:36:28,152 - __main__ - WARNING - 404 error: /images/portfolio-1-900w.webp
+2025-06-01 19:36:28,159 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:36:28] "[33mGET /images/portfolio-2-900w.webp HTTP/1.1[0m" 404 -
+2025-06-01 19:36:28,159 - __main__ - ERROR - Error serving image portfolio-4-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 439, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:36:28,163 - __main__ - WARNING - 404 error: /images/portfolio-3-900w.webp
+2025-06-01 19:36:28,163 - __main__ - ERROR - Error serving image portfolio-5-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 439, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:36:28,163 - __main__ - ERROR - Error serving image portfolio-6-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 439, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:36:28,168 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:36:28] "[33mGET /images/portfolio-1-900w.webp HTTP/1.1[0m" 404 -
+2025-06-01 19:36:28,173 - __main__ - WARNING - 404 error: /images/portfolio-4-900w.webp
+2025-06-01 19:36:28,177 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:36:28] "[33mGET /images/portfolio-3-900w.webp HTTP/1.1[0m" 404 -
+2025-06-01 19:36:28,183 - __main__ - WARNING - 404 error: /images/portfolio-5-900w.webp
+2025-06-01 19:36:28,191 - __main__ - WARNING - 404 error: /images/portfolio-6-900w.webp
+2025-06-01 19:36:28,195 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:36:28] "[33mGET /images/portfolio-4-900w.webp HTTP/1.1[0m" 404 -
+2025-06-01 19:36:28,203 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:36:28] "[33mGET /images/portfolio-5-900w.webp HTTP/1.1[0m" 404 -
+2025-06-01 19:36:28,203 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:36:28] "[33mGET /images/portfolio-6-900w.webp HTTP/1.1[0m" 404 -
+2025-06-01 19:36:52,373 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\utils\\image_utils.py', reloading
+2025-06-01 19:36:52,437 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\.venv\\Lib\\site-packages\\PIL\\ImageOps.py', reloading
+2025-06-01 19:36:52,604 - werkzeug - INFO -  * Detected change in 'e:\\Portfolio\\utils\\image_utils.py', reloading
+2025-06-01 19:36:53,102 - __main__ - INFO - Starting Flask application
+2025-06-01 19:36:53,123 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:36:53,130 - werkzeug - INFO -  * Debugger PIN: 383-080-055
+2025-06-01 19:36:53,323 - __main__ - INFO - Starting Flask application
+2025-06-01 19:36:53,366 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:36:53,370 - werkzeug - INFO -  * Debugger PIN: 484-122-228
+2025-06-01 19:37:16,929 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:37:16,930 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:37:17,498 - werkzeug - INFO -  * Detected change in 'e:\\Portfolio\\app.py', reloading
+2025-06-01 19:37:18,004 - __main__ - INFO - Starting Flask application
+2025-06-01 19:37:18,032 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:37:18,036 - werkzeug - INFO -  * Debugger PIN: 383-080-055
+2025-06-01 19:37:18,162 - __main__ - INFO - Starting Flask application
+2025-06-01 19:37:18,181 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:37:18,183 - werkzeug - INFO -  * Debugger PIN: 484-122-228
+2025-06-01 19:38:50,748 - __main__ - INFO - Home page accessed
+2025-06-01 19:38:50,819 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:38:50] "GET / HTTP/1.1" 200 -
+2025-06-01 19:38:50,881 - __main__ - WARNING - 404 error: /static/css/image-optimization.css
+2025-06-01 19:38:50,882 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:38:50] "[33mGET /static/css/image-optimization.css HTTP/1.1[0m" 404 -
+2025-06-01 19:38:50,887 - __main__ - WARNING - Image not found: hero-image.jpg
+2025-06-01 19:38:50,888 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 19:38:50,888 - __main__ - ERROR - Error serving image hero-image.jpg: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 445, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:38:50,890 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:38:50] "[33mGET /static/js/image-optimization.js HTTP/1.1[0m" 404 -
+2025-06-01 19:38:50,890 - __main__ - WARNING - 404 error: /images/hero-image.jpg
+2025-06-01 19:38:50,890 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:38:50] "[33mGET /images/hero-image.jpg HTTP/1.1[0m" 404 -
+2025-06-01 19:38:55,141 - __main__ - WARNING - Image not found: portfolio-4-900w.webp
+2025-06-01 19:38:55,141 - __main__ - ERROR - Error serving image portfolio-4-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 445, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:38:55,150 - __main__ - WARNING - Image not found: portfolio-5-900w.webp
+2025-06-01 19:38:55,150 - __main__ - WARNING - 404 error: /images/portfolio-4-900w.webp
+2025-06-01 19:38:55,153 - __main__ - ERROR - Error serving image portfolio-5-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 445, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:38:55,153 - __main__ - WARNING - Image not found: portfolio-6-900w.webp
+2025-06-01 19:38:55,155 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:38:55] "[33mGET /images/portfolio-4-900w.webp HTTP/1.1[0m" 404 -
+2025-06-01 19:38:55,159 - __main__ - WARNING - 404 error: /images/portfolio-5-900w.webp
+2025-06-01 19:38:55,160 - __main__ - ERROR - Error serving image portfolio-6-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 445, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:38:55,165 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:38:55] "[33mGET /images/portfolio-5-900w.webp HTTP/1.1[0m" 404 -
+2025-06-01 19:38:55,171 - __main__ - WARNING - 404 error: /images/portfolio-6-900w.webp
+2025-06-01 19:38:55,180 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:38:55] "[33mGET /images/portfolio-6-900w.webp HTTP/1.1[0m" 404 -
+2025-06-01 19:38:55,200 - __main__ - WARNING - Image not found: portfolio-1-900w.webp
+2025-06-01 19:38:55,203 - __main__ - ERROR - Error serving image portfolio-1-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 445, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:38:55,205 - __main__ - WARNING - Image not found: portfolio-2-900w.webp
+2025-06-01 19:38:55,217 - __main__ - WARNING - 404 error: /images/portfolio-1-900w.webp
+2025-06-01 19:38:55,217 - __main__ - ERROR - Error serving image portfolio-2-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 445, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:38:55,219 - __main__ - WARNING - Image not found: portfolio-3-900w.webp
+2025-06-01 19:38:55,219 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:38:55] "[33mGET /images/portfolio-1-900w.webp HTTP/1.1[0m" 404 -
+2025-06-01 19:38:55,221 - __main__ - WARNING - 404 error: /images/portfolio-2-900w.webp
+2025-06-01 19:38:55,223 - __main__ - ERROR - Error serving image portfolio-3-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 445, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:38:55,224 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:38:55] "[33mGET /images/portfolio-2-900w.webp HTTP/1.1[0m" 404 -
+2025-06-01 19:38:55,228 - __main__ - WARNING - 404 error: /images/portfolio-3-900w.webp
+2025-06-01 19:38:55,229 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 19:38:55] "[33mGET /images/portfolio-3-900w.webp HTTP/1.1[0m" 404 -
+2025-06-01 19:40:18,458 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:40:18,459 - werkzeug - INFO -  * Detected change in 'E:\\Portfolio\\app.py', reloading
+2025-06-01 19:40:19,317 - werkzeug - INFO -  * Detected change in 'e:\\Portfolio\\app.py', reloading
+2025-06-01 19:47:57,313 - __main__ - INFO - Starting Flask application
+2025-06-01 19:47:57,782 - __main__ - INFO - Starting Flask application
+2025-06-01 19:47:57,819 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:48:20,746 - __main__ - INFO - Home page accessed
+2025-06-01 19:48:20,921 - __main__ - WARNING - 404 error: /static/css/image-optimization.css
+2025-06-01 19:48:20,928 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 19:48:20,931 - __main__ - WARNING - Image not found: hero-image.jpg
+2025-06-01 19:48:20,932 - __main__ - ERROR - Error serving image hero-image.jpg: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 617, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:48:20,958 - __main__ - WARNING - 404 error: /images/hero-image.jpg
+2025-06-01 19:48:26,338 - __main__ - WARNING - Image not found: portfolio-1-900w.webp
+2025-06-01 19:48:26,340 - __main__ - ERROR - Error serving image portfolio-1-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 617, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:48:26,340 - __main__ - WARNING - 404 error: /images/portfolio-1-900w.webp
+2025-06-01 19:48:26,345 - __main__ - WARNING - Image not found: portfolio-2-900w.webp
+2025-06-01 19:48:26,345 - __main__ - ERROR - Error serving image portfolio-2-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 617, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:48:26,353 - __main__ - WARNING - 404 error: /images/portfolio-2-900w.webp
+2025-06-01 19:48:26,358 - __main__ - WARNING - Image not found: portfolio-3-900w.webp
+2025-06-01 19:48:26,360 - __main__ - ERROR - Error serving image portfolio-3-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 617, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:48:26,372 - __main__ - WARNING - Image not found: portfolio-4-900w.webp
+2025-06-01 19:48:26,378 - __main__ - WARNING - 404 error: /images/portfolio-3-900w.webp
+2025-06-01 19:48:26,379 - __main__ - ERROR - Error serving image portfolio-4-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 617, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:48:26,385 - __main__ - WARNING - 404 error: /images/portfolio-4-900w.webp
+2025-06-01 19:48:26,388 - __main__ - WARNING - Image not found: portfolio-5-900w.webp
+2025-06-01 19:48:26,389 - __main__ - WARNING - Image not found: portfolio-6-900w.webp
+2025-06-01 19:48:26,390 - __main__ - ERROR - Error serving image portfolio-5-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 617, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:48:26,391 - __main__ - ERROR - Error serving image portfolio-6-900w.webp: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 617, in serve_image
+    abort(404)
+  File "E:\Portfolio\.venv\Lib\site-packages\flask\helpers.py", line 284, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "E:\Portfolio\.venv\Lib\site-packages\werkzeug\exceptions.py", line 876, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-01 19:48:26,397 - __main__ - WARNING - 404 error: /images/portfolio-5-900w.webp
+2025-06-01 19:48:26,407 - __main__ - WARNING - 404 error: /images/portfolio-6-900w.webp
+2025-06-01 19:52:34,784 - __main__ - INFO - Starting Flask application
+2025-06-01 19:52:34,819 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:55:28,939 - __main__ - INFO - Starting Flask application
+2025-06-01 19:55:29,429 - __main__ - INFO - Starting Flask application
+2025-06-01 19:55:29,453 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:55:40,669 - __main__ - INFO - Home page accessed
+2025-06-01 19:55:40,776 - __main__ - WARNING - 404 error: /static/css/image-optimization.css
+2025-06-01 19:55:40,777 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 20:00:09,374 - __main__ - INFO - Home page accessed
+2025-06-01 20:00:09,480 - __main__ - WARNING - 404 error: /static/css/image-optimization.css
+2025-06-01 20:00:09,484 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 20:00:20,553 - __main__ - INFO - Starting Flask application
+2025-06-01 20:00:21,316 - __main__ - INFO - Starting Flask application
+2025-06-01 20:00:21,355 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 20:07:15,382 - __main__ - INFO - Home page accessed
+2025-06-01 20:07:15,542 - __main__ - WARNING - 404 error: /static/css/image-optimization.css
+2025-06-01 20:07:15,543 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 20:07:15,544 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 20:07:15,545 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 20:08:03,765 - __main__ - INFO - Starting Flask application
+2025-06-01 20:08:04,341 - __main__ - INFO - Starting Flask application
+2025-06-01 20:08:04,354 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 20:08:20,867 - __main__ - INFO - Home page accessed
+2025-06-01 20:08:21,032 - __main__ - INFO - Serving CSS file: style.css
+2025-06-01 20:08:21,041 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-01 20:08:21,061 - __main__ - WARNING - 404 error: /static/css/image-optimization.css
+2025-06-01 20:08:21,085 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-01 20:08:21,160 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-01 20:08:21,161 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-01 20:08:21,163 - __main__ - INFO - Serving JS file: main.js
+2025-06-01 20:08:21,166 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-01 20:08:21,169 - __main__ - INFO - Serving JS file: typed.js
+2025-06-01 20:08:22,300 - __main__ - WARNING - 404 error: /favicon.ico

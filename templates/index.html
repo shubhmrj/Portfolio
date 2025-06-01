@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- Image Optimization CSS -->
+    <link rel="stylesheet" href="static/css/image-optimization.css">
 </head>
 <body>
     <!-- Preloader -->
@@ -338,66 +340,93 @@
                 </ul>
             </div>
             <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="400">
-                <div class="portfolio-item" data-category="design development">
+                {% set portfolio_items = [
+                    {
+                        'title': 'SAAS Website',
+                        'category': 'design development',
+                        'description': 'UI/UX Design, Development',
+                        'image': 'images/portfolio-1.jpg'
+                    },
+                    {
+                        'title': 'Workout App',
+                        'category': 'branding',
+                        'description': 'Branding, Mobile App',
+                        'image': 'images/portfolio-2.jpg'
+                    },
+                    {
+                        'title': 'Business Analytics',
+                        'category': 'development',
+                        'description': 'Web Development',
+                        'image': 'images/portfolio-3.jpg'
+                    },
+                    {
+                        'title': 'Dashboard Design',
+                        'category': 'design marketing',
+                        'description': 'UI/UX Design, Marketing',
+                        'image': 'images/portfolio-4.jpg'
+                    },
+                    {
+                        'title': 'Chatbots & AI Support',
+                        'category': 'branding development',
+                        'description': 'Branding, Development',
+                        'image': 'images/portfolio-5.jpg'
+                    },
+                    {
+                        'title': 'Content Marketing',
+                        'category': 'marketing',
+                        'description': 'Digital Marketing',
+                        'image': 'images/portfolio-6.jpg'
+                    }
+                ] %}
+
+                {% for item in portfolio_items %}
+                <div class="portfolio-item" data-category="{{ item.category }}" data-aos="fade-up" data-aos-delay="{{ loop.index * 100 }}">
                     <div class="portfolio-image">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="images/portfolio-1.jpg" alt="Portfolio Item 1" class="lazy-image">
+                        <picture class="responsive-image">
+                            <!-- WebP format (preferred) -->
+                            <source 
+                                type="image/webp" 
+                                srcset="
+                                    {{ item.image|replace('.jpg', '-600w.webp') }} 600w"
+                                sizes="(max-width: 576px) 100vw, 
+                                       (min-width: 577px) 350px">
+                            
+                            <!-- Fallback to original JPG -->
+                            <img 
+                                src="{{ item.image|replace('.jpg', '-600w.jpg') }}" 
+                                alt="{{ item.title }}" 
+                                class="portfolio-img"
+                                loading="lazy"
+                                decoding="async">
+                        </picture>
+                        
                         <div class="portfolio-overlay">
-                            <h3>SAAS Website</h3>
-                            <p>UI/UX Design, Development</p>
-                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <span class="portfolio-category">{{ item.category|replace('development', 'Dev')|replace('design', 'Design')|replace('branding', 'Brand')|replace('marketing', 'Marketing')|title }}</span>
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.description }}</p>
+                            <div class="portfolio-actions">
+                                <a href="#portfolio-modal-{{ loop.index }}" class="btn-view-project" data-portfolio-id="{{ loop.index }}">
+                                    <i class="fas fa-eye"></i> View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>{{ item.title }}</h4>
+                        <p>{{ item.description }}</p>
+                        <div class="portfolio-meta">
+                            <div class="portfolio-tags">
+                                {% for tag in item.category.split(' ') %}
+                                <span class="portfolio-tag">{{ tag }}</span>
+                                {% endfor %}
+                            </div>
+                            <a href="#portfolio-modal-{{ loop.index }}" class="portfolio-link-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="branding">
-                    <div class="portfolio-image">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="images/portfolio-2.jpg" alt="Portfolio Item 2" class="lazy-image">
-                        <div class="portfolio-overlay">
-                            <h3>Workout App</h3>
-                            <p>Branding, Mobile App</p>
-                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="development">
-                    <div class="portfolio-image">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="images/portfolio-3.jpg" alt="Portfolio Item 3" class="lazy-image">
-                        <div class="portfolio-overlay">
-                            <h3>Business Analytics</h3>
-                            <p>Web Development</p>
-                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="design marketing">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio-4.jpg" alt="Portfolio Item 4">
-                        <div class="portfolio-overlay">
-                            <h3>Dashboard Design</h3>
-                            <p>UI/UX Design, Marketing</p>
-                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="branding development">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio-5.jpg" alt="Portfolio Item 5">
-                        <div class="portfolio-overlay">
-                            <h3>Chatbots & AI Support</h3>
-                            <p>Branding, Development</p>
-                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="marketing">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio-6.jpg" alt="Portfolio Item 6">
-                        <div class="portfolio-overlay">
-                            <h3>Content Marketing</h3>
-                            <p>Digital Marketing</p>
-                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
@@ -808,7 +837,12 @@
     <script src="https://unpkg.com/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
     
-    <!-- Main JS - load last -->
-    <script src="js/main.js" defer></script>
+    <!-- Add your scripts here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Image Optimization JS -->
+    <script src="static/js/image-optimization.js"></script>
 </body>
 </html>

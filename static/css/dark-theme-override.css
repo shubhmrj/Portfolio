@@ -1,0 +1,166 @@
+/* Dark Theme Override - Forces dark theme across all pages */
+
+:root {
+  /* Override with dark theme variables */
+  --primary-color: #5dbbff !important;
+  --secondary-color: #a78bfa !important;
+  --dark-color: #ffffff !important;
+  --light-color: #121212 !important;
+  --text-color: #e0e0e0 !important;
+  --white-color: #1e1e1e !important;
+  --bg-color: #121212 !important;
+  --card-bg: #1e1e1e !important;
+  --header-bg: rgba(30, 30, 30, 0.95) !important;
+  --shadow-color: rgba(0, 0, 0, 0.3) !important;
+  --border-color: #333333 !important;
+  --text-shadow: 0 0 3px rgba(255, 255, 255, 0.1) !important;
+  --animation-glow: 0 0 8px rgba(93, 187, 255, 0.6) !important;
+}
+
+body {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+
+/* Ensure all text is visible */
+h1, h2, h3, h4, h5, h6, p, span, a, li, label, input, textarea, button {
+  color: #ffffff !important;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Make headings stand out */
+h1, h2, .section-title h2 {
+  color: #5dbbff !important;
+  text-shadow: 0 0 5px rgba(93, 187, 255, 0.3) !important;
+}
+
+/* Improve visibility of cards and containers */
+.card, .service-card, .portfolio-item, .resume-item, .contact-form, 
+.feature-card, .blog-item, .about-content, .skill-item, .timeline-item {
+  background-color: #1e1e1e !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid #333333 !important;
+}
+
+/* Enhance buttons */
+.btn, button {
+  box-shadow: 0 4px 15px rgba(93, 187, 255, 0.4) !important;
+}
+
+.primary-btn, .btn-primary {
+  background-color: #5dbbff !important;
+  color: #121212 !important;
+  font-weight: bold !important;
+  text-shadow: none !important;
+}
+
+/* Improve form fields */
+input, textarea, select {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid #444444 !important;
+  color: #ffffff !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #5dbbff !important;
+  box-shadow: 0 0 0 3px rgba(93, 187, 255, 0.25) !important;
+}
+
+/* Enhance animations */
+.animated-element, .animated-bg, .skill-progress-bar, 
+.counter-item, .service-icon, .portfolio-item-overlay {
+  box-shadow: 0 0 10px rgba(93, 187, 255, 0.6) !important;
+}
+
+/* Improve 3D portfolio viewer */
+.portfolio-3d-container {
+  background-color: #1a1a1a !important;
+}
+
+.portfolio-3d-info {
+  background-color: rgba(30, 30, 30, 0.9) !important;
+  border: 1px solid #444444 !important;
+}
+
+.portfolio-3d-info h3 {
+  color: #5dbbff !important;
+}
+
+/* Navigation improvements */
+header, .main-header, nav, .navbar {
+  background-color: rgba(18, 18, 18, 0.95) !important;
+  border-bottom: 1px solid #333333 !important;
+}
+
+.main-nav a, nav a, .navbar-nav a {
+  color: #ffffff !important;
+}
+
+.main-nav a:hover, nav a:hover, .navbar-nav a:hover {
+  color: #5dbbff !important;
+}
+
+/* Footer improvements */
+footer, .footer-section {
+  background-color: #0a0a0a !important;
+  border-top: 1px solid #333333 !important;
+}
+
+/* Preloader */
+.preloader {
+  background-color: #121212 !important;
+}
+
+.preloader-spinner {
+  border-top-color: #5dbbff !important;
+}
+
+/* Make sure icons are visible */
+.fas, .fab, .far, .fa, i[class*="fa-"] {
+  color: #5dbbff !important;
+}
+
+/* Improve visibility of portfolio items */
+.portfolio-item-content {
+  background-color: rgba(30, 30, 30, 0.9) !important;
+}
+
+.portfolio-category {
+  background-color: #5dbbff !important;
+  color: #121212 !important;
+  font-weight: bold !important;
+}
+
+/* Typing text effect */
+.typing-text {
+  color: #5dbbff !important;
+  text-shadow: 0 0 5px rgba(93, 187, 255, 0.3) !important;
+}
+
+/* Social icons */
+.social-icons a, .footer-social a {
+  background-color: #1e1e1e !important;
+  color: #5dbbff !important;
+  border: 1px solid #333333 !important;
+}
+
+.social-icons a:hover, .footer-social a:hover {
+  background-color: #5dbbff !important;
+  color: #121212 !important;
+}
+
+/* Force dark theme on all elements */
+[data-theme="light"] {
+  /* Override light theme with dark theme */
+  --primary-color: #5dbbff !important;
+  --secondary-color: #a78bfa !important;
+  --dark-color: #ffffff !important;
+  --light-color: #121212 !important;
+  --text-color: #e0e0e0 !important;
+  --white-color: #1e1e1e !important;
+  --bg-color: #121212 !important;
+  --card-bg: #1e1e1e !important;
+  --header-bg: rgba(30, 30, 30, 0.95) !important;
+  --shadow-color: rgba(0, 0, 0, 0.3) !important;
+  --border-color: #333333 !important;
+}
