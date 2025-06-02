@@ -661,3 +661,798 @@ werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on 
 2025-06-01 21:40:51,404 - __main__ - WARNING - 404 error: /js/portfolio.js
 2025-06-01 21:41:16,467 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
 2025-06-01 21:42:37,596 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 01:54:57,292 - __main__ - INFO - Starting Flask application
+2025-06-02 01:54:57,899 - __main__ - INFO - Starting Flask application
+2025-06-02 01:54:57,926 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 01:56:45,123 - __main__ - INFO - Starting Flask application
+2025-06-02 01:56:45,675 - __main__ - INFO - Starting Flask application
+2025-06-02 01:56:45,691 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 01:59:36,572 - __main__ - INFO - Starting Flask application
+2025-06-02 01:59:36,987 - __main__ - INFO - Starting Flask application
+2025-06-02 01:59:37,002 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 02:00:15,354 - __main__ - INFO - Starting Flask application
+2025-06-02 02:00:16,051 - __main__ - INFO - Starting Flask application
+2025-06-02 02:00:16,071 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 02:00:45,067 - __main__ - INFO - Home page accessed
+2025-06-02 02:00:45,210 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 02:00:45,227 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 02:00:45,347 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:00:45,347 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:00:45,366 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:02:34,792 - __main__ - INFO - Home page accessed
+2025-06-02 02:02:34,882 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:02:34,882 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:02:34,891 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:03:08,615 - __main__ - INFO - Home page accessed
+2025-06-02 02:03:08,699 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:03:08,699 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:03:08,704 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:03:32,670 - __main__ - INFO - Home page accessed
+2025-06-02 02:03:32,745 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:03:32,745 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:03:32,747 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:03:43,891 - __main__ - INFO - Home page accessed
+2025-06-02 02:03:43,947 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:03:43,951 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:03:43,952 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:04:00,748 - __main__ - INFO - Home page accessed
+2025-06-02 02:04:00,812 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:04:00,814 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:04:00,817 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:04:22,232 - __main__ - INFO - Home page accessed
+2025-06-02 02:04:22,306 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:04:22,306 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:04:22,306 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:04:36,218 - __main__ - INFO - Home page accessed
+2025-06-02 02:04:36,345 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:04:36,347 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:04:36,347 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:04:45,720 - __main__ - INFO - Home page accessed
+2025-06-02 02:04:45,792 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:04:45,792 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:04:45,797 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:08:34,746 - __main__ - INFO - Home page accessed
+2025-06-02 02:08:34,841 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:08:34,841 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:08:34,866 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:11:52,103 - __main__ - INFO - Home page accessed
+2025-06-02 02:11:52,226 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:11:52,229 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:11:52,232 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:13:29,123 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 02:17:45,402 - __main__ - INFO - Home page accessed
+2025-06-02 02:17:45,464 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:17:45,464 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:17:45,474 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:17:55,730 - __main__ - INFO - Home page accessed
+2025-06-02 02:17:55,808 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:17:55,811 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:17:55,812 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:18:05,120 - __main__ - INFO - Home page accessed
+2025-06-02 02:18:05,197 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:18:05,198 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:18:05,202 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:18:36,361 - __main__ - INFO - Home page accessed
+2025-06-02 02:18:36,542 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:18:36,545 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:18:36,558 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:18:44,374 - __main__ - INFO - Home page accessed
+2025-06-02 02:18:44,429 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:18:44,430 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:18:44,436 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:18:54,415 - __main__ - INFO - Home page accessed
+2025-06-02 02:18:54,468 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:18:54,469 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:18:54,473 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:22:55,963 - __main__ - INFO - Home page accessed
+2025-06-02 02:22:56,032 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:22:56,032 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:22:56,032 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:23:09,156 - __main__ - INFO - Starting Flask application
+2025-06-02 02:23:09,626 - __main__ - INFO - Starting Flask application
+2025-06-02 02:23:09,644 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 02:32:50,313 - __main__ - INFO - Home page accessed
+2025-06-02 02:32:50,537 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:32:50,541 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:32:50,543 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:34:14,309 - __main__ - INFO - Home page accessed
+2025-06-02 02:34:14,416 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:34:14,416 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:34:14,426 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:35:12,062 - __main__ - INFO - Starting Flask application
+2025-06-02 02:35:13,176 - __main__ - INFO - Starting Flask application
+2025-06-02 02:35:13,229 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 02:35:44,751 - __main__ - INFO - Home page accessed
+2025-06-02 02:35:44,902 - __main__ - INFO - Serving CSS file: hero-custom.css
+2025-06-02 02:35:44,916 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:35:44,920 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:35:44,924 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:35:59,915 - __main__ - INFO - Home page accessed
+2025-06-02 02:35:59,993 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 02:35:59,996 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 02:36:00,004 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 02:36:00,013 - __main__ - INFO - Serving CSS file: hero-custom.css
+2025-06-02 02:36:00,018 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 02:36:00,149 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 02:36:00,202 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:36:00,202 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:36:00,204 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:36:00,207 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 02:36:00,220 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 02:36:03,539 - __main__ - INFO - Home page accessed
+2025-06-02 02:36:03,663 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 02:36:03,665 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 02:36:03,669 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 02:36:03,675 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 02:36:03,677 - __main__ - INFO - Serving CSS file: hero-custom.css
+2025-06-02 02:36:03,755 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 02:36:03,772 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:36:03,773 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:36:03,774 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 02:36:03,778 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:36:03,800 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 02:36:04,605 - __main__ - WARNING - 404 error: /favicon.ico
+2025-06-02 02:36:08,946 - __main__ - INFO - Home page accessed
+2025-06-02 02:36:09,047 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:36:09,053 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:36:09,055 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:51:26,803 - __main__ - INFO - Home page accessed
+2025-06-02 02:51:26,993 - __main__ - INFO - Serving CSS file: transparent-nav.css
+2025-06-02 02:51:27,005 - __main__ - INFO - Serving CSS file: button-styles.css
+2025-06-02 02:51:27,010 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:51:27,011 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:51:27,014 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:52:39,550 - __main__ - INFO - Home page accessed
+2025-06-02 02:52:39,676 - __main__ - INFO - Serving JS file: particles-config.js
+2025-06-02 02:52:39,680 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:52:39,683 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:52:39,708 - __main__ - INFO - Serving JS file: interactive.js
+2025-06-02 02:52:39,712 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:54:13,111 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 02:58:34,602 - __main__ - INFO - Home page accessed
+2025-06-02 02:58:34,828 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 02:58:34,846 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:58:34,851 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:58:34,851 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:59:00,067 - __main__ - INFO - Home page accessed
+2025-06-02 02:59:00,156 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:59:00,159 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:59:00,159 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:59:06,337 - __main__ - INFO - Home page accessed
+2025-06-02 02:59:06,487 - __main__ - INFO - Serving CSS file: button-styles.css
+2025-06-02 02:59:06,492 - __main__ - INFO - Serving CSS file: transparent-nav.css
+2025-06-02 02:59:06,549 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:59:06,549 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:59:06,607 - __main__ - INFO - Serving JS file: particles-config.js
+2025-06-02 02:59:06,624 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:59:06,629 - __main__ - INFO - Serving JS file: interactive.js
+2025-06-02 02:59:09,133 - __main__ - INFO - Home page accessed
+2025-06-02 02:59:09,281 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:59:09,282 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:59:09,283 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 02:59:35,949 - __main__ - INFO - Home page accessed
+2025-06-02 02:59:36,018 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 02:59:36,020 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 02:59:36,023 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:06:16,864 - __main__ - INFO - Starting Flask application
+2025-06-02 03:06:17,337 - __main__ - INFO - Starting Flask application
+2025-06-02 03:06:17,368 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:06:18,337 - __main__ - INFO - Starting Flask application
+2025-06-02 03:06:18,379 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:06:46,218 - __main__ - INFO - Home page accessed
+2025-06-02 03:06:46,497 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 03:06:46,503 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:06:46,503 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:06:46,513 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:09:39,042 - __main__ - INFO - Home page accessed
+2025-06-02 03:09:39,136 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:09:39,142 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:09:39,142 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:10:19,622 - __main__ - INFO - Starting Flask application
+2025-06-02 03:10:20,080 - __main__ - INFO - Starting Flask application
+2025-06-02 03:10:20,094 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:10:34,149 - __main__ - INFO - Home page accessed
+2025-06-02 03:10:34,193 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 03:10:34,200 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 03:10:34,209 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 03:10:34,218 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 03:10:34,370 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 03:10:34,387 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:10:34,391 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 03:10:34,392 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:10:34,394 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:10:34,410 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 03:10:45,243 - __main__ - INFO - Home page accessed
+2025-06-02 03:10:45,334 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:10:45,335 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:10:45,336 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:13:16,112 - __main__ - INFO - Starting Flask application
+2025-06-02 03:13:16,294 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:13:20,513 - __main__ - INFO - Starting Flask application
+2025-06-02 03:13:20,580 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:13:22,443 - __main__ - INFO - Starting Flask application
+2025-06-02 03:13:23,138 - __main__ - INFO - Starting Flask application
+2025-06-02 03:13:23,182 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:14:44,320 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 03:18:02,751 - __main__ - INFO - Home page accessed
+2025-06-02 03:18:02,910 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:18:02,915 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:18:02,921 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:18:46,953 - __main__ - INFO - Starting Flask application
+2025-06-02 03:18:47,321 - __main__ - INFO - Starting Flask application
+2025-06-02 03:18:47,353 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:19:10,816 - __main__ - INFO - Home page accessed
+2025-06-02 03:19:11,047 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 03:19:11,061 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 03:19:11,109 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 03:19:11,127 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 03:19:11,196 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 03:19:11,204 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:19:11,205 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:19:11,210 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:19:11,214 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 03:19:11,230 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 03:19:11,936 - __main__ - WARNING - 404 error: /favicon.ico
+2025-06-02 03:19:51,104 - __main__ - INFO - Home page accessed
+2025-06-02 03:19:51,271 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:19:51,273 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:19:51,275 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:20:52,154 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 03:22:02,829 - __main__ - INFO - Home page accessed
+2025-06-02 03:22:02,988 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:22:02,991 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:22:02,993 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:23:18,016 - __main__ - INFO - Home page accessed
+2025-06-02 03:23:18,208 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:23:18,209 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:23:18,216 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:23:31,833 - __main__ - INFO - Home page accessed
+2025-06-02 03:23:31,983 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:23:32,000 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:23:32,001 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:23:53,574 - __main__ - INFO - Home page accessed
+2025-06-02 03:23:53,644 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:23:53,645 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:23:53,648 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:24:24,068 - __main__ - INFO - Home page accessed
+2025-06-02 03:24:24,136 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:24:24,138 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:24:24,144 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:24:45,823 - __main__ - INFO - Starting Flask application
+2025-06-02 03:24:46,133 - __main__ - INFO - Starting Flask application
+2025-06-02 03:24:46,154 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:26:26,968 - __main__ - INFO - Home page accessed
+2025-06-02 03:26:27,066 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:26:27,067 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:26:27,071 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:29:12,016 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 03:30:57,561 - __main__ - INFO - Home page accessed
+2025-06-02 03:30:57,649 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:30:57,652 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:30:57,655 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:31:07,964 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 03:34:52,214 - __main__ - INFO - Starting Flask application
+2025-06-02 03:34:52,503 - __main__ - INFO - Starting Flask application
+2025-06-02 03:34:52,521 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:35:59,895 - __main__ - INFO - Home page accessed
+2025-06-02 03:35:59,986 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:35:59,990 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:35:59,997 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:36:20,204 - __main__ - INFO - Home page accessed
+2025-06-02 03:36:20,307 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:36:20,309 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:36:20,314 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:36:50,173 - __main__ - INFO - Home page accessed
+2025-06-02 03:36:50,338 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:36:50,338 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:36:50,358 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:37:14,065 - __main__ - INFO - Home page accessed
+2025-06-02 03:37:14,161 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:37:14,162 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:37:14,165 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:37:19,435 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 03:39:35,799 - __main__ - INFO - Home page accessed
+2025-06-02 03:39:35,925 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:39:35,930 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:39:35,932 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:39:36,084 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 03:39:36,681 - __main__ - INFO - Home page accessed
+2025-06-02 03:39:36,709 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:39:36,712 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:39:36,712 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:39:36,718 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 03:40:06,446 - __main__ - INFO - Home page accessed
+2025-06-02 03:40:06,591 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:40:06,594 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:40:06,662 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:42:49,524 - __main__ - INFO - Home page accessed
+2025-06-02 03:42:49,634 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:42:49,634 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:42:49,638 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:42:58,925 - __main__ - INFO - Home page accessed
+2025-06-02 03:42:59,266 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:42:59,266 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:42:59,275 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:44:22,948 - __main__ - INFO - Home page accessed
+2025-06-02 03:44:23,054 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:44:23,058 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:44:23,058 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:45:10,506 - __main__ - INFO - Home page accessed
+2025-06-02 03:45:10,564 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:45:10,564 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:45:10,567 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:47:19,214 - __main__ - INFO - Home page accessed
+2025-06-02 03:47:19,322 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:47:19,330 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:47:19,333 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:48:02,007 - __main__ - INFO - Home page accessed
+2025-06-02 03:48:02,072 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:48:02,072 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:48:02,076 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:48:17,296 - __main__ - INFO - Starting Flask application
+2025-06-02 03:48:18,014 - __main__ - INFO - Starting Flask application
+2025-06-02 03:48:18,032 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:48:50,354 - __main__ - INFO - Home page accessed
+2025-06-02 03:48:50,565 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:48:50,569 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:48:50,574 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:50:51,341 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:51,391 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:51,599 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:51,927 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,144 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,226 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,343 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,375 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,390 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,406 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,421 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,512 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,517 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,538 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,541 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,543 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,557 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,569 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,590 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,601 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,604 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,611 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,625 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,638 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,649 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,669 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,674 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,679 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,690 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,711 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,713 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,733 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,751 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,752 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,768 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,775 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:50:52,797 - __main__ - INFO - Starting Flask application
+2025-06-02 03:50:52,832 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:51:19,554 - __main__ - INFO - Starting Flask application
+2025-06-02 03:51:19,907 - __main__ - INFO - Starting Flask application
+2025-06-02 03:51:19,922 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:51:40,498 - __main__ - INFO - Home page accessed
+2025-06-02 03:51:40,778 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:51:40,782 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:51:40,829 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:52:13,723 - __main__ - INFO - Starting Flask application
+2025-06-02 03:52:14,187 - __main__ - INFO - Starting Flask application
+2025-06-02 03:52:14,208 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:52:46,932 - __main__ - INFO - Home page accessed
+2025-06-02 03:52:47,113 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:52:47,114 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:52:47,130 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:53:31,149 - __main__ - INFO - Starting Flask application
+2025-06-02 03:53:31,198 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:54:12,970 - __main__ - INFO - Home page accessed
+2025-06-02 03:54:13,047 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 03:54:13,047 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 03:54:13,047 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 03:54:13,047 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 03:54:13,499 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:54:13,502 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:54:13,504 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:54:13,640 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 03:54:13,640 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 03:54:13,640 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 03:54:13,646 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 03:55:02,230 - __main__ - INFO - Starting Flask application
+2025-06-02 03:55:02,638 - __main__ - INFO - Starting Flask application
+2025-06-02 03:55:02,665 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 03:55:08,668 - __main__ - INFO - Home page accessed
+2025-06-02 03:55:08,774 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 03:55:08,780 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 03:55:08,788 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 03:55:08,797 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 03:55:08,820 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:55:08,830 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:55:08,833 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:55:08,935 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 03:55:08,942 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 03:55:08,948 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 03:55:08,954 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 03:55:57,454 - __main__ - INFO - Home page accessed
+2025-06-02 03:55:57,502 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 03:55:57,506 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 03:55:57,506 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 03:55:57,510 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 03:55:57,523 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 03:55:58,391 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 03:55:58,424 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:55:58,424 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 03:55:58,429 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:55:58,434 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:55:58,718 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 03:55:58,929 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 03:55:58,930 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 03:55:58,935 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 03:55:58,941 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 03:55:59,296 - __main__ - WARNING - 404 error: /favicon.ico
+2025-06-02 03:56:31,087 - __main__ - INFO - Home page accessed
+2025-06-02 03:56:31,165 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 03:56:31,168 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 03:56:31,175 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 03:56:31,180 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 03:56:31,192 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 03:56:31,366 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 03:56:31,470 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:56:31,472 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:56:31,473 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 03:56:31,493 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:56:31,503 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 03:56:31,835 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 03:56:31,837 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 03:56:31,841 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 03:56:31,846 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 03:56:32,153 - __main__ - WARNING - 404 error: /favicon.ico
+2025-06-02 03:56:37,211 - __main__ - INFO - Home page accessed
+2025-06-02 03:56:37,260 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 03:56:37,271 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 03:56:37,273 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 03:56:37,275 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 03:56:37,281 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 03:56:37,288 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 03:56:37,291 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 03:56:37,293 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 03:56:37,405 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 03:56:37,405 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 03:56:37,405 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 03:56:37,412 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 03:56:37,616 - __main__ - WARNING - 404 error: /favicon.ico
+2025-06-02 14:46:35,399 - __main__ - INFO - Starting Flask application
+2025-06-02 14:46:36,337 - __main__ - INFO - Starting Flask application
+2025-06-02 14:46:36,393 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 14:47:36,438 - __main__ - INFO - Home page accessed
+2025-06-02 14:47:36,544 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:47:36,545 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:47:36,545 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:47:36,551 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:47:36,555 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:47:36,620 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 14:47:37,296 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 14:47:37,301 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 14:47:37,329 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 14:47:37,360 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 14:47:37,368 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 14:47:37,615 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:47:37,620 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:47:37,623 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:47:37,626 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:47:37,769 - __main__ - WARNING - 404 error: /favicon.ico
+2025-06-02 14:50:53,730 - __main__ - INFO - Home page accessed
+2025-06-02 14:50:53,795 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:50:53,816 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:50:53,817 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:50:53,820 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:50:53,822 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:50:53,829 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 14:50:53,830 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 14:50:53,845 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 14:50:53,898 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 14:50:53,905 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 14:50:53,912 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 14:50:54,003 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:50:54,004 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:50:54,004 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:50:54,014 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:50:55,716 - __main__ - INFO - Home page accessed
+2025-06-02 14:50:55,804 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:50:55,807 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:50:55,809 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:50:55,809 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:50:55,812 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:50:55,812 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 14:50:55,832 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 14:50:55,845 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 14:50:55,873 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 14:50:55,877 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 14:50:55,880 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 14:50:55,977 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:50:55,979 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:50:55,979 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:50:55,982 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:50:59,146 - __main__ - INFO - Home page accessed
+2025-06-02 14:50:59,220 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:50:59,224 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:50:59,226 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:50:59,228 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:50:59,234 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:50:59,427 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 14:50:59,466 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 14:50:59,468 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 14:50:59,471 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 14:50:59,474 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 14:50:59,495 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 14:51:00,314 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:51:00,316 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:51:00,316 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:51:00,316 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:51:00,486 - __main__ - WARNING - 404 error: /favicon.ico
+2025-06-02 14:51:16,980 - __main__ - INFO - Home page accessed
+2025-06-02 14:51:17,086 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:51:17,107 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:51:17,112 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:51:17,115 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:51:17,116 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:51:17,125 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 14:51:17,130 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 14:51:17,138 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 14:51:17,183 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 14:51:17,186 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 14:51:17,197 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 14:51:17,326 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:51:17,328 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:51:17,328 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:51:17,332 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:51:20,588 - __main__ - INFO - Home page accessed
+2025-06-02 14:51:20,651 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:51:20,657 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:51:20,662 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:51:20,666 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:51:20,678 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:51:20,864 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 14:51:21,125 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 14:51:21,128 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 14:51:21,139 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 14:51:21,150 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 14:51:21,301 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 14:51:21,513 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:51:21,515 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:51:21,516 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:51:21,520 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:51:21,972 - __main__ - WARNING - 404 error: /favicon.ico
+2025-06-02 14:51:22,996 - __main__ - INFO - Home page accessed
+2025-06-02 14:51:23,078 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:51:23,084 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:51:23,084 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:51:23,091 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:51:23,097 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:51:23,104 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 14:51:23,116 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 14:51:23,122 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 14:51:23,155 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 14:51:23,165 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 14:51:23,170 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 14:51:23,301 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:51:23,301 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:51:23,305 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:51:23,318 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:52:48,748 - __main__ - INFO - Home page accessed
+2025-06-02 14:52:48,814 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:52:48,816 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:52:48,816 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:52:48,820 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:52:48,820 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:52:48,825 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 14:52:48,852 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 14:52:48,870 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 14:52:48,870 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 14:52:48,878 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 14:52:48,885 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 14:52:48,987 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:52:48,991 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:52:48,992 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:52:48,998 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:52:51,997 - __main__ - INFO - Home page accessed
+2025-06-02 14:52:52,047 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:52:52,066 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:52:52,071 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:52:52,073 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:52:52,076 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:52:52,078 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 14:52:52,086 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 14:52:52,096 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 14:52:52,132 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 14:52:52,175 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 14:52:52,181 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 14:52:52,300 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:52:52,300 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:52:52,300 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:52:52,305 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:54:32,993 - __main__ - INFO - Starting Flask application
+2025-06-02 14:54:33,534 - __main__ - INFO - Starting Flask application
+2025-06-02 14:54:33,580 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 14:54:42,017 - __main__ - INFO - Home page accessed
+2025-06-02 14:54:42,261 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:54:42,265 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:54:42,265 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:54:42,265 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:54:42,265 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:54:42,290 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 14:54:42,610 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 14:54:42,614 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 14:54:42,621 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 14:54:42,638 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 14:54:42,638 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 14:54:43,044 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:54:43,068 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:54:43,068 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:54:43,068 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:55:26,349 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 14:55:26,355 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 14:55:26,355 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 14:55:26,357 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 14:55:26,481 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 15:11:02,827 - __main__ - INFO - Home page accessed
+2025-06-02 15:11:02,983 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:11:02,989 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:11:02,991 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:11:02,992 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:11:02,993 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:11:03,002 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 15:11:03,038 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 15:11:03,060 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 15:11:03,060 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 15:11:03,065 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 15:11:03,068 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 15:11:03,070 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 15:11:03,207 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:11:03,209 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:11:03,209 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:11:03,211 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:11:55,707 - __main__ - INFO - Home page accessed
+2025-06-02 15:11:55,791 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:11:55,794 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:11:55,798 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:11:55,798 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:11:55,802 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:11:55,802 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 15:11:55,835 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 15:11:55,838 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 15:11:55,842 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 15:11:55,850 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 15:11:55,855 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 15:11:55,868 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 15:11:56,118 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:11:56,125 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:11:56,127 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:11:56,127 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:12:08,118 - __main__ - INFO - Home page accessed
+2025-06-02 15:12:08,171 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:12:08,171 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:12:08,177 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:12:08,184 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:12:08,188 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:12:08,758 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 15:12:08,760 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 15:12:08,763 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 15:12:08,767 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 15:12:09,105 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 15:12:09,113 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 15:12:09,404 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:12:09,404 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:12:09,407 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:12:09,407 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:12:09,662 - __main__ - WARNING - 404 error: /favicon.ico
+2025-06-02 15:13:19,724 - __main__ - INFO - Home page accessed
+2025-06-02 15:13:19,788 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:13:19,794 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:13:19,798 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:13:19,798 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:13:19,803 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:13:19,810 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 15:13:19,821 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 15:13:19,821 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 15:13:19,834 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 15:13:19,848 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 15:13:19,848 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 15:13:20,039 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:13:20,039 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:13:20,040 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:13:20,040 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:15:06,484 - __main__ - INFO - Home page accessed
+2025-06-02 15:15:06,559 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:15:06,559 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:15:06,559 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:15:06,559 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:15:06,559 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:15:06,567 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 15:15:06,592 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 15:15:06,602 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 15:15:06,629 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 15:15:06,632 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 15:15:06,645 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 15:15:06,751 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:15:06,773 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:15:06,777 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:15:06,779 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:17:27,408 - __main__ - INFO - Starting Flask application
+2025-06-02 15:17:28,230 - __main__ - INFO - Starting Flask application
+2025-06-02 15:17:28,267 - werkzeug - WARNING -  * Debugger is active!
+2025-06-02 15:17:39,462 - __main__ - INFO - Home page accessed
+2025-06-02 15:17:40,207 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:17:40,234 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:17:40,271 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:17:40,341 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:17:40,351 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:17:40,806 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 15:17:40,809 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 15:17:40,816 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 15:17:40,829 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 15:17:40,861 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 15:17:40,889 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 15:17:41,852 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:17:41,904 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:17:41,918 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:17:41,925 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:17:42,817 - __main__ - WARNING - 404 error: /favicon.ico
+2025-06-02 15:19:11,867 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:19:11,876 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:19:11,892 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:19:11,904 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:19:11,931 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 15:22:00,085 - __main__ - INFO - Home page accessed
+2025-06-02 15:22:00,270 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:22:00,281 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:22:00,292 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:22:00,299 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:22:00,314 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:22:00,354 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 15:22:00,358 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 15:22:00,363 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 15:22:00,394 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 15:22:00,399 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 15:22:00,435 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 15:22:00,655 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:22:00,678 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:22:00,686 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:22:00,689 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:25:09,041 - __main__ - INFO - Home page accessed
+2025-06-02 15:25:09,138 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:25:09,143 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:25:09,149 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:25:09,152 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:25:09,167 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:25:09,200 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 15:25:09,204 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 15:25:09,207 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 15:25:09,217 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 15:25:09,225 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 15:25:09,227 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 15:25:09,313 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:25:09,317 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:25:09,317 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:25:09,321 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:26:36,858 - __main__ - INFO - Home page accessed
+2025-06-02 15:26:36,963 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:26:36,971 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:26:36,974 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:26:36,992 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:26:36,999 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-02 15:26:37,015 - __main__ - WARNING - 404 error: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-02 15:26:37,058 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-02 15:26:37,066 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-02 15:26:37,067 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-02 15:26:37,070 - __main__ - INFO - Serving JS file: main.js
+2025-06-02 15:26:37,072 - __main__ - INFO - Serving JS file: typed.js
+2025-06-02 15:26:37,078 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-02 15:26:37,294 - __main__ - INFO - Serving CSS file: style.css
+2025-06-02 15:26:37,303 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-02 15:26:37,307 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-02 15:26:37,309 - __main__ - INFO - Serving CSS file: portfolio-grid.css

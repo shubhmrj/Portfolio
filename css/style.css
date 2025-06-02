@@ -9,15 +9,15 @@
 
 /* Global Styles */
 :root {
-    /* Modern Dark Theme Colors */
+    /* Black Theme Colors */
     --primary-color: #6366F1; /* Indigo */
     --primary-color-light: #818CF8;
     --secondary-color: #F472B6; /* Pink */
     --tertiary-color: #10B981; /* Emerald */
-    --dark-color: #0F172A; /* Dark background */
-    --dark-color-light: #1E293B; /* Slightly lighter dark */
-    --card-bg: rgba(30, 41, 59, 0.8); /* Semi-transparent card background */
-    --light-color: #F8FAFC; /* Light text */
+    --dark-color: #000000; /* Pure black background */
+    --dark-color-light: #121212; /* Slightly lighter black */
+    --card-bg: rgba(18, 18, 18, 0.8); /* Semi-transparent card background */
+    --light-color: #FFFFFF; /* Pure white text */
     --light-color-muted: #E2E8F0; /* Muted light text */
     --grey-color: #94A3B8;
     --accent-color: #8B5CF6; /* Purple */
@@ -1097,13 +1097,20 @@ p {
 
 .hero-image {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: none !important;
 }
 
 .hero-image img {
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-lg);
-    border: 3px solid rgba(255, 255, 255, 0.05);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transform: none !important;
+    transition: all 0.3s ease;
 }
 
 .hero-image img:hover {
@@ -1718,10 +1725,11 @@ p {
 
 /* Services Section */
 .services-section {
+    background-color: var(--dark-color);
     padding: var(--section-padding);
-    background-color: var(--dark-color-light);
     position: relative;
     overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .services-section::before {

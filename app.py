@@ -880,17 +880,29 @@ def inject_current_year():
 @app.route('/css/<path:filename>')
 def serve_css(filename):
     logger.info(f'Serving CSS file: {filename}')
-    return send_from_directory('css', filename)
+    response = send_from_directory('css', filename)
+    response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '0'
+    return response
 
 @app.route('/js/<path:filename>')
 def serve_js(filename):
     logger.info(f'Serving JS file: {filename}')
-    return send_from_directory('js', filename)
+    response = send_from_directory('js', filename)
+    response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '0'
+    return response
 
 @app.route('/images/<path:filename>')
 def serve_images(filename):
     logger.info(f'Serving image file: {filename}')
-    return send_from_directory('images', filename)
+    response = send_from_directory('images', filename)
+    response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '0'
+    return response
 
 @app.route('/files/<path:filename>')
 def serve_files(filename):
@@ -898,12 +910,23 @@ def serve_files(filename):
     return send_from_directory('files', filename)
 
 if __name__ == '__main__':
-    # Check if directories exist
-    for directory in ['css', 'js', 'images', 'templates']:
-        if not os.path.exists(directory):
-            logger.warning(f'{directory} directory not found - creating it')
-            os.makedirs(directory, exist_ok=True)
-            
-    # Start the Flask application
-    logger.info('Starting Flask application')
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    try:
+        # Check if directories exist
+        for directory in ['css', 'js', 'images', 'templates']:
+            if not os.path.exists(directory):
+                logger.warning(f'{directory} directory not found - creating it')
+                os.makedirs(directory, exist_ok=True)
+        
+        # Start the Flask application
+        print('\n' + '='*50)
+        print('  Starting Flask Development Server')
+        print('  Press Ctrl+C to quit')
+        print('='*50 + '\n')
+        
+        logger.info('Starting Flask application')
+        app.run(debug=True, host='0.0.0.0', port=5000, use_reloader=True, use_debugger=True, use_evalex=True)
+        
+    except Exception as e:
+        logger.error(f'Failed to start Flask application: {str(e)}')
+        print(f'\nError: Failed to start server - {str(e)}')
+        print('Please check the logs for more details.')
