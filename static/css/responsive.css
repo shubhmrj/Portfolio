@@ -9,7 +9,7 @@
 /* Global Responsive Styles */
 @media (max-width: 1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 140px;
     }
     
     .blog-grid {

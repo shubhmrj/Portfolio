@@ -3,14 +3,15 @@
 /* Reset for portfolio section */
 .portfolio-section * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 ;
     padding: 0;
+    /* margin-left: 100px; */
 }
 
 /* Portfolio section container */
 .portfolio-section {
-    padding: 80px 0;
-    background-color: #000000;
+    padding: 80px ;
+    background-color: #0a1011;
 }
 
 /* Portfolio grid layout */
@@ -18,7 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
@@ -28,10 +29,10 @@
 .portfolio-item {
     width: 300px;
     height: 400px;
-    background-color: #121212;
-    border-radius: 8px;
+    background-color: #000000;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 6px 12px rgba(17, 126, 128, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -50,7 +51,7 @@
     height: 250px;
     position: relative;
     overflow: hidden;
-    background-color: #000000;
+    background-color: #171717;
     /* Remove debug outline */
     /* outline: 2px solid blue; */
 }
@@ -94,7 +95,7 @@
 }
 
 .portfolio-category {
-    background-color: #3b82f6;
+    background-color: #177172;
     color: #fff;
     padding: 4px 10px;
     border-radius: 4px;
@@ -107,17 +108,17 @@
 .portfolio-overlay h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #fff;
+    color: #35a1b0;
 }
 
 .portfolio-overlay p {
     font-size: 14px;
     margin-bottom: 15px;
-    color: #cbd5e1;
+    color: #219f9f;
 }
 
 .btn-view-project {
-    background-color: #3b82f6;
+    background-color: #219f9f;
     color: #fff;
     padding: 8px 16px;
     border-radius: 4px;
@@ -130,7 +131,7 @@
 }
 
 .btn-view-project:hover {
-    background-color: #2563eb;
+    background-color: #177172;
 }
 
 /* Portfolio info section */
@@ -144,7 +145,7 @@
 .portfolio-info h4 {
     font-size: 18px;
     margin-bottom: 5px;
-    color: #ffffff;
+    color: #218ba0;
     font-weight: 600;
 }
 
@@ -175,7 +176,7 @@
 }
 
 .portfolio-tag {
-    background-color: #334155;
+    background-color: #084d59;
     color: #cbd5e1;
     padding: 2px 8px;
     border-radius: 4px;
@@ -186,7 +187,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #334155;
+    background-color: #084257;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,7 +197,7 @@
 }
 
 .portfolio-link-icon:hover {
-    background-color: #3b82f6;
+    background-color: #033b59;
     color: #fff;
     transform: rotate(45deg);
 }
@@ -218,36 +219,42 @@
     padding: 8px 20px;
     cursor: pointer;
     border-radius: 4px;
-    background-color: #1e293b;
+    background-color: #033746;
     transition: all 0.3s ease;
 }
 
 .portfolio-filter li.active,
 .portfolio-filter li:hover {
-    background-color: #3b82f6;
+    background-color: #176e8b;
     color: #fff;
 }
 
 /* Section title */
 .section-title {
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 40px;
+    /* margin-left: 240px; */
 }
 
 .section-title h2 {
     font-size: 36px;
     margin-bottom: 10px;
     color: #f8fafc;
+    /* margin-left: 240px; */
+
 }
 
 .section-title p {
     font-size: 18px;
     color: #cbd5e1;
+    
 }
 
 /* Animation for filtering */
 .portfolio-item {
     transition: all 0.5s ease;
+    /* margin-left: 240px; */
+
 }
 
 .portfolio-item.hide {
@@ -272,6 +279,6 @@
     
     .portfolio-image,
     .portfolio-img {
-        width: 100%;
+    width: 100%;
     }
 }

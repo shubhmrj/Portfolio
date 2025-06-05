@@ -1052,10 +1052,15 @@ p {
 }
 
 .hero-text h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 50px;
     color: var(--primary-color-light);
-    text-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+    text-shadow: 0 0 20px rgba(4, 4, 4, 0.971);
+    font: Montserrat, sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgb(214, 214, 214);
+    text-align: left;
 }
 
 .hero-text .hero-name {
@@ -1067,18 +1072,72 @@ p {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    color: rgb(214, 214, 214);
+    
+  display: block;
+  position: relative;
+  top: 04px;
+  /* right: 0px; 
+  bottom: 0px;
+  left: 0px;
+  width: 705px;
+  height: 139.2px;
+  padding: 0px; */
+  /* margin: 10px 0px 0px; */
+  border: 0px none rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Montserrat, serif;
+  line-height: 69.6px;
+  text-align: start;
+  z-index: 2;
+  overflow: visible;
+  box-sizing: border-box;
+  opacity: 1;
+  visibility: visible;
+  /* Add more properties if needed, e.g., flex/grid properties if applicable */
 }
 
+
 .hero-text .hero-title {
-    font-size: 24px;
+    font-size: 58px;
     font-weight: 600;
     margin-bottom: 20px;
     color: var(--light-color-muted);
+    /* background-color: #000000; */
 }
 
 .hero-text .hero-title span {
     color: var(--secondary-color);
+   
+  /* display: block; */
+  position: relative;
+  /* top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 705px;
+  height: 139.2px;
+  padding: 0px; */
+  /* margin: 10px 0px 0px; */
+  /* border: 0px none rgb(255, 255, 255); */
+  color: rgb(55, 186, 203);
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 58px;
+  /* font-weight: 700; */
+  font-family: Montserrat, serif;
+  line-height: 69.6px;
+  text-align: start;
+  /* z-index: 2; */
+  overflow: visible;
+  box-sizing: border-box;
+  opacity: 1;
+  visibility: visible;
+  /* Add more properties if needed, e.g., flex/grid properties if applicable */
 }
+
 
 .hero-text p {
     margin-bottom: 30px;
@@ -1101,6 +1160,15 @@ p {
     justify-content: center;
     align-items: center;
     transform: none !important;
+    /* background-image: url("https://inversweb.com/product/html/virtuo/assets/images/bg/bg-image-3.jpg"); */
+    /* background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);  */
+    /* This ensures the background image is visible */ 
+    width: 340px;
+    height: 100px;
+    /* object-fit: cover; or 'contain' */
 }
 
 .hero-image img {
@@ -1803,11 +1871,12 @@ p {
 }
 
 /* Portfolio Section */
-.portfolio-section {
+/* .portfolio-section {
     padding: var(--section-padding);
     background-color: var(--dark-color);
     position: relative;
     overflow: hidden;
+    
 }
 
 .portfolio-section::before {
@@ -1984,10 +2053,10 @@ p {
 .portfolio-link:hover {
     background-color: #fff;
     color: var(--primary-color);
-}
+} */
 
 /* Blog Section */
-.blog-section {
+/* .blog-section {
     padding: var(--section-padding);
     background-color: var(--dark-color);
     position: relative;
@@ -2166,7 +2235,7 @@ p {
 
 .blog-read-more:hover i {
     transform: translateX(3px);
-}
+} */
 
 /* Resume Section */
 .resume-section {

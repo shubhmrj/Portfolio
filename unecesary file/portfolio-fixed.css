@@ -1,0 +1,270 @@
+/* /* 
+ * Portfolio Fixed CSS
+ * This stylesheet provides fixed dimensions for portfolio items
+ */
+
+/* Portfolio section *
+.portfolio-section {
+    padding: 80px 0;
+    background-color: #0f172a;
+}
+
+/* Reset any conflicting styles *
+.portfolio-grid * {
+    box-sizing: border-box;
+}
+
+/* Portfolio grid layout - Portfolio Grid Layout *
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 30px;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 0 15px;
+    width: 100%;
+}
+
+/* Media queries for responsive grid *
+@media (max-width: 992px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media (max-width: 650px) {
+    .portfolio-grid {
+        grid-template-columns: 300px;
+    }
+}
+
+/* Portfolio item card *
+.portfolio-item {
+    width: 300px; /* Fixed width */
+    height: 400px; /* Fixed height *
+    background-color: #1e293b;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio image container *
+.portfolio-image {
+    width: 100%; /* Full width of parent *
+    height: 250px; /* Fixed height *
+    position: relative;
+    overflow: hidden;
+    background-color: #0f172a;
+    display: block;
+}
+
+/* Image styling *
+.portfolio-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.portfolio-item:hover .portfolio-image img {
+    transform: scale(1.1);
+}
+
+/* Portfolio overlay *
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.7));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+/* Category badge *
+.portfolio-category {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+/* Overlay title and description *
+.portfolio-overlay h3 {
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-overlay p {
+    color: #cbd5e1;
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+}
+
+/* View project button *
+.btn-view-project {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-view-project i {
+    margin-right: 0.5rem;
+}
+
+.btn-view-project:hover {
+    background-color: #2563eb;
+}
+
+/* Portfolio info section 
+.portfolio-info {
+    padding: 1rem;
+    height: 150px; /* Fixed height *
+    background-color: #1e293b;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Portfolio title *
+.portfolio-info h4 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Portfolio description *
+.portfolio-info p {
+    color: #94a3b8;
+    font-size: 0.875rem;
+    margin: 0 0 auto 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Meta section with tags and link *
+.portfolio-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Tags container *
+.portfolio-tags {
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    max-width: 75%;
+}
+
+/* Individual tag */
+.portfolio-tag {
+    font-size: 0.7rem;
+    color: #94a3b8;
+    background-color: #0f172a;
+    padding: 0.15rem 0.35rem;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+/* Link icon */
+.portfolio-link-icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #0f172a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3b82f6;
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-link-icon {
+    background-color: #3b82f6;
+    color: white;
+    transform: rotate(45deg);
+}
+
+/* Portfolio filter */
+.portfolio-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.portfolio-filter ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.portfolio-filter li {
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    background-color: #1e293b;
+    color: #cbd5e1;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.portfolio-filter li.active,
+.portfolio-filter li:hover {
+    background-color: #3b82f6;
+    color: white;
+} */
