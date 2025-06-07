@@ -6,7 +6,7 @@
     <title> Shubham Raj</title>
     <!-- Preload critical resources -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" as="style">
-    <link rel="preload" href="/static/css/style.css" as="style">
+    <link rel="preload" href="css/style.css" as="style">
     
     <!-- Critical CSS inline for faster rendering -->
     <style>
@@ -16,95 +16,6 @@
         .preloader.hidden{opacity:0;visibility:hidden;transition:opacity .5s ease,visibility .5s ease}
         .container{width:100%;max-width:1200px;margin:0 auto;padding:0 15px}
         .hero-section{padding:180px 0 100px;position:relative;overflow:hidden}
-        
-        /* Lines Animation Styles */
-        .lines {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            margin: auto;
-            width: 90vw;
-            z-index: -1;
-        }
-
-        .line {
-            position: absolute;
-            width: 1px;
-            height: 100%;
-            top: 0;
-            background: rgba(255, 255, 255, 0.1);
-            overflow: hidden;
-        }
-
-        .line::after {
-            content: '';
-            display: block;
-            position: absolute;
-            height: 15vh;
-            width: 100%;
-            top: -50%;
-            left: 0;
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
-            animation: drop 7s 0s infinite;
-            animation-fill-mode: forwards;
-            animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-        }
-
-        .line-1 { left: 25%; }
-        .line-2 { left: 50%; }
-        .line-3 { left: 75%; }
-        .line-4 { left: 100%; }
-
-        .line-1::after { animation-delay: 2s; }
-        .line-2::after { animation-delay: 0s; }
-        .line-3::after { animation-delay: 3.5s; }
-        .line-4::after { animation-delay: 1.5s; }
-
-        @keyframes drop {
-            0% { top: -50%; }
-            100% { top: 110%; }
-        }
-
-        /* Global Animation Styles */
-        [data-aos] {
-            opacity: 0;
-            transition-duration: 1s;
-            transition-property: opacity, transform;
-        }
-        
-        [data-aos].aos-animate {
-            opacity: 1;
-        }
-        
-        /* Scroll Progress Bar */
-        .scroll-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 0%;
-            height: 3px;
-            background: var(--primary-color);
-            z-index: 9999;
-            transition: width 0.3s ease;
-        }
-
-        /* Enhanced Preloader */
-        .preloader {
-            background: var(--dark-color);
-            transition: all 0.5s ease;
-        }
-
-        .preloader.hidden {
-            opacity: 0;
-            visibility: hidden;
-        }
-        
-        /* Ensure all animated elements are visible after animation */
-        .animate__animated {
-            opacity: 1 !important;
-        }
     </style>
     
     <!-- Font Awesome -->
@@ -133,7 +44,6 @@
     <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body>
-    <div class="background-overlay"></div>
     <!-- Preloader -->
     <div class="preloader" id="preloader">
         <div class="preloader-content">
@@ -145,14 +55,6 @@
         </div>
     </div>
     
-    <!-- Lines Animation - Move it here, right after preloader -->
-    <div class="lines">
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
-        <div class="line line-3"></div>
-        <div class="line line-4"></div>
-    </div>
-
     <!-- Scroll Progress Indicator -->
     <div class="scroll-progress" id="scrollProgress"></div>
     
@@ -181,6 +83,12 @@
     <!-- Particles Background -->
     <div class="particles-container" id="particles-js"></div>
 
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    
     <!-- Header Section Start -->
     <header id="header" class="animate__animated animate__fadeIn">
         <div class="container">
@@ -404,7 +312,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                 <!-- Portfolio Item 1 -->
                 <div class="portfolio-item" data-category="design">
                     <div class="portfolio-image">
-                        <img src="/static/images/portfolio-1-600w.jpg" alt="SAAS Website" class="portfolio-img">
+                        <img src="/images/portfolio-1-600w.jpg" alt="SAAS Website" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <span class="portfolio-category">Design</span>
                             
@@ -462,7 +370,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                 <!-- Portfolio Item 3 -->
                 <div class="portfolio-item" data-category="development">
                     <div class="portfolio-image">
-                        <img src="/static/images/portfolio-3-600w.jpg" alt="Business Analytics" class="portfolio-img">
+                        <img src="/images/portfolio-3-600w.jpg" alt="Business Analytics" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <span class="portfolio-category">Development</span>
                             <h3>PhotoGenic</h3>
@@ -489,7 +397,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                 <!-- Portfolio Item 4 -->
                 <div class="portfolio-item" data-category="marketing">
                     <div class="portfolio-image">
-                        <img src="/static/images/portfolio-4-600w.jpg" alt="Marketing Campaign" class="portfolio-img">
+                        <img src="/images/portfolio-4-600w.jpg" alt="Marketing Campaign" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <span class="portfolio-category">API</span>
                             <h3>Weather Info.</h3>
@@ -1026,21 +934,21 @@ My work extends beyond the screen — exploring the potential of Extensible Real
 
     <!-- Critical JavaScript Libraries - Load in optimal order -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     
     <!-- Animation Libraries -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="/static/js/typed.js" defer></script>
+    <script src="js/typed.js" defer></script>
     <script src="https://unpkg.com/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
     
     <!-- Add your scripts here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="/static/js/portfolio.js"></script>
-    <script src="/static/js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/main.js"></script>
     <!-- Image Optimization JS -->
-    <script src="/static/js/image-optimization.js"></script>
+    <script src="static/js/image-optimization.js"></script>
 </body>
 </html>
