@@ -1,14 +1,17 @@
 [build]
-  command = "pip install -r requirements.txt"
-  publish = "."
-
-[build.environment]
-  PYTHON_VERSION = "3.9"
+  publish = "templates"
+  command = ""
 
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/app"
+  to = "/index.html"
   status = 200
+
+[[redirects]]
+  from = "/static/*"
+  to = "/static/:splat"
+  status = 200
+  force = true
 
 [functions]
   directory = "functions"
