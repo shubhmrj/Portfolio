@@ -121,4 +121,65 @@ document.addEventListener('DOMContentLoaded', function() {
         // Start the typing effect after a delay
         setTimeout(typeEffect, 1000);
     }
+    
+    // Magnetic effect
+    const magneticItems = document.querySelectorAll('.magnetic-item');
+    magneticItems.forEach(item => {
+        item.addEventListener('mousemove', function(e) {
+            const bound = this.getBoundingClientRect();
+            const mouseX = e.clientX - bound.left - bound.width / 2;
+            const mouseY = e.clientY - bound.top - bound.height / 2;
+            
+            gsap.to(this, {
+                duration: 0.3,
+                x: mouseX * 0.2,
+                y: mouseY * 0.2,
+                ease: "power2.out"
+            });
+        });
+
+        item.addEventListener('mouseleave', function() {
+            gsap.to(this, {
+                duration: 0.3,
+                x: 0,
+                y: 0,
+                ease: "power2.out"
+            });
+        });
+    });
+
+    // Click effect
+    document.addEventListener('click', function(e) {
+        createParticles(e.clientX, e.clientY);
+    });
+
+    // Interactive background
+    document.addEventListener('mousemove', function(e) {
+        if (Math.random() > 0.92) {
+            createRipple(e.clientX, e.clientY);
+        }
+    });
 });
+
+function createParticles(x, y) {
+    for (let i = 0; i < 8; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = x + 'px';
+        particle.style.top = y + 'px';
+        particle.style.transform = `rotate(${Math.random() * 360}deg)`;
+        document.body.appendChild(particle);
+        
+        setTimeout(() => particle.remove(), 1000);
+    }
+}
+
+function createRipple(x, y) {
+    const ripple = document.createElement('div');
+    ripple.className = 'ripple';
+    ripple.style.left = x + 'px';
+    ripple.style.top = y + 'px';
+    document.querySelector('.interactive-bg').appendChild(ripple);
+    
+    setTimeout(() => ripple.remove(), 1000);
+}

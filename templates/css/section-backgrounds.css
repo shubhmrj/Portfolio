@@ -1,0 +1,71 @@
+/* Hero Section Background */
+.hero-bg-animation {
+    background: linear-gradient(45deg, rgba(33, 150, 243, 0.1), rgba(103, 58, 183, 0.1));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* About Section Background */
+.about-bg-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, var(--dark-color) 100%);
+}
+
+.about-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Skills Section Background */
+.skills-bg-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.05) 0%, rgba(103, 58, 183, 0.05) 100%);
+}
+
+.skills-grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+    animation: gridMove 20s linear infinite;
+}
+
+/* Portfolio Section Background */
+.portfolio-bg-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(33, 150, 243, 0.03), rgba(103, 58, 183, 0.03));
+}
+
+.floating-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Contact Section Background */
+.contact-bg-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contact-waves {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, rgba(33, 150, 243, 0.05), rgba(103, 58, 183, 0.05));
+    animation: waveMove 15s linear infinite;
+}
