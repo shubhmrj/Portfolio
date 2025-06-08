@@ -15347,3 +15347,5 @@ werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on 
 2025-06-08 19:40:20,982 - __main__ - INFO - Serving CSS file: style.css
 2025-06-08 19:40:20,983 - __main__ - INFO - Serving CSS file: responsive.css
 2025-06-08 19:40:20,983 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-08 19:43:13,409 - __main__ - INFO - Starting Flask application
+2025-06-08 19:43:13,483 - werkzeug - WARNING -  * Debugger is active!
