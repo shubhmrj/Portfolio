@@ -15172,3 +15172,150 @@ werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on 
 2025-06-08 18:25:18,847 - __main__ - INFO - Serving CSS file: responsive.css
 2025-06-08 18:25:19,008 - __main__ - INFO - Serving CSS file: image-optimization.css
 2025-06-08 18:25:19,118 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-08 18:27:22,671 - __main__ - INFO - Starting Flask application
+2025-06-08 18:27:22,740 - werkzeug - WARNING -  * Debugger is active!
+2025-06-08 18:27:58,661 - __main__ - INFO - Home page accessed
+2025-06-08 18:27:58,790 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:27:58,793 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:27:58,795 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:27:58,796 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-08 18:27:58,796 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-08 18:27:58,801 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-08 18:27:59,374 - __main__ - INFO - Serving CSS file: section-animations.css
+2025-06-08 18:27:59,382 - __main__ - INFO - Serving CSS file: services-section.css
+2025-06-08 18:27:59,397 - __main__ - INFO - Serving CSS file: header.css
+2025-06-08 18:27:59,404 - __main__ - INFO - Serving CSS file: section-backgrounds.css
+2025-06-08 18:27:59,411 - __main__ - WARNING - 404 error: /css/section-backgrounds.css
+2025-06-08 18:27:59,430 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-08 18:27:59,446 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-08 18:27:59,449 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-08 18:27:59,471 - __main__ - INFO - Serving JS file: main.js
+2025-06-08 18:27:59,507 - __main__ - INFO - Serving JS file: section-animations.js
+2025-06-08 18:27:59,507 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:27:59,507 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-08 18:27:59,514 - __main__ - INFO - Serving JS file: header.js
+2025-06-08 18:27:59,515 - __main__ - INFO - Serving JS file: interactive.js
+2025-06-08 18:27:59,516 - __main__ - INFO - Serving JS file: typed.js
+2025-06-08 18:27:59,565 - __main__ - WARNING - Image not found: pattern.png
+2025-06-08 18:27:59,565 - __main__ - ERROR - Error serving image pattern.png: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 622, in serve_image
+    abort(404)
+  File "C:\Users\Hp\anaconda3\Lib\site-packages\flask\helpers.py", line 310, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "C:\Users\Hp\anaconda3\Lib\site-packages\werkzeug\exceptions.py", line 863, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-08 18:27:59,573 - __main__ - WARNING - 404 error: /images/pattern.png
+2025-06-08 18:27:59,782 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:27:59,782 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-08 18:27:59,786 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-08 18:27:59,786 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-08 18:33:46,946 - __main__ - INFO - Home page accessed
+2025-06-08 18:33:47,034 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:33:47,047 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:33:47,052 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:33:47,192 - __main__ - WARNING - 404 error: /favicon.ico
+2025-06-08 18:33:52,402 - __main__ - INFO - Home page accessed
+2025-06-08 18:33:52,438 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:33:52,448 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:33:52,454 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:33:53,095 - __main__ - INFO - Home page accessed
+2025-06-08 18:33:53,126 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:33:53,130 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:33:53,138 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:33:53,296 - __main__ - INFO - Home page accessed
+2025-06-08 18:33:53,337 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:33:53,337 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:33:53,344 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:33:53,474 - __main__ - INFO - Home page accessed
+2025-06-08 18:33:53,501 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:33:53,511 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:33:53,515 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:33:53,637 - __main__ - INFO - Home page accessed
+2025-06-08 18:33:53,665 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:33:53,676 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:33:53,678 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:33:53,820 - __main__ - INFO - Home page accessed
+2025-06-08 18:33:53,900 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:33:53,902 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:33:53,916 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:33:53,978 - __main__ - INFO - Home page accessed
+2025-06-08 18:33:54,054 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:33:54,056 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:33:54,056 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:33:54,174 - __main__ - INFO - Home page accessed
+2025-06-08 18:33:54,205 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:33:54,207 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:33:54,215 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:34:02,769 - __main__ - INFO - Home page accessed
+2025-06-08 18:34:02,805 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:34:02,808 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:34:02,818 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:34:03,006 - __main__ - INFO - Home page accessed
+2025-06-08 18:34:03,033 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:34:03,037 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:34:03,045 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:34:03,188 - __main__ - INFO - Home page accessed
+2025-06-08 18:34:03,224 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:34:03,229 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:34:03,231 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:34:03,376 - __main__ - INFO - Home page accessed
+2025-06-08 18:34:03,405 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:34:03,406 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:34:03,411 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:34:03,538 - __main__ - INFO - Home page accessed
+2025-06-08 18:34:03,564 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:34:03,568 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:34:03,575 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:34:03,702 - __main__ - INFO - Home page accessed
+2025-06-08 18:34:03,730 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:34:03,733 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:34:03,741 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:34:03,880 - __main__ - INFO - Home page accessed
+2025-06-08 18:34:03,917 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:34:03,928 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:34:03,928 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:34:47,379 - __main__ - INFO - Home page accessed
+2025-06-08 18:34:47,405 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:34:47,407 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:34:47,409 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:36:27,903 - __main__ - INFO - Home page accessed
+2025-06-08 18:36:27,956 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:36:27,965 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-06-08 18:36:27,970 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:36:27,970 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-08 18:36:27,973 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-08 18:36:27,977 - __main__ - INFO - Serving CSS file: section-animations.css
+2025-06-08 18:36:27,977 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-08 18:36:27,990 - __main__ - INFO - Serving CSS file: services-section.css
+2025-06-08 18:36:28,002 - __main__ - INFO - Serving CSS file: header.css
+2025-06-08 18:36:28,012 - __main__ - INFO - Serving CSS file: section-backgrounds.css
+2025-06-08 18:36:28,015 - __main__ - WARNING - 404 error: /css/section-backgrounds.css
+2025-06-08 18:36:28,076 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-06-08 18:36:28,076 - __main__ - INFO - Serving JS file: main.js
+2025-06-08 18:36:28,082 - __main__ - INFO - Serving JS file: section-animations.js
+2025-06-08 18:36:28,093 - __main__ - INFO - Serving JS file: portfolio.js
+2025-06-08 18:36:28,094 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-06-08 18:36:28,104 - __main__ - WARNING - 404 error: /js/portfolio.js
+2025-06-08 18:36:28,118 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-06-08 18:36:28,138 - __main__ - INFO - Serving JS file: header.js
+2025-06-08 18:36:28,143 - __main__ - INFO - Serving JS file: interactive.js
+2025-06-08 18:36:28,177 - __main__ - INFO - Serving JS file: typed.js
+2025-06-08 18:36:28,186 - __main__ - WARNING - Image not found: pattern.png
+2025-06-08 18:36:28,190 - __main__ - ERROR - Error serving image pattern.png: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 622, in serve_image
+    abort(404)
+  File "C:\Users\Hp\anaconda3\Lib\site-packages\flask\helpers.py", line 310, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "C:\Users\Hp\anaconda3\Lib\site-packages\werkzeug\exceptions.py", line 863, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-06-08 18:36:28,196 - __main__ - WARNING - 404 error: /images/pattern.png
+2025-06-08 18:36:28,415 - __main__ - INFO - Serving CSS file: style.css
+2025-06-08 18:36:28,425 - __main__ - INFO - Serving CSS file: responsive.css
+2025-06-08 18:36:28,433 - __main__ - INFO - Serving CSS file: image-optimization.css
+2025-06-08 18:36:28,434 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-06-08 19:13:19,868 - __main__ - INFO - Starting Flask application
+2025-06-08 19:13:19,913 - werkzeug - WARNING -  * Debugger is active!
