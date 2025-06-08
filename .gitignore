@@ -48,3 +48,16 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+
+# Large files
+images/bg/CursorUserSetup-x64-1.0.0.exe
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
