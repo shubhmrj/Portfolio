@@ -1,6 +1,6 @@
 /* Custom Hero Section CSS to match the screenshot design */
 
-.hero-section {
+/* .hero-section {
     padding: 180px 0 100px;
     position: relative;
     overflow: hidden;
@@ -115,7 +115,7 @@
     box-shadow: 0 0 40px rgba(99, 102, 241, 0.3);
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments *
 @media (max-width: 992px) {
     .hero-content {
         flex-direction: column;
@@ -144,4 +144,4 @@
     .hero-title {
         font-size: 2rem;
     }
-}
+} */

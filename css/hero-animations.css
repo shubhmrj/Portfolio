@@ -1,4 +1,4 @@
-/* Matrix Rain Effect */
+/* Matrix Rain Effect
 canvas#matrixRain {
     position: absolute;
     top: 0;
@@ -6,7 +6,7 @@ canvas#matrixRain {
     opacity: 0.1;
 }
 
-/* Floating Shapes */
+/* Floating Shapes *
 .floating-shapes {
     position: absolute;
     width: 100%;
@@ -25,7 +25,7 @@ canvas#matrixRain {
 .shape-3 { top: 30%; left: 85%; animation-delay: 2s; }
 .shape-4 { top: 70%; left: 20%; animation-delay: 3s; }
 
-/* Tech Stack Icons */
+/* Tech Stack Icons *
 .tech-stack {
     position: absolute;
     right: 20px;
@@ -48,7 +48,7 @@ canvas#matrixRain {
     transform: scale(1.2);
 }
 
-/* Glitch Effect */
+/* Glitch Effect *
 .glitch-wrapper {
     position: relative;
 }
@@ -65,7 +65,7 @@ canvas#matrixRain {
     left: 0;
 }
 
-/* Orbit Animation */
+/* Orbit Animation *
 .orbit-wrapper {
     position: absolute;
     width: 100%;
@@ -107,4 +107,4 @@ canvas#matrixRain {
 @keyframes self-rotate {
     from { transform: rotate(360deg); }
     to { transform: rotate(0deg); }
-}
+} */

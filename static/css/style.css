@@ -1031,7 +1031,7 @@ p {
 }
 
 /* Hero Section */
-.hero-section {
+/* .hero-section {
     padding-top: 180px;
     padding-bottom: 100px;
     background-color: var(--dark-color);
@@ -1109,7 +1109,7 @@ p {
 .hero-image img:hover {
     transform: scale(1.02);
     box-shadow: 0 0 40px rgba(99, 102, 241, 0.3);
-}
+} */
 
 /* Stats Section */
 .stats-section {

@@ -1,3 +1,4 @@
+/* Hero Section CSS for image bordering */
 .hero-section {
     position: relative;
     min-height: 100vh;
@@ -16,7 +17,7 @@
 .image-frame {
     position: relative;
     width: 400px;
-    height: 500px;
+    height: 530px;
     margin: 0 auto;
 }
 
@@ -61,7 +62,7 @@
 
     .image-frame {
         width: 280px;
-        height: 350px;
+        height: 370px;
         margin-top: 2rem;
     }
 }

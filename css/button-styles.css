@@ -1,4 +1,4 @@
-/* Custom Button Styles to match the screenshot */
+/* Custom Button Styles to match the screenshot
 
 .view-portfolio-btn {
     display: inline-flex;
@@ -54,7 +54,7 @@
     transform: translateX(5px);
 }
 
-/* Animation for the button */
+/* Animation for the button *
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
@@ -65,4 +65,4 @@
     100% {
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     }
-}
+} */

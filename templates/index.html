@@ -18,6 +18,192 @@
         .container{width:100%;max-width:1200px;margin:0 auto;padding:0 15px}
         .hero-section{padding:180px 0 100px;position:relative;overflow:hidden}
 
+        /* Enhanced Hero Section Background Animation */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+            background: var(--dark-color);
+        }
+
+        .hero-bg-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .geometric-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            opacity: 0.1;
+            filter: blur(40px);
+            animation: shapeFloat 15s infinite;
+        }
+
+        .shape:nth-child(1) {
+            width: 400px;
+            height: 400px;
+            top: -150px;
+            left: -100px;
+            animation-delay: 0s;
+        }
+
+        .shape:nth-child(2) {
+            width: 300px;
+            height: 300px;
+            top: 50%;
+            right: -100px;
+            animation-delay: -5s;
+        }
+
+        .shape:nth-child(3) {
+            width: 200px;
+            height: 200px;
+            bottom: -50px;
+            left: 30%;
+            animation-delay: -10s;
+        }
+
+        /* Grid Pattern Overlay */
+        .grid-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(var(--dark-color) 1px, transparent 1px),
+                             linear-gradient(90deg, var(--dark-color) 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.1;
+        }
+
+        /* Floating Particles */
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            animation: particleFloat 20s infinite linear;
+        }
+
+        /* Glowing Lines */
+        .glowing-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+            opacity: 0.7;
+        }
+
+        .glowing-lines .line {
+            position: absolute;
+            width: 2px; /* Increased from 1px for better visibility */
+            height: 100%;
+            background: linear-gradient(180deg, 
+                transparent 0%,
+                rgba(33, 150, 243, 0.2) 15%,
+                rgba(33, 150, 243, 0.4) 30%,
+                var(--primary-color) 50%,
+                rgba(33, 150, 243, 0.4) 70%,
+                rgba(33, 150, 243, 0.2) 85%,
+                transparent 100%
+            );
+            filter: drop-shadow(0 0 8px var(--primary-color));
+            animation: lineMove 6s infinite;
+        }
+
+        /* Position each line with specific left values */
+        .glowing-lines .line-1 {
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .glowing-lines .line-2 {
+            left: 50%;
+            animation-delay: -2s;
+        }
+
+        .glowing-lines .line-3 {
+            left: 70%;
+            animation-delay: -4s;
+        }
+
+        @keyframes lineMove {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.8;
+            }
+            90% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+        }
+
+        /* Animations */
+        @keyframes shapeFloat {
+            0%, 100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            25% {
+                transform: translate(50px, -30px) rotate(90deg);
+            }
+            50% {
+                transform: translate(0, 50px) rotate(180deg);
+            }
+            75% {
+                transform: translate(-50px, -30px) rotate(270deg);
+            }
+        }
+
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px) translateX(100px);
+                opacity: 0;
+            }
+        }
+
+        /* Hero Content Enhancement */
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(5px);
+            padding: 2rem;
+            border-radius: 20px;
+            background: rgba(14, 22, 48, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
         /* Reset base styles */
         body {
             position: relative;
@@ -296,6 +482,192 @@
         .container{width:100%;max-width:1200px;margin:0 auto;padding:0 15px}
         .hero-section{padding:180px 0 100px;position:relative;overflow:hidden}
 
+        /* Enhanced Hero Section Background Animation */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+            background: var(--dark-color);
+        }
+
+        .hero-bg-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .geometric-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            opacity: 0.1;
+            filter: blur(40px);
+            animation: shapeFloat 15s infinite;
+        }
+
+        .shape:nth-child(1) {
+            width: 400px;
+            height: 400px;
+            top: -150px;
+            left: -100px;
+            animation-delay: 0s;
+        }
+
+        .shape:nth-child(2) {
+            width: 300px;
+            height: 300px;
+            top: 50%;
+            right: -100px;
+            animation-delay: -5s;
+        }
+
+        .shape:nth-child(3) {
+            width: 200px;
+            height: 200px;
+            bottom: -50px;
+            left: 30%;
+            animation-delay: -10s;
+        }
+
+        /* Grid Pattern Overlay */
+        .grid-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(var(--dark-color) 1px, transparent 1px),
+                             linear-gradient(90deg, var(--dark-color) 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.1;
+        }
+
+        /* Floating Particles */
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            animation: particleFloat 20s infinite linear;
+        }
+
+        /* Glowing Lines */
+        .glowing-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+            opacity: 0.7;
+        }
+
+        .glowing-lines .line {
+            position: absolute;
+            width: 2px; /* Increased from 1px for better visibility */
+            height: 100%;
+            background: linear-gradient(180deg, 
+                transparent 0%,
+                rgba(33, 150, 243, 0.2) 15%,
+                rgba(33, 150, 243, 0.4) 30%,
+                var(--primary-color) 50%,
+                rgba(33, 150, 243, 0.4) 70%,
+                rgba(33, 150, 243, 0.2) 85%,
+                transparent 100%
+            );
+            filter: drop-shadow(0 0 8px var(--primary-color));
+            animation: lineMove 6s infinite;
+        }
+
+        /* Position each line with specific left values */
+        .glowing-lines .line-1 {
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .glowing-lines .line-2 {
+            left: 50%;
+            animation-delay: -2s;
+        }
+
+        .glowing-lines .line-3 {
+            left: 70%;
+            animation-delay: -4s;
+        }
+
+        @keyframes lineMove {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.8;
+            }
+            90% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+        }
+
+        /* Animations */
+        @keyframes shapeFloat {
+            0%, 100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            25% {
+                transform: translate(50px, -30px) rotate(90deg);
+            }
+            50% {
+                transform: translate(0, 50px) rotate(180deg);
+            }
+            75% {
+                transform: translate(-50px, -30px) rotate(270deg);
+            }
+        }
+
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px) translateX(100px);
+                opacity: 0;
+            }
+        }
+
+        /* Hero Content Enhancement */
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(5px);
+            padding: 2rem;
+            border-radius: 20px;
+            background: rgba(14, 22, 48, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
         /* Reset base styles */
         body {
             position: relative;
@@ -364,7 +736,7 @@
 
         .circle-container {
             position: absolute;
-            width: 100%;
+            width: 110%;
             height: 100%;
         }
 
@@ -1086,14 +1458,51 @@
 
     <!-- Hero Section Start -->
     <section id="home" class="hero-section">
+        <!-- Background Animation Elements -->
         <div class="hero-bg-animation">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+            <div class="geometric-shapes">
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+            <div class="grid-overlay"></div>
+            <div class="particles">
+                <!-- Particles will be added via JavaScript -->
+            </div>
+            <div class="glowing-lines">
+                <div class="line line-1" style="left: 20%"></div>
+                <div class="line line-2" style="left: 50%"></div>
+                <div class="line line-3" style="left: 80%"></div>
+            </div>
+
+            <!-- Add Floating Elements -->
+            <div class="floating-elements">
+                <div class="float-item code-block">{ }</div>
+                <div class="float-item bracket-block">&lt; /&gt;</div>
+                <div class="float-item hash-block">#</div>
+                <div class="float-item dot-block">...</div>
+            </div>
+
+            <!-- Add Tech Stack Icons -->
+            <div class="tech-stack">
+                <i class="fab fa-python tech-icon"></i>
+                <i class="fab fa-react tech-icon"></i>
+                <i class="fab fa-js tech-icon"></i>
+                <i class="fab fa-html5 tech-icon"></i>
+                <i class="fab fa-css3-alt tech-icon"></i>
+            </div>
+
+            <!-- Add Highlight Rings -->
+            <div class="highlight-rings">
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+            </div>
         </div>
         
         <div class="container">
             <div class="hero-content">
+                <div class="hero-background-glow"></div>
                 <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
                     <div class="glowing-subtitle">Welcome to my Portfolio</div>
                     <h1 class="animate__animated animate__fadeInUp">
@@ -1112,7 +1521,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="image-frame">
-                        <img src="./images/hero-image.png" alt="Profile" class="profile-img">
+                        <img src="./images/hero-image2.jpg" alt="Profile" class="profile-img">
                         <div class="frame-border"></div>
                     </div>
                 </div>
@@ -1322,7 +1731,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                 <!-- Portfolio Item 1 -->
                 <div class="portfolio-item" data-category="design">
                     <div class="portfolio-image">
-                        <img src="/images/portfolio-1-600w.jpg" alt="SAAS Website" class="portfolio-img">
+                        <img src="/images/portfolio-1.jpg" alt="SAAS Website" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <span class="portfolio-category">Design</span>
                             
@@ -1351,7 +1760,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                 <!-- Portfolio Item 2 -->
                 <div class="portfolio-item" data-category="branding">
                     <div class="portfolio-image">
-                        <img src="/images/portfolio-2-600w.jpg" alt="Workout App" class="portfolio-img">
+                        <img src="/images/portfolio-2.jpg" alt="Workout App" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <span class="portfolio-category">Augmented</span>
                             <h3>Extensible Reality</h3>
@@ -1380,7 +1789,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                 <!-- Portfolio Item 3 -->
                 <div class="portfolio-item" data-category="development">
                     <div class="portfolio-image">
-                        <img src="/images/portfolio-3-600w.jpg" alt="Business Analytics" class="portfolio-img">
+                        <img src="/images/portfolio-3.jpg" alt="Business Analytics" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <span class="portfolio-category">Development</span>
                             <h3>PhotoGenic</h3>
@@ -1407,7 +1816,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                 <!-- Portfolio Item 4 -->
                 <div class="portfolio-item" data-category="marketing">
                     <div class="portfolio-image">
-                        <img src="/images/portfolio-4-600w.jpg" alt="Marketing Campaign" class="portfolio-img">
+                        <img src="/images/portfolio-4.jpg" alt="Marketing Campaign" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <span class="portfolio-category">API</span>
                             <h3>Weather Info.</h3>
@@ -1436,7 +1845,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                 <!-- Portfolio Item 5 -->
                 <div class="portfolio-item" data-category="development">
                     <div class="portfolio-image">
-                        <img src="/images/portfolio-5-600w.jpg" alt="E-commerce Platform" class="portfolio-img">
+                        <img src="/images/portfolio-5.jpg" alt="E-commerce Platform" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <span class="portfolio-category">Development</span>
                             <h3>Birthday App</h3>
@@ -1465,7 +1874,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                 <!-- Portfolio Item 6 -->
                 <div class="portfolio-item" data-category="branding">
                     <div class="portfolio-image">
-                        <img src="/images/portfolio-6-600w.jpg" alt="Brand Identity" class="portfolio-img">
+                        <img src="/images/portfolio-6.jpg" alt="Brand Identity" class="portfolio-img">
                         <div class="portfolio-overlay">
                             <span class="portfolio-category">API</span>
                             <h3>API GGenerator</h3>
@@ -1587,20 +1996,23 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                         </div>
                     </div>
                     
-                    <div class="timeline-block" data-aos="fade-right">
+                    <div class="timeline-block" data-aos="fade-left">
                         <div class="timeline-icon">
-                            <i class="fas fa-briefcase"></i>
-                            <span class="timeline-date">2014 - 2017</span>
-                            <h3>App Developer</h3>
-                            <h4>ModernTech</h4>
-                            <p>Developed mobile applications for iOS and Android platforms using React Native and other technologies, focusing on performance and user experience.</p>
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2014 - 2016</span>
+                            <h3>Bachelor in Computer Science</h3>
+                            <h4>MIT University</h4>
+                            <p>Focused on software engineering and web technologies, graduated with honors and received recognition for innovative projects.</p>
                             <div class="timeline-skills">
-                                <span>React Native</span>
-                                <span>JavaScript</span>
-                                <span>Mobile Dev</span>
+                                <span>Programming</span>
+                                <span>Algorithms</span>
+                                <span>Web Dev</span>
                             </div>
                         </div>
                     </div>
+                   
                     
                     <div class="timeline-block" data-aos="fade-left">
                         <div class="timeline-icon">
@@ -1742,7 +2154,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                         <img src="images/blog-2.jpg" alt="Blog Image 2">
                         <div class="blog-category">UI/UX Design</div>
                     </div>
-                    <div class="blog-content">
+                                       <div class="blog-content">
                         <div class="blog-date">
                             <i class="far fa-calendar-alt"></i> May 25, 2025
                         </div>
@@ -1778,14 +2190,9 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                     </div>
                 </div>
             </div>
-            <div class="text-center" data-aos="fade-up" data-aos-delay="400" style="margin-top: 40px;">
-                <a href="blog.html" class="btn primary-btn">View All Posts</a>
-            </div>
         </div>
-    </section> 
-    Blog Section End -->
-
-        <!-- Services Section Start -->
+    </section>
+    <!-- Services Section Start -->
     <section id="services" class="services-section">
         <div class="services-bg-shapes">
             <div class="shape"></div>
@@ -2052,5 +2459,50 @@ My work extends beyond the screen — exploring the potential of Extensible Real
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+    // Create floating particles
+    function createParticles() {
+        const particlesContainer = document.querySelector('.particles');
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 20 + 's';
+            particlesContainer.appendChild(particle);
+        }
+    }
+
+    // Initialize animations when document is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+        createParticles();
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Mouse trail effect
+        const trail = Array.from({length: 10}, () => {
+            const div = document.createElement('div');
+            div.className = 'cursor-trail';
+            document.body.appendChild(div);
+            return div;
+        });
+
+        let timeout;
+        window.addEventListener('mousemove', (e) => {
+            trail.forEach((div, index) => {
+                setTimeout(() => {
+                    div.style.left = e.pageX + 'px';
+                    div.style.top = e.pageY + 'px';
+                    div.style.opacity = 1 - (index * 0.1);
+                }, index * 50);
+            });
+            
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                trail.forEach(div => div.style.opacity = 0);
+            }, 1000);
+        });
+    });
+</script>
 </body>
 </html>
