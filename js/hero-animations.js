@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize Typed.js
     const typed = new Typed('.typed-text', {
-        strings: ['Data Analyst', 'Python Developer', 'XR Developer', 'Full Stack Developer'],
+        strings: ['Data Analyst', 'XR Developer', 'Developer'],
         typeSpeed: 50,
         backSpeed: 30,
         backDelay: 2000,

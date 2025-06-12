@@ -1,8 +1,9 @@
 /* Hero Section Animation */
-.hero-bg-animation {
+/* here incorect the bg of hero */
+/* .hero-bg-animation {
     background: linear-gradient(45deg, rgba(33, 150, 243, 0.1), rgba(103, 58, 183, 0.1));
     animation: gradientMove 15s ease infinite;
-}
+} */
 
 /* About Section Animation */
 .about-particles {
