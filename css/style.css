@@ -253,6 +253,19 @@ body.loaded {
 }
 
 /* Contact Form Animations */
+.contact-section .form-group input,
+.contact-section .form-group textarea {
+    padding-top: 2px; /* give space for label */
+}
+
+.contact-section .form-group .form-label {
+    opacity: 0; /* hidden until focus or input */
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 500;
+    text-shadow: 0 0 2px rgba(0,0,0,0.6);
+    z-index: 2;
+}
+
 .contact-form {
     position: relative;
     overflow: hidden;
@@ -312,11 +325,11 @@ body.loaded {
     position: absolute;
     top: 15px;
     left: 20px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.65);
     pointer-events: none;
     transform-origin: left top;
     transition: all 0.3s ease;
-    opacity: 0;
+    opacity: 1;
 }
 
 .form-group input:focus ~ .form-label,
