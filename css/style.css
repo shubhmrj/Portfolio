@@ -760,10 +760,11 @@ section {
 
 .line {
     position: absolute;
-    width: 1px;
+    width: 2px; /* keep wider width */
     height: 100vh;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.05); /* reverted subtle white */
     top: 0;
+    transition: background 0.2s ease;
 }
 
 .line::after {
@@ -797,20 +798,10 @@ section {
 .line:nth-child(3)::after { animation-delay: 4s; }
 
 @keyframes dropLine {
-    0% {
-        top: -50%;
-        opacity: 0;
-    }
-    20% {
-        opacity: 0.5;
-    }
-    70% {
-        opacity: 0.3;
-    }
-    100% {
-        top: 110%;
-        opacity: 0;
-    }
+    0% { top: -50%; opacity: 1; }
+    20% { opacity: 0.5; }
+    70% { opacity: 0.3; }
+    100% { top: 110%; opacity: 0; }
 }
 
 ul {
@@ -2015,6 +2006,10 @@ p {
     filter: brightness(0.9) contrast(1.1);
 }
 
+.portfolio-item:hover .portfolio-image img {
+    transform: scale(1.05);
+}
+
 .portfolio-info {
     position: absolute;
     bottom: 0;
@@ -2103,7 +2098,75 @@ p {
 .portfolio-link:hover {
     background-color: #fff;
     color: var(--primary-color);
-} */
+}
+
+/* --- Pro Portfolio Enhancements --- */
+/* Enhanced filter buttons */
+.portfolio-filter ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.portfolio-filter ul li {
+    list-style: none;
+    padding: 10px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
+    font-weight: 500;
+    user-select: none;
+}
+
+.portfolio-filter ul li:hover,
+.portfolio-filter ul li.active {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Card glow and sheen */
+.portfolio-item {
+    overflow: hidden;
+    perspective: 800px;
+}
+
+.portfolio-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.06);
+    transform: skewX(-25deg);
+    transition: left 0.7s ease;
+}
+
+.portfolio-item:hover::before {
+    left: 130%;
+}
+
+/* Image zoom */
+.portfolio-image img {
+    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.portfolio-item:hover .portfolio-image img {
+    transform: scale(1.1) rotate(1deg);
+}
+
+/* Overlay glass effect */
+.portfolio-overlay {
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
 
 /* Blog Section */
 /* .blog-section {
@@ -2695,5 +2758,31 @@ section { position: relative; z-index: 1; }
     100% {
         transform: scale(0.8);
         opacity: 0.3;
+    }
+}
+
+/* ===== Mobile optimizations ===== */
+@media (max-width: 576px) {
+    /* Disable heavy background animations */
+    .animated-background,
+    .particles-container {
+        display: none !important;
+    }
+
+    /* Simplify box shadows */
+    .portfolio-item,
+    .service-card,
+    .experience-card {
+        box-shadow: none;
+    }
+
+    /* Ensure text readable */
+    body {
+        font-size: 15px;
+    }
+
+    /* Navbar adjustments */
+    .navbar {
+        padding: 10px 20px;
     }
 }

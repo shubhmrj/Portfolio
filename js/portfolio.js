@@ -57,18 +57,37 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Add hover effects for portfolio items
+    // Add hover effects (desktop) or tap toggle (touch)
+    const hasHoverSupport = window.matchMedia('(hover: hover)').matches;
+
     portfolioItems.forEach(item => {
-        item.addEventListener('mouseenter', function() {
-            this.querySelector('.portfolio-overlay').style.opacity = '1';
-            this.querySelector('.portfolio-overlay').style.transform = 'translateY(0)';
-        });
-        
-        item.addEventListener('mouseleave', function() {
-            this.querySelector('.portfolio-overlay').style.opacity = '0';
-            this.querySelector('.portfolio-overlay').style.transform = 'translateY(10px)';
-        });
+        const overlay = item.querySelector('.portfolio-overlay');
+
+        if (hasHoverSupport) {
+            item.addEventListener('mouseenter', () => {
+                overlay.style.opacity = '1';
+                overlay.style.transform = 'translateY(0)';
+            });
+            item.addEventListener('mouseleave', () => {
+                overlay.style.opacity = '0';
+                overlay.style.transform = 'translateY(10px)';
+            });
+        } else {
+            // Touch: toggle details on tap
+            item.addEventListener('click', (e) => {
+                if (!e.target.closest('a')) {
+                    overlay.classList.toggle('show');
+                }
+            });
+        }
     });
+
+    // Touch overlay show class style insertion
+    if (!hasHoverSupport) {
+        const styleTag = document.createElement('style');
+        styleTag.textContent = `.portfolio-overlay.show{opacity:1 !important;transform:translateY(0)!important}`;
+        document.head.appendChild(styleTag);
+    }
     
     // Handle portfolio item click to show details
     portfolioItems.forEach(item => {
