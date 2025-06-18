@@ -120,6 +120,7 @@
     position: absolute;
     background: var(--primary-color);
     opacity: 0.05;
+    
     animation: float 8s infinite;
     pointer-events: none; /* ensure shapes themselves don't intercept clicks */
 }
