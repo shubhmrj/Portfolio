@@ -1,0 +1,18 @@
+.logo-image {
+  width: 120px;
+  height: 120px;
+  display: block;
+  filter: brightness(1.5) contrast(1.4);
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.logo-image:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+  filter: brightness(1.6) contrast(1.5);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
