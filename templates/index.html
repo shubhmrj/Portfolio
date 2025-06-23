@@ -948,6 +948,35 @@
     }
 
     /* Add these contact section styles in your existing style tag */
+/* Contact section enhancements */
+.contact-waves {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+.contact-waves::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 60%);
+    animation: contactWaves 8s linear infinite;
+}
+@keyframes contactWaves {
+    0% { transform: translateX(0) translateY(0) rotate(0deg); }
+    100% { transform: translateX(-25%) translateY(-25%) rotate(360deg); }
+}
+.form-status {
+    margin-top: 15px;
+    font-size: 15px;
+}
+.sending-msg{display:flex;align-items:center;gap:8px;}
     .contact-section {
         position: relative;
         padding: 100px 0;
@@ -1368,7 +1397,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="image-frame">
-                        <img src="./images/hero-image2.jpg" alt="Profile" class="profile-img">
+                        <img src="./images/hero-image3.jpg" alt="Profile" class="profile-img">
                         <div class="frame-border"></div>
                     </div>
                 </div>
@@ -1782,23 +1811,108 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                 </div>
                 
                 <div class="timeline">
-                        <!-- Dummy Certification Entry -->
-                        <div class="timeline-block certification" data-aos="fade-right">
-                            <div class="timeline-icon">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <span class="timeline-date">2025</span>
-                                <h3>AWS Certified Cloud Practitioner</h3>
-                                <h4>Amazon Web Services</h4>
-                                <p>Demonstrated foundational knowledge of cloud concepts, AWS services, and best practices.</p>
-                                <div class="timeline-skills">
-                                    <span>Cloud</span>
-                                    <span>AWS</span>
-                                    <span>Certification</span>
-                                </div>
+                    <!-- Certification Timeline -->
+
+                        <div class="timeline-block certification" data-aos="fade-left">
+                        <div class="timeline-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">May 2025</span>
+                            <h3>Foundation of Cloud IOT Edge ML</h3>
+                            <h4>NPTEL</h4>
+                            <p>Learned fundamental principles of Cloud, IoT, Edge Computing, and ML, building a strong foundation for future specialization.</p>
+                            <div class="timeline-skills">
+                                <span>HTML/CSS</span>
+                                <span>Design</span>
+                                <span>UX Basics</span>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="timeline-block certification" data-aos="fade-right">
+                        <div class="timeline-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">December 2024</span>
+                            <h3>Machine Learning </h3>
+                            <h4>Udemy</h4>
+                            <p>Developed and deployed machine learning models, collaborated with cross-functional teams to integrate AI solutions into products.</p>
+                            <div class="timeline-skills">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>User Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-block certification" data-aos="fade-left">
+                        <div class="timeline-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">June 2024</span>
+                            <h3>Introduction to Programming Using Python</h3>
+                            <h4>Predin Cisco Network Academy</h4>
+                            <p>Learned programming fundamentals using Python, including data types, control structures, and functions.</p>
+                            <div class="timeline-skills">
+                                <span>Python</span>
+                                <span>Programming Fundamentals</span>
+                                <span>Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-block certification" data-aos="fade-right">
+                        <div class="timeline-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">June 2024</span>
+                            <h3>Python</h3>
+                            <h4>Udemy</h4>
+                            <p>Python for Data Science and Machine Learning Bootcamp</p>
+                            <div class="timeline-skills">
+                                <span>Python</span>
+                                <span>Data Science</span>
+                                <span>Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-block certification" data-aos="fade-left">
+                        <div class="timeline-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">September 2023</span>
+                            <h3>Communication Skills</h3>
+                            <h4>TCS iON</h4>
+                            <p>Learned effective communication strategies, active listening, and presentation skills.</p>
+                            <div class="timeline-skills">
+                                <span>Communication</span>
+                                <span>Active Listening</span>
+                                <span>Presentation Skills</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-block certification" data-aos="fade-right">
+                        <div class="timeline-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Jan 2025</span>
+                            <h3>HTML & CSS</h3>
+                            <h4>Udemy</h4>
+                            <p>Learned HTML and CSS fundamentals, including responsive design and web accessibility.</p>
+                            <div class="timeline-skills">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Web Development</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Experience Timeline -->
                     <div class="timeline-block experience" data-aos="fade-right">
                         <div class="timeline-icon">
@@ -1816,8 +1930,28 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                             </div>
                         </div>
                     </div>
+
+                    <div class="timeline-block experience" data-aos="fade-right">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">June 2024</span>
+                            <h3>Software Engineering (Intern)</h3>
+                            <h4>Walmart (Forage)</h4>
+                            <p>Focused on software engineering and web technologies, graduated with honors and received recognition for innovative projects.</p>
+                            <div class="timeline-skills">
+                                <span>Programming</span>
+                                <span>Algorithms</span>
+                                <span>Web Dev</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Timeline -->
+
                     
-                    <div class="timeline-block education" data-aos="fade-left">
+                    <div class="timeline-block education" data-aos="fade-right">
                         <div class="timeline-icon">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
@@ -1833,75 +1967,62 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="timeline-block experience" data-aos="fade-right">
-                        <div class="timeline-icon">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">December 2024</span>
-                            <h3>Machine Learning </h3>
-                            <h4>Udemy</h4>
-                            <p>Developed and deployed machine learning models, collaborated with cross-functional teams to integrate AI solutions into products.</p>
-                            <div class="timeline-skills">
-                                <span>Python</span>
-                                <span>TensorFlow</span>
-                                <span>User Testing</span>
-                            </div>
-                        </div>
-                    </div>
-                    
+
                     <div class="timeline-block education" data-aos="fade-left">
                         <div class="timeline-icon">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                         <div class="timeline-content">
-                            <span class="timeline-date">2025</span>
-                            <h3>Bachelor in Computer Science</h3>
-                            <h4>MIT University</h4>
-                            <p></p>
+                            <span class="timeline-date">2019</span>
+                            <h3>C Programming</h3>
+                            <h4>Argus Academy</h4>
+                            <p>Gained hands-on experience through projects and coding exercises, enhancing problem-solving skills.</p>
                             <div class="timeline-skills">
                                 <span>Programming</span>
                                 <span>Algorithms</span>
-                                <span>Web Dev</span>
+                                <span>DSA</span>
                             </div>
                         </div>
                     </div>
-                    
+
+                     
                     <div class="timeline-block education" data-aos="fade-left">
                         <div class="timeline-icon">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                         <div class="timeline-content">
-                            <span class="timeline-date">June 2024</span>
-                            <h3>Software Engineering (Intern)</h3>
-                            <h4>Walmart (Forage)</h4>
-                            <p>Focused on software engineering and web technologies, graduated with honors and received recognition for innovative projects.</p>
+                            <span class="timeline-date">2021</span>
+                            <h3>12th</h3>
+                            <h4>Manas Bharti Educational Complex</h4>
+                            <p>Completed 12th standard with a strong foundation in mathematics and physics, while also developing skills in C programming and physical education.</p>
                             <div class="timeline-skills">
-                                <span>Programming</span>
-                                <span>Algorithms</span>
-                                <span>Web Dev</span>
+                                <span>PCM</span>
+                                <span>C Programming</span>
+                                <span>Physical Education</span>
                             </div>
                         </div>
                     </div>
+                    
+
+                    <div class="timeline-block education" data-aos="fade-right">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2018</span>
+                            <h3>10th</h3>
+                            <h4>Modern English School</h4>
+                            <p>Completed 10th standard with a strong foundation in mathematics and science.</p>
+                            <div class="timeline-skills">
+                                <span>PCM</span>
+                                <span>Computer</span>
+                                <span>Social Science</span>
+                            </div>
+                        </div>
+                    </div>
+                    
                    
                     
-                    <div class="timeline-block education" data-aos="fade-left">
-                        <div class="timeline-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">May 2025</span>
-                            <h3>Foundation of Cloud IOT Edge ML</h3>
-                            <h4>NPTEL</h4>
-                            <p>Learned fundamental principles of Cloud, IoT, Edge Computing, and ML, building a strong foundation for future specialization.</p>
-                            <div class="timeline-skills">
-                                <span>HTML/CSS</span>
-                                <span>Design</span>
-                                <span>UX Basics</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -2184,7 +2305,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm" onsubmit="return handleSubmit(event)">
+                    <form id="contactForm">
                         <div class="form-group">
                             <input type="text" id="name" required placeholder="Your Name">
                             <label for="name" class="form-label">Your Name</label>
@@ -2206,6 +2327,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                                 Send Message <i class="fas fa-paper-plane"></i>
                             </button>
                         </div>
+                        <div id="formStatus" class="form-status" style="display:none"></div>
                     </form>
                 </div>
             </div>
@@ -2444,5 +2566,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
             });
         });
     </script>
+    <!-- Contact form functionality -->
+    <script src="js/contact-form.js" defer></script>
 </body>
 </html>

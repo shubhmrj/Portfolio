@@ -809,6 +809,47 @@ def optimize_all_images():
             'traceback': traceback.format_exc()
         }), 500
 
+def send_email(name, email, subject, message):
+    """Send an email with the contact form contents using SMTP.
+
+    Environment variables required:
+    MAIL_SERVER, MAIL_PORT, MAIL_USERNAME, MAIL_PASSWORD [, MAIL_RECIPIENT]
+    Returns True on success, False otherwise.
+    """
+    try:
+        mail_server = os.environ.get('MAIL_SERVER')
+        mail_port = int(os.environ.get('MAIL_PORT', 587))
+        mail_username = os.environ.get('MAIL_USERNAME')
+        mail_password = os.environ.get('MAIL_PASSWORD')
+        # If MAIL_RECIPIENT not provided, send to the authenticated user.
+        mail_recipient = os.environ.get('MAIL_RECIPIENT', mail_username)
+
+        if not all([mail_server, mail_username, mail_password]):
+            logger.warning('Mail environment variables not fully configured; skipping actual email send.')
+            return False
+
+        import smtplib
+        from email.message import EmailMessage
+
+        msg = EmailMessage()
+        msg['Subject'] = f"Portfolio Contact: {subject}"
+        msg['From'] = mail_username
+        msg['To'] = mail_recipient
+        msg.set_content(f"Name: {name}\nEmail: {email}\n\n{message}")
+
+        with smtplib.SMTP(mail_server, mail_port) as server:
+            server.starttls()
+            server.login(mail_username, mail_password)
+            server.send_message(msg)
+
+        logger.info('Contact email sent successfully')
+        return True
+
+    except Exception as e:
+        logger.error(f'Error sending contact email: {str(e)}', exc_info=True)
+        return False
+
+
 @app.route('/contact', methods=['POST'])
 def contact():
     """Handle contact form submission"""
@@ -830,11 +871,12 @@ def contact():
             # Log contact submission
             logger.info(f'Contact form submission from {name} ({email})')
             
-            # Here you would typically save to database or send email
-            # For now, we'll just return a success message
+            # Attempt to send email
+            email_sent = send_email(name, email, subject, message)
+
             return jsonify({
-                'success': True, 
-                'message': 'Thank you! Your message has been sent successfully.'
+                'success': True,
+                'message': 'Thank you! Your message has been sent successfully.' if email_sent else 'Thank you! Your message has been received.'
             })
             
         except Exception as e:

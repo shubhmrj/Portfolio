@@ -147,6 +147,7 @@ picture {
     opacity: 0;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transform: translateY(10px);
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 }
 
@@ -205,7 +206,7 @@ picture {
     justify-content: center;
     padding: 0.5rem 1.25rem;
     border-radius: 0.375rem;
-    background-color: #3b82f6;
+    background-color: #0b787d;
     color: #fff;
     font-size: 0.875rem;
     font-weight: 500;
@@ -303,7 +304,7 @@ picture {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #3b82f6;
+    color: #0a6579;
     transition: all 0.3s ease;
 }
 
