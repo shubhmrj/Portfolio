@@ -596,6 +596,7 @@
             white-space: nowrap;
             animation: typing 4s steps(10, end), blink-caret 0.75s step-end infinite;
             font-weight: 500;
+            min-width: 24ch; /* prevent layout shift when text changes */
         }
 
         @keyframes typing {
@@ -2566,6 +2567,8 @@ My work extends beyond the screen — exploring the potential of Extensible Real
             });
         });
     </script>
+    <!-- Mobile menu toggle functionality -->
+    <script src="js/mobile-menu.js" defer></script>
     <!-- Contact form functionality -->
     <script src="js/contact-form.js" defer></script>
 </body>
