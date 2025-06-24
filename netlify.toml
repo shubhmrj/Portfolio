@@ -1,17 +1,10 @@
 [build]
-  command = "pip install -r requirements.txt"
+  # Copy Flask template index to root for static hosting
+  command = "cp templates/index.html ./index.html"
   publish = "."
 
 [build.environment]
   PYTHON_VERSION = "3.9"
-
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/app"
-  status = 200
-
-[functions]
-  directory = "functions"
 
 [dev]
   framework = "flask"
