@@ -51471,3 +51471,111 @@ werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on 
 2025-07-06 18:12:48,711 - __main__ - INFO - Serving CSS file: style.css
 2025-07-06 18:12:48,711 - __main__ - INFO - Serving CSS file: responsive.css
 2025-07-06 18:12:48,714 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-07-06 18:15:23,032 - __main__ - INFO - Home page accessed
+2025-07-06 18:15:23,138 - __main__ - INFO - Serving CSS file: style.css
+2025-07-06 18:15:23,140 - __main__ - INFO - Serving CSS file: style.css
+2025-07-06 18:15:23,144 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-07-06 18:15:23,147 - __main__ - INFO - Serving CSS file: responsive.css
+2025-07-06 18:15:23,154 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-07-06 18:15:23,163 - __main__ - INFO - Serving CSS file: section-backgrounds.css
+2025-07-06 18:15:23,179 - __main__ - WARNING - 404 error: /css/section-backgrounds.css
+2025-07-06 18:15:23,192 - __main__ - INFO - Serving CSS file: section-animations.css
+2025-07-06 18:15:23,214 - __main__ - INFO - Serving CSS file: services-section.css
+2025-07-06 18:15:23,244 - __main__ - INFO - Serving CSS file: header.css
+2025-07-06 18:15:23,358 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-07-06 18:15:23,418 - __main__ - INFO - Serving JS file: portfolio.js
+2025-07-06 18:15:23,418 - __main__ - INFO - Serving JS file: main.js
+2025-07-06 18:15:23,422 - __main__ - INFO - Serving JS file: section-animations.js
+2025-07-06 18:15:23,425 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-07-06 18:15:23,427 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-07-06 18:15:23,427 - __main__ - WARNING - 404 error: /static/js/header.js
+2025-07-06 18:15:23,492 - __main__ - INFO - Serving JS file: interactive.js
+2025-07-06 18:15:23,533 - __main__ - INFO - Serving JS file: typed.js
+2025-07-06 18:15:23,542 - __main__ - INFO - Serving JS file: mobile-menu.js
+2025-07-06 18:15:23,559 - __main__ - INFO - Serving JS file: contact-form.js
+2025-07-06 18:15:23,563 - __main__ - WARNING - Image not found: pattern.png
+2025-07-06 18:15:23,564 - __main__ - ERROR - Error serving image pattern.png: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 622, in serve_image
+    abort(404)
+  File "C:\Users\Hp\anaconda3\Lib\site-packages\flask\helpers.py", line 310, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "C:\Users\Hp\anaconda3\Lib\site-packages\werkzeug\exceptions.py", line 863, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-07-06 18:15:23,568 - __main__ - WARNING - 404 error: /images/pattern.png
+2025-07-06 18:15:23,746 - __main__ - INFO - Serving CSS file: style.css
+2025-07-06 18:15:23,747 - __main__ - INFO - Serving CSS file: responsive.css
+2025-07-06 18:15:23,755 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-07-06 18:15:33,130 - __main__ - INFO - Home page accessed
+2025-07-06 18:15:33,192 - __main__ - INFO - Serving CSS file: style.css
+2025-07-06 18:15:33,197 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-07-06 18:15:33,201 - __main__ - INFO - Serving CSS file: style.css
+2025-07-06 18:15:33,206 - __main__ - INFO - Serving CSS file: responsive.css
+2025-07-06 18:15:33,220 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-07-06 18:15:33,236 - __main__ - INFO - Serving CSS file: section-backgrounds.css
+2025-07-06 18:15:33,254 - __main__ - INFO - Serving CSS file: section-animations.css
+2025-07-06 18:15:33,260 - __main__ - WARNING - 404 error: /css/section-backgrounds.css
+2025-07-06 18:15:33,269 - __main__ - INFO - Serving CSS file: services-section.css
+2025-07-06 18:15:33,285 - __main__ - INFO - Serving CSS file: header.css
+2025-07-06 18:15:33,393 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-07-06 18:15:33,395 - __main__ - INFO - Serving JS file: portfolio.js
+2025-07-06 18:15:33,395 - __main__ - INFO - Serving JS file: main.js
+2025-07-06 18:15:33,402 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-07-06 18:15:33,419 - __main__ - INFO - Serving JS file: section-animations.js
+2025-07-06 18:15:33,480 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-07-06 18:15:33,483 - __main__ - WARNING - 404 error: /static/js/header.js
+2025-07-06 18:15:33,506 - __main__ - INFO - Serving JS file: interactive.js
+2025-07-06 18:15:33,538 - __main__ - INFO - Serving JS file: typed.js
+2025-07-06 18:15:33,552 - __main__ - INFO - Serving JS file: mobile-menu.js
+2025-07-06 18:15:33,573 - __main__ - INFO - Serving JS file: contact-form.js
+2025-07-06 18:15:33,577 - __main__ - WARNING - Image not found: pattern.png
+2025-07-06 18:15:33,580 - __main__ - ERROR - Error serving image pattern.png: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 622, in serve_image
+    abort(404)
+  File "C:\Users\Hp\anaconda3\Lib\site-packages\flask\helpers.py", line 310, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "C:\Users\Hp\anaconda3\Lib\site-packages\werkzeug\exceptions.py", line 863, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-07-06 18:15:33,583 - __main__ - WARNING - 404 error: /images/pattern.png
+2025-07-06 18:15:33,733 - __main__ - INFO - Serving CSS file: style.css
+2025-07-06 18:15:33,733 - __main__ - INFO - Serving CSS file: responsive.css
+2025-07-06 18:15:33,733 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-07-06 18:16:50,163 - __main__ - INFO - Home page accessed
+2025-07-06 18:16:50,265 - __main__ - INFO - Serving CSS file: style.css
+2025-07-06 18:16:50,281 - __main__ - INFO - Serving CSS file: hero-section.css
+2025-07-06 18:16:50,283 - __main__ - INFO - Serving CSS file: responsive.css
+2025-07-06 18:16:50,289 - __main__ - INFO - Serving CSS file: portfolio-grid.css
+2025-07-06 18:16:50,291 - __main__ - INFO - Serving CSS file: style.css
+2025-07-06 18:16:50,298 - __main__ - INFO - Serving CSS file: section-animations.css
+2025-07-06 18:16:50,302 - __main__ - INFO - Serving CSS file: services-section.css
+2025-07-06 18:16:50,306 - __main__ - INFO - Serving CSS file: header.css
+2025-07-06 18:16:50,331 - __main__ - INFO - Serving CSS file: section-backgrounds.css
+2025-07-06 18:16:50,341 - __main__ - WARNING - 404 error: /css/section-backgrounds.css
+2025-07-06 18:16:50,360 - __main__ - INFO - Serving JS file: bootstrap.min.js
+2025-07-06 18:16:50,366 - __main__ - INFO - Serving JS file: portfolio.js
+2025-07-06 18:16:50,404 - __main__ - INFO - Serving JS file: main.js
+2025-07-06 18:16:50,404 - __main__ - INFO - Serving JS file: section-animations.js
+2025-07-06 18:16:50,409 - __main__ - INFO - Serving JS file: hero-animations.js
+2025-07-06 18:16:50,409 - __main__ - WARNING - 404 error: /static/js/image-optimization.js
+2025-07-06 18:16:50,415 - __main__ - INFO - Serving JS file: interactive.js
+2025-07-06 18:16:50,418 - __main__ - WARNING - 404 error: /static/js/header.js
+2025-07-06 18:16:50,431 - __main__ - INFO - Serving JS file: typed.js
+2025-07-06 18:16:50,435 - __main__ - INFO - Serving JS file: mobile-menu.js
+2025-07-06 18:16:50,446 - __main__ - INFO - Serving JS file: contact-form.js
+2025-07-06 18:16:50,456 - __main__ - WARNING - Image not found: pattern.png
+2025-07-06 18:16:50,456 - __main__ - ERROR - Error serving image pattern.png: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "e:\Portfolio\app.py", line 622, in serve_image
+    abort(404)
+  File "C:\Users\Hp\anaconda3\Lib\site-packages\flask\helpers.py", line 310, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "C:\Users\Hp\anaconda3\Lib\site-packages\werkzeug\exceptions.py", line 863, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-07-06 18:16:50,456 - __main__ - WARNING - 404 error: /images/pattern.png
+2025-07-06 18:16:50,505 - __main__ - INFO - Serving CSS file: style.css
+2025-07-06 18:16:50,507 - __main__ - INFO - Serving CSS file: responsive.css
+2025-07-06 18:16:50,512 - __main__ - INFO - Serving CSS file: portfolio-grid.css
