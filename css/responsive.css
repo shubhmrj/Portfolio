@@ -314,4 +314,26 @@
     .contact-text p {
         font-size: 14px;
     }
+
+    /* Hero & navigation mobile fixes */
+    body { overflow-x: hidden; }
+
+    /* Hide floating nav dots */
+    .nav-indicator { display: none; }
+
+    /* Simplify hero decorations to avoid overflow */
+    .hero-bg-animation,
+    .glowing-lines,
+    .floating-elements,
+    .tech-stack,
+    .highlight-rings { display: none !important; }
+
+    /* Stack hero section elements */
+    .hero-content { flex-direction: column; text-align: center; padding: 0 10px; }
+    .hero-text { margin-bottom: 24px; padding: 0; }
+    .hero-image { margin: 0 auto; width: 75%; max-width: 260px; }
+    .image-frame { width: 100%; height: auto; }
+
+    /* Smaller divider icons */
+    .section-divider .divider-icon { width: 48px; height: 48px; font-size: 18px; }
 }

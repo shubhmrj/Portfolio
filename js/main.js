@@ -224,6 +224,11 @@ function deferNonCriticalJS() {
 $(document).ready(function() {
     'use strict';
 
+    // Add data-shadow attribute to each section title for shadow text effect
+    document.querySelectorAll('.section-title h2').forEach(el => {
+        el.setAttribute('data-shadow', el.textContent.trim());
+    });
+
     // Initialize AOS Animation Library with performance optimizations
     AOS.init({
         duration: 1000,
