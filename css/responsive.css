@@ -42,6 +42,9 @@
     .hero-content {
         flex-direction: column;
         text-align: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
     }
     
     .hero-text {
@@ -55,6 +58,9 @@
     .about-wrapper {
         grid-template-columns: 1fr;
         gap: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
     
     .about-left {
@@ -123,6 +129,10 @@
     
     .portfolio-grid {
         grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 100%;
     }
     
     .blog-grid {
@@ -177,11 +187,25 @@
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
-        padding: 0 15px;
+        padding: 0 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .section-title {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        padding: 0 20px;
     }
     
     .section-title h2 {
         font-size: 28px;
+        margin-left: 0;
+        text-align: center;
     }
     
     .section-title p {
@@ -210,6 +234,9 @@
     }
 
     .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
         flex-direction: column;
     }
     
@@ -235,6 +262,12 @@
     
     .form-row {
         grid-template-columns: 1fr;
+    }
+    
+    .skills-container {
+        max-width: 100%;
+        text-align: center;
+        padding: 20px;
     }
 }
 
@@ -285,6 +318,8 @@
     }
     .contact-wrapper {
         grid-template-columns: 1fr;
+        text-align: center;
+        justify-content: center;
         gap: 30px;
     }
     .contact-info {
@@ -330,7 +365,10 @@
 
     /* Stack hero section elements */
     .hero-content { flex-direction: column; text-align: center; padding: 0 10px; }
-    .hero-text { margin-bottom: 24px; padding: 0; }
+    .hero-text { margin-bottom: 24px; padding: 0; text-align: center; }
+    .hero-text h1,
+    .hero-text .hero-name,
+    .hero-text .hero-title { text-align: center; }
     .hero-image { margin: 0 auto; width: 75%; max-width: 260px; }
     .image-frame { width: 100%; height: auto; }
 
