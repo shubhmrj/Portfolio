@@ -1,4 +1,4 @@
-// Enhanced Contact Form with Security Features
+// Contact Form Handler (clean version)
 
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.head.appendChild(script);
     }
     
-    // Load reCAPTCHA
-    loadRecaptchaScript();
+    // Temporarily disable reCAPTCHA (site key placeholder causes hanging)
+    // loadRecaptchaScript();
     
     // Form validation
     function validateForm() {
@@ -109,26 +109,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 subject: sanitizeInput(formData.get('subject')),
                 message: sanitizeInput(formData.get('message'))
             };
-            
-            // Get reCAPTCHA token
-            if (typeof grecaptcha !== 'undefined') {
-                grecaptcha.ready(function() {
-                    grecaptcha.execute('6LexampleTokenHere', {action: 'contact_form'})
-                        .then(function(token) {
-                            // Add token to form data
-                            formData.append('recaptcha_token', token);
-                            
-                            // Send form data to server
-                            submitForm(formData);
-                        });
-                });
-            } else {
-                // Fallback if reCAPTCHA is not loaded
-                submitForm(formData);
-            }
+            // Call async submit
+            submitForm(formData);
         });
-    }
-    
     // Submit form data to server
     function submitForm(formData) {
         fetch('/contact', {
