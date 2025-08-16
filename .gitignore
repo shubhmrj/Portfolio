@@ -82,3 +82,6 @@ env/
 # Python
 __pycache__/
 *.pyc
+.gitignore
+.gitattributes
+.github/workflows
