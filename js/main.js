@@ -1,12 +1,3 @@
-/*
-===================================
-    Portfolio Website JavaScript
-    Based on Modern Portfolio Template
-    Author: Portfolio Developer
-    Date: June 1, 2025
-===================================
-*/
-
 // Preloader Functionality - Optimized for faster loading
 const preloader = document.getElementById('preloader');
 

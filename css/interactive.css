@@ -83,9 +83,6 @@
     }
 }
 
-/* =========================
-   Button Gradient & Ripple
-   ========================= */
 
 .btn,
 .hero-buttons a,
@@ -122,9 +119,7 @@
     }
 }
 
-/* =========================
-   Section Background Anim.
-   ========================= */
+
 
 section:not(#home):not(.no-animated-bg) {
     position: relative;
