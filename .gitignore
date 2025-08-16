@@ -85,3 +85,7 @@ __pycache__/
 .gitignore
 .gitattributes
 .github/workflows
+venv
+E:\Portfolio\venv
+# Virtual Environment
+venv/
