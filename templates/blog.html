@@ -27,12 +27,12 @@
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"></noscript>
     
     <!-- Preload critical CSS -->
-    <link rel="preload" href="{{ url_for('static', filename='css/style.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></noscript>
+    <link rel="preload" href="{{ url_for('serve_static', filename='css/style.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ url_for('serve_static', filename='css/style.css') }}"></noscript>
     
     <!-- Defer non-critical CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" media="print" onload="this.media='all'; this.onload=null;">
-    <noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}"></noscript>
+    <link rel="stylesheet" href="{{ url_for('serve_static', filename='css/responsive.css') }}" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript><link rel="stylesheet" href="{{ url_for('serve_static', filename='css/responsive.css') }}"></noscript>
     
     <!-- Font Awesome Icons - Deferred -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" media="print" onload="this.media='all'; this.onload=null;">
@@ -105,7 +105,7 @@
                 <!-- Blog Post 1 -->
                 <article class="blog-card" data-aos="fade-up">
                     <div class="blog-image">
-                        <img src="{{ url_for('static', filename='images/blog-1.jpg') }}" alt="Blog Post 1" loading="lazy">
+                        <img src="{{ url_for('serve_static', filename='images/blog-1.jpg') }}" alt="Blog Post 1" loading="lazy">
                         <div class="blog-date">
                             <span class="day">15</span>
                             <span class="month">Jun</span>
@@ -117,7 +117,7 @@
                         <p class="blog-excerpt">An in-depth analysis of the most popular JavaScript frameworks in 2025, comparing React, Vue, Angular, and Svelte.</p>
                         <div class="blog-meta">
                             <div class="blog-author">
-                                <img src="{{ url_for('static', filename='images/author.jpg') }}" alt="Author">
+                                <img src="{{ url_for('serve_static', filename='images/author.jpg') }}" alt="Author">
                                 <span>By Shubham Raj</span>
                             </div>
                             <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
@@ -128,7 +128,7 @@
                 <!-- Blog Post 2 -->
                 <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="blog-image">
-                        <img src="{{ url_for('static', filename='images/blog-2.jpg') }}" alt="Blog Post 2" loading="lazy">
+                        <img src="{{ url_for('serve_static', filename='images/blog-2.jpg') }}" alt="Blog Post 2" loading="lazy">
                         <div class="blog-date">
                             <span class="day">03</span>
                             <span class="month">Jun</span>
@@ -140,7 +140,7 @@
                         <p class="blog-excerpt">Exploring essential accessibility guidelines and how they can be implemented in modern web design without sacrificing aesthetics.</p>
                         <div class="blog-meta">
                             <div class="blog-author">
-                                <img src="{{ url_for('static', filename='images/author.jpg') }}" alt="Author">
+                                <img src="{{ url_for('serve_static', filename='images/author.jpg') }}" alt="Author">
                                 <span>By Shubham Raj</span>
                             </div>
                             <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
@@ -151,7 +151,7 @@
                 <!-- Blog Post 3 -->
                 <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="blog-image">
-                        <img src="{{ url_for('static', filename='images/blog-3.jpg') }}" alt="Blog Post 3" loading="lazy">
+                        <img src="{{ url_for('serve_static', filename='images/blog-3.jpg') }}" alt="Blog Post 3" loading="lazy">
                         <div class="blog-date">
                             <span class="day">28</span>
                             <span class="month">May</span>
@@ -163,7 +163,7 @@
                         <p class="blog-excerpt">Tips and strategies for building a successful career as a full-stack developer in today's competitive tech landscape.</p>
                         <div class="blog-meta">
                             <div class="blog-author">
-                                <img src="{{ url_for('static', filename='images/author.jpg') }}" alt="Author">
+                                <img src="{{ url_for('serve_static', filename='images/author.jpg') }}" alt="Author">
                                 <span>By Shubham Raj</span>
                             </div>
                             <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
@@ -211,7 +211,7 @@
     
     <!-- JavaScript Dependencies - Deferred -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+    <script src="{{ url_for('serve_static', filename='js/main.js') }}" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {

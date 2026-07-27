@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const message = document.getElementById('message').value.trim();
         
         // Reset previous errors
-        document.querySelectorAll('.form-control').forEach(el => {
+        document.querySelectorAll('#contactForm input, #contactForm textarea').forEach(el => {
             el.classList.remove('is-invalid');
         });
         
@@ -103,12 +103,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const formData = new FormData(contactForm);
             
             // Sanitize inputs
-            const sanitizedData = {
-                name: sanitizeInput(formData.get('name')),
-                email: sanitizeInput(formData.get('email')),
-                subject: sanitizeInput(formData.get('subject')),
-                message: sanitizeInput(formData.get('message'))
-            };
+            sanitizeInput(formData.get('name'));
+            sanitizeInput(formData.get('email'));
+            sanitizeInput(formData.get('subject'));
+            sanitizeInput(formData.get('message'));
             // Call async submit
             submitForm(formData);
         });
@@ -130,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 formStatus.innerHTML = `<div class="alert alert-success animate__animated animate__fadeIn">${data.message}</div>`;
                 formStatus.style.display = 'block';
                 contactForm.reset();
-                formButton.innerHTML = '<button type="submit" class="btn primary-btn">Send Message</button>';
+                formButton.innerHTML = '<button type="submit" class="primary-btn">Send Message <i class="fas fa-paper-plane"></i></button>';
                 
                 // Hide success message after 5 seconds
                 setTimeout(() => {
@@ -140,14 +138,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Show error message
                 formStatus.innerHTML = `<div class="alert alert-danger animate__animated animate__fadeIn">${data.message}</div>`;
                 formStatus.style.display = 'block';
-                formButton.innerHTML = '<button type="submit" class="btn primary-btn">Send Message</button>';
+                formButton.innerHTML = '<button type="submit" class="primary-btn">Send Message <i class="fas fa-paper-plane"></i></button>';
             }
         })
         .catch(error => {
             // Show error message
             formStatus.innerHTML = '<div class="alert alert-danger animate__animated animate__fadeIn">An error occurred. Please try again later.</div>';
             formStatus.style.display = 'block';
-            formButton.innerHTML = '<button type="submit" class="btn primary-btn">Send Message</button>';
+            formButton.innerHTML = '<button type="submit" class="primary-btn">Send Message <i class="fas fa-paper-plane"></i></button>';
             console.error('Error:', error);
         });
     }

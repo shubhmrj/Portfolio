@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Shubham Raj</title>
+    <meta name="description" content="Shubham Raj is an AI/ML engineer and data analyst building machine learning, NLP, computer vision, and Flask-based intelligent applications.">
+    <title>Shubham Raj | AI/ML Engineer Portfolio</title>
     <!-- Preload critical resources -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" as="style">
     <link rel="preload" href="css/style.css" as="style">
@@ -1192,6 +1193,47 @@
             font-size: 15px;
         }
     }
+    .resume-overview {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+        margin: 20px 0 35px;
+    }
+    .resume-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 18px;
+        padding: 24px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+    }
+    .resume-card h3 {
+        margin-bottom: 12px;
+    }
+    .resume-card p {
+        margin-bottom: 14px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .resume-pills,
+    .resume-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .resume-pills span,
+    .resume-links a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(33, 150, 243, 0.14);
+        color: var(--white-color);
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .resume-links a:hover {
+        background: rgba(33, 150, 243, 0.24);
+    }
     </style>
     
     <!-- Font Awesome -->
@@ -1323,9 +1365,9 @@
                 </ul>
             </nav>
             <div class="mobile-social-icons">
-                <a href="#" class="social-icon"><i class="fab fa-python"></i></a>
+                <a href="mailto:shubham4312raj@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/shubham-raj-899572314" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://leetcode.com/u/shubhmrj/" class="social-icon"><i class="fas fa-code"></i></a>
                 <a href="https://github.com/shubhmrj" class="social-icon"><i class="fab fa-github"></i></a>
             </div>
         </div>
@@ -1380,7 +1422,7 @@
             <div class="hero-content">
                 <div class="hero-background-glow"></div>
                 <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="glowing-subtitle">Welcome to my Portfolio</div>
+                    <div class="glowing-subtitle">AI, data, and production-ready ML experiences</div>
                     <h1 class="animate__animated animate__fadeInUp">
                         Hi, I'm <span class="highlight">Shubham Raj</span>
                     </h1>
@@ -1388,15 +1430,16 @@
                         A <span class="typed-text"></span>
                     </h3>
                     <p class="hero-description animate__animated animate__fadeInUp animate__delay-2s">
-                        Aspiring Data Scientist, transforming ideas into solutions that matter.                    </p>
+                        AI/ML engineer and data analyst focused on NLP, computer vision, predictive modeling, and Flask applications that turn data into usable products.
+                    </p>
                     <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-3s">
-                        <a href="#contact" class="btn primary-btn">Hire Me</a>
-                        <a href="#portfolio" class="btn secondary-btn">View Portfolio</a>
+                        <a href="#contact" class="btn primary-btn">Contact Me</a>
+                        <a href="{{ url_for('download_resume') }}" class="btn secondary-btn">Download Resume</a>
                     </div>
                 </div>
                 <div class="hero-image">
                     <div class="image-frame">
-                        <img src="./images/hero-image3.jpg" alt="Profile" class="profile-img">
+                        <img src="images/hero-image3.jpg" alt="Shubham Raj profile photo" class="profile-img">
                         <div class="frame-border"></div>
                     </div>
                 </div>
@@ -1422,19 +1465,19 @@
             <div class="stats-wrapper" data-aos="fade-up" data-aos-duration="800">
                 <div class="stat-item">
                     <h3>12+</h3>
-                    <p>ML Projects</p>
+                    <p>AI/ML Projects</p>
                 </div>
                 <div class="stat-item">
-                    <h3>30+</h3>
-                    <p>Python Projects</p>
+                    <h3>7</h3>
+                    <p>Datasets Analyzed</p>
                 </div>
                 <div class="stat-item">
-                    <h3>8+</h3>
-                    <p>Live Deployments</p>
+                    <h3>Top 5%</h3>
+                    <p>Batch Ranking</p>
                 </div>
                 <div class="stat-item">
                     <h3>2</h3>
-                    <p>XR Projects</p>
+                    <p>Industry Simulations</p>
                 </div>
             </div>
         </div>
@@ -1449,10 +1492,10 @@
                 <div class="about-left" data-aos="fade-up-right" data-aos-duration="1000">
                     <div class="experience-card animate__animated animate__fadeIn animate__delay-1s">
                         <h2 class="experience-number" id="experienceCounter">0</h2>
-                        <h3 class="experience-title">Projects<br>Completed</h3>
+                        <h3 class="experience-title">Featured<br>Projects</h3>
                     </div>
                     <div class="expertise-card animate__animated animate__fadeIn animate__delay-1s">
-                        <h3 class="expertise-title">Data is the new oil</h3>
+                        <h3 class="expertise-title">Analytics in action</h3>
                         <p class="expertise-count" id="projectCounter"></p>
                     </div>
                 </div>
@@ -1460,12 +1503,10 @@
                 <div class="about-right" data-aos="fade-up-left" data-aos-duration="1000">
                     <div class="about-header animate__animated animate__fadeIn animate__delay-1s">
                         <span class="about-label">ABOUT ME</span>
-                        <h2 class="about-title">Introduction<br></h2>
+                        <h2 class="about-title">Building AI products with clear business value</h2>
                     </div>
                     
-                    <p class="about-description animate__animated animate__fadeIn animate__delay-1s">I specialize in transforming raw data into actionable insights and crafting fast, responsive, and user-centric web applications. With a powerful blend of data analytics expertise and full-stack development skills, I seamlessly bridge the gap between data, design, and immersive technology.
-
-My work extends beyond the screen — exploring the potential of Extensible Reality (Mixed Reality) to create interactive, data-driven experiences that engage, inform, and innovate.</p>
+                    <p class="about-description animate__animated animate__fadeIn animate__delay-1s">I am a Computer Science student at Malwa Institute of Technology with hands-on experience in data analysis, machine learning, NLP, Flask development, and AI automation. My work spans explainable malware detection, RAG-based assistants, multimodal storytelling, predictive analytics, and XR experiments, with a strong focus on turning prototypes into practical user-facing solutions.</p>
                     
                     <div class="about-features">
                         <div class="feature-card animate__animated animate__fadeInUp animate__delay-1s" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="500">
@@ -1473,24 +1514,24 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                                 <i class="fas fa-chart-line"></i>
                             </div>
                             <div class="feature-content">
-                                <h3>ML Models</h3>
-                                <p>Building data models to extract insights from complex data.</p>
+                                <h3>Machine Learning Systems</h3>
+                                <p>Building predictive and explainable models using Python, TensorFlow, XGBoost, and applied statistics.</p>
                             </div>
                         </div>
                         
                         <div class="feature-card animate__animated animate__fadeInUp animate__delay-1s" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="500">
                             <div class="feature-icon">
-                                <i class="fas fa-handshake"></i>
+                                <i class="fas fa-brain"></i>
                             </div>
                             <div class="feature-content">
-                                <h3>Data Science</h3>
-                                <p>Transforming complex data into actionable insights.</p>
+                                <h3>NLP, Analytics, and Deployment</h3>
+                                <p>Combining data storytelling, retrieval pipelines, dashboards, and Flask apps to ship usable AI experiences.</p>
                             </div>
                         </div>
                     </div>
                     
                     <div class="about-cta animate__animated animate__fadeIn animate__delay-2s">
-                        <a href="#about" class="btn read-more-btn">Read More About Me <i class="fas fa-arrow-down"></i></a>
+                        <a href="#resume" class="btn read-more-btn">See Resume Highlights <i class="fas fa-arrow-down"></i></a>
                     </div>
                 </div>
             </div>
@@ -1515,7 +1556,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
         <div class="container">
             <div class="section-title" data-aos="fade-up">
                 <h2>My Skills</h2>
-                <p>Technical expertise and proficiency</p>
+                <p>Core tools for applied AI, analytics, and deployment</p>
             </div>
             
             <div class="skills-container" data-aos="fade-up" data-aos-delay="200">
@@ -1531,41 +1572,51 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                 
                 <div class="skill-item">
                     <div class="skill-info">
-                        <h4>Data Science</h4>
-                        <span>85%</span>
+                        <h4>SQL &amp; Data Analysis</h4>
+                        <span>88%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" data-progress="85"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <h4>Extensible reality</h4>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="90"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <h4>Deep Learning</h4>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="70"></div>
+                        <div class="skill-progress" data-progress="88"></div>
                     </div>
                 </div>
                 
                 <div class="skill-item">
                     <div class="skill-info">
                         <h4>Machine Learning</h4>
-                        <span>75%</span>
+                        <span>84%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" data-progress="75"></div>
+                        <div class="skill-progress" data-progress="84"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h4>Deep Learning</h4>
+                        <span>78%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="78"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h4>NLP &amp; GenAI</h4>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h4>Power BI &amp; Visualization</h4>
+                        <span>82%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="82"></div>
                     </div>
                 </div>
             </div>
@@ -1908,7 +1959,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
 
             </div>
             <div>
-                <p style="padding: 50px 0; text-align: center;">For Download My Resume click on resume icon. <a href="images/Shubham_Raj_Resume.pdf" download="Shubham_Raj_Resume.pdf">Click Here</a> </p>
+                <p style="padding: 50px 0; text-align: center;">Want the full resume? <a href="{{ url_for('download_resume') }}">Download the latest PDF here</a>.</p>
             </div>
         </div>
     </section>
@@ -1918,7 +1969,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
     <div class="section-divider">
         <div class="divider-wave"></div>
         <div class="divider-content">
-            <div class="divider-icon" onclick="window.open('images/Shubham_Raj_Resume.pdf', '_blank')">
+            <div class="divider-icon" onclick="window.open('{{ url_for('download_resume') }}', '_blank')">
                 <i class="fas fa-file-alt"></i>
             </div>
         </div>
@@ -1930,14 +1981,48 @@ My work extends beyond the screen — exploring the potential of Extensible Real
         <div class="container">
             <div class="section-title" data-aos="fade-up">
                 <h2>My Resume</h2>
-                <p>Empowering Creativity Through Experience</p>
+                <p>Visible resume highlights tailored for AI/ML engineer roles</p>
             
             <!-- Resume Category Toggle Buttons -->
+            <div class="resume-overview" data-aos="fade-up" data-aos-delay="100">
+                <div class="resume-card">
+                    <h3>Profile Snapshot</h3>
+                    <p>Data Analyst and aspiring AI/ML Engineer with strengths in Python, SQL, machine learning, NLP, analytics, and Flask-based product development.</p>
+                    <div class="resume-pills">
+                        <span>Malwa Institute of Technology</span>
+                        <span>Computer Science 2022-2026</span>
+                        <span>Top 5% of batch</span>
+                    </div>
+                </div>
+                <div class="resume-card">
+                    <h3>Key Skills</h3>
+                    <div class="resume-pills">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Machine Learning</span>
+                        <span>NLP</span>
+                        <span>Data Visualization</span>
+                        <span>Power BI</span>
+                        <span>AI Automation</span>
+                        <span>Flask</span>
+                    </div>
+                </div>
+                <div class="resume-card">
+                    <h3>Resume Links</h3>
+                    <p>Quick access to my resume and professional profiles.</p>
+                    <div class="resume-links">
+                        <a href="{{ url_for('download_resume') }}"><i class="fas fa-file-arrow-down"></i> Download Resume</a>
+                        <a href="https://github.com/shubhmrj" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/shubham-raj-899572314" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="mailto:shubham4312raj@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+            </div>
             <div class="resume-toggle" data-aos="fade-up" data-aos-delay="150">
                 
                 <button class="toggle-btn" data-filter="experience">Experience</button>
                 <button class="toggle-btn active" data-filter="education">Education</button>
-                <button class="toggle-btn" data-filter="certification">Certification</button>
+                <button class="toggle-btn" data-filter="certification">Certifications</button>
             </div>
             </div>
             
@@ -1949,7 +2034,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                 <div class="timeline">
                     <!-- Certification Timeline -->
 
-                        <div class="timeline-block certification" data-aos="fade-left">
+                    <div class="timeline-block certification" data-aos="fade-left">
                         <div class="timeline-icon">
                             <i class="fas fa-certificate"></i>
                         </div>
@@ -1957,11 +2042,11 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                             <span class="timeline-date">May 2025</span>
                             <h3>Foundation of Cloud IOT Edge ML</h3>
                             <h4>NPTEL</h4>
-                            <p>Learned fundamental principles of Cloud, IoT, Edge Computing, and ML, building a strong foundation for future specialization.</p>
+                            <p>Built a stronger foundation in cloud systems, IoT, edge computing, and machine learning for practical intelligent applications.</p>
                             <div class="timeline-skills">
-                                <span>HTML/CSS</span>
-                                <span>Design</span>
-                                <span>UX Basics</span>
+                                <span>Cloud</span>
+                                <span>IoT</span>
+                                <span>Edge ML</span>
                             </div>
                         </div>
                     </div>
@@ -1971,14 +2056,14 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                             <i class="fas fa-certificate"></i>
                         </div>
                         <div class="timeline-content">
-                            <span class="timeline-date">December 2024</span>
-                            <h3>Machine Learning </h3>
-                            <h4>Udemy</h4>
-                            <p>Developed and deployed machine learning models, collaborated with cross-functional teams to integrate AI solutions into products.</p>
+                            <span class="timeline-date">January 2024</span>
+                            <h3>Google Data Analytics Specialization</h3>
+                            <h4>Google</h4>
+                            <p>Strengthened analytics fundamentals across data cleaning, visualization, reporting, and communication of business insights.</p>
                             <div class="timeline-skills">
-                                <span>Python</span>
-                                <span>TensorFlow</span>
-                                <span>User Testing</span>
+                                <span>Analytics</span>
+                                <span>Visualization</span>
+                                <span>Reporting</span>
                             </div>
                         </div>
                     </div>
@@ -1990,7 +2075,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                         <div class="timeline-content">
                             <span class="timeline-date">June 2024</span>
                             <h3>Introduction to Programming Using Python</h3>
-                            <h4>Predin Cisco Network Academy</h4>
+                            <h4>Cisco Networking Academy</h4>
                             <p>Learned programming fundamentals using Python, including data types, control structures, and functions.</p>
                             <div class="timeline-skills">
                                 <span>Python</span>
@@ -2005,9 +2090,9 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                         </div>
                         <div class="timeline-content">
                             <span class="timeline-date">June 2024</span>
-                            <h3>Python</h3>
+                            <h3>Python for Data Science and Machine Learning Bootcamp</h3>
                             <h4>Udemy</h4>
-                            <p>Python for Data Science and Machine Learning Bootcamp</p>
+                            <p>Applied Python to exploratory analysis, feature engineering, model training, and practical machine learning workflows.</p>
                             <div class="timeline-skills">
                                 <span>Python</span>
                                 <span>Data Science</span>
@@ -2020,31 +2105,14 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                             <i class="fas fa-certificate"></i>
                         </div>
                         <div class="timeline-content">
-                            <span class="timeline-date">September 2023</span>
-                            <h3>Communication Skills</h3>
-                            <h4>TCS iON</h4>
-                            <p>Learned effective communication strategies, active listening, and presentation skills.</p>
-                            <div class="timeline-skills">
-                                <span>Communication</span>
-                                <span>Active Listening</span>
-                                <span>Presentation Skills</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-block certification" data-aos="fade-right">
-                        <div class="timeline-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Jan 2025</span>
-                            <h3>HTML & CSS</h3>
+                            <span class="timeline-date">December 2024</span>
+                            <h3>Machine Learning</h3>
                             <h4>Udemy</h4>
-                            <p>Learned HTML and CSS fundamentals, including responsive design and web accessibility.</p>
+                            <p>Expanded core ML knowledge across supervised learning, model building, and deployment-oriented thinking.</p>
                             <div class="timeline-skills">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>Web Development</span>
+                                <span>Machine Learning</span>
+                                <span>Modeling</span>
+                                <span>Deployment Mindset</span>
                             </div>
                         </div>
                     </div>
@@ -2055,10 +2123,10 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                             <i class="fas fa-briefcase"></i>
                         </div>
                         <div class="timeline-content">
-                            <span class="timeline-date">July 2024</span>
-                            <h3>Data Analyst (Intern)</h3>
-                            <h4>Accenture(Forage)</h4>
-                            <p>Led data analysis projects, providing insights and developing data-driven solutions for clients.</p>
+                            <span class="timeline-date">07/24 - 07/24</span>
+                            <h3>Data Analyst</h3>
+                            <h4>Accenture North America - Forage</h4>
+                            <p>Modelled and analyzed seven datasets to identify content trends, then translated findings into a presentation deck and video for stakeholders.</p>
                             <div class="timeline-skills">
                                 <span>Data Analysis</span>
                                 <span>Python</span>
@@ -2072,14 +2140,14 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                             <i class="fas fa-briefcase"></i>
                         </div>
                         <div class="timeline-content">
-                            <span class="timeline-date">June 2024</span>
-                            <h3>Software Engineering (Intern)</h3>
-                            <h4>Walmart (Forage)</h4>
-                            <p>Focused on software engineering and web technologies, graduated with honors and received recognition for innovative projects.</p>
+                            <span class="timeline-date">06/24 - 06/24</span>
+                            <h3>Advanced Software Engineering</h3>
+                            <h4>Walmart USA - Forage</h4>
+                            <p>Completed the simulation by solving technical tasks and designing an entity relationship diagram for a new database system.</p>
                             <div class="timeline-skills">
-                                <span>Programming</span>
-                                <span>Algorithms</span>
-                                <span>Web Dev</span>
+                                <span>System Design</span>
+                                <span>Database Design</span>
+                                <span>Problem Solving</span>
                             </div>
                         </div>
                     </div>
@@ -2093,13 +2161,13 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                         </div>
                         <div class="timeline-content">
                             <span class="timeline-date">2022 - 2026</span>
-                            <h3>BTech in  Computer Science</h3>
-                            <h4>RGPV University</h4>
-                            <p>Focused on software engineering and web technologies, graduated with honors and received recognition for innovative projects.</p>
+                            <h3>Bachelor of Engineering in Computer Science</h3>
+                            <h4>Malwa Institute of Technology, Indore</h4>
+                            <p>Focused on computer science fundamentals, software engineering, and applied AI while graduating among the top 5% of the batch.</p>
                             <div class="timeline-skills">
                                 <span>Programming</span>
                                 <span>Algorithms</span>
-                                <span>Design Thinking</span>
+                                <span>Top 5% Batch</span>
                             </div>
                         </div>
                     </div>
@@ -2109,19 +2177,18 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                         <div class="timeline-content">
-                            <span class="timeline-date">2019</span>
-                            <h3>C Programming</h3>
-                            <h4>Argus Academy</h4>
-                            <p>Gained hands-on experience through projects and coding exercises, enhancing problem-solving skills.</p>
+                            <span class="timeline-date">2024 - 2025</span>
+                            <h3>Applied Learning Focus</h3>
+                            <h4>AI, Analytics, and Product Development</h4>
+                            <p>Combined classroom learning with hands-on portfolio work in NLP, machine learning, computer vision, analytics, and Flask deployment.</p>
                             <div class="timeline-skills">
-                                <span>Programming</span>
-                                <span>Algorithms</span>
-                                <span>DSA</span>
+                                <span>NLP</span>
+                                <span>Computer Vision</span>
+                                <span>Flask</span>
                             </div>
                         </div>
                     </div>
 
-                     
                     <div class="timeline-block education" data-aos="fade-left">
                         <div class="timeline-icon">
                             <i class="fas fa-graduation-cap"></i>
@@ -2130,11 +2197,11 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                             <span class="timeline-date">2021</span>
                             <h3>12th</h3>
                             <h4>Manas Bharti Educational Complex</h4>
-                            <p>Completed 12th standard with a strong foundation in mathematics and physics, while also developing skills in C programming and physical education.</p>
+                            <p>Completed higher secondary education with a strong grounding in mathematics and physics that continues to support analytical problem-solving.</p>
                             <div class="timeline-skills">
                                 <span>PCM</span>
-                                <span>C Programming</span>
-                                <span>Physical Education</span>
+                                <span>Mathematics</span>
+                                <span>Physics</span>
                             </div>
                         </div>
                     </div>
@@ -2331,51 +2398,51 @@ My work extends beyond the screen — exploring the potential of Extensible Real
         </div>
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <h2>Expertise </h2>
-                <p>What I have Learned.</p>
+                <h2>Expertise</h2>
+                <p>What I can contribute as an AI/ML engineer</p>
             </div>
             <div class="services-wrapper" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-card magnetic-item">
                     <div class="service-icon">
-                        <i class="fas fa-paint-brush"></i>
+                        <i class="fas fa-robot"></i>
                     </div>
-                    <h3>Python</h3>
-                    <p>Skilled Python Developer specializing in Data Analysis, Machine Learning, Web Development (Flask/Django), API Integration, and Process Automation.</p>
+                    <h3>Applied Machine Learning</h3>
+                    <p>Designing predictive pipelines, feature workflows, and explainable ML models for practical business and research use cases.</p>
+                </div>
+                <div class="service-card magnetic-item">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Analytics</h3>
+                    <p>Working with SQL, Python, Excel, and Power BI to turn messy datasets into clear trends, reports, and decision support.</p>
+                </div>
+                <div class="service-card magnetic-item">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>NLP &amp; GenAI</h3>
+                    <p>Building retrieval-augmented assistants, text generation workflows, and language-driven interfaces for domain-specific applications.</p>
                 </div>
                 <div class="service-card magnetic-item">
                     <div class="service-icon">
                         <i class="fas fa-code"></i>
                     </div>
-                    <h3>Data Science</h3>
-                    <p>Skilled Data Scientist specializing in Data Analysis, Machine Learning, Web Development (Flask/Django), API Integration, and Process Automation.</p>
+                    <h3>Flask Product Development</h3>
+                    <p>Turning models into usable web apps with Flask, clean UI flows, API integration, and deployment-friendly architecture.</p>
                 </div>
                 <div class="service-card magnetic-item">
                     <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-eye"></i>
                     </div>
-                    <h3>Extensible Reality</h3>
-                    <p>Exploring the intersection of virtual and augmented reality to create immersive experiences.</p>
+                    <h3>Computer Vision</h3>
+                    <p>Applying image understanding, multimodal pipelines, and OpenCV-based processing to create richer AI-powered experiences.</p>
                 </div>
                 <div class="service-card magnetic-item">
                     <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-vr-cardboard"></i>
                     </div>
-                    <h3>Git & Github</h3>
-                    <p>Proficient in using Git for version control and collaboration on software projects.</p>
-                </div>
-                <div class="service-card magnetic-item">
-                    <div class="service-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>SQL</h3>
-                    <p>Proficient in using SQL for database management and data analysis.</p>
-                </div>
-                <div class="service-card magnetic-item">
-                    <div class="service-icon">
-                        <i class="fas fa-pen"></i>
-                    </div>
-                    <h3>Machine Learning</h3>
-                    <p>Building predictive models and algorithms to analyze data and automate decision-making processes.</p>
+                    <h3>XR Exploration</h3>
+                    <p>Extending technical curiosity into AR/VR experiments where immersive interfaces meet interactive learning and simulation.</p>
                 </div>
             </div>
         </div>
@@ -2399,7 +2466,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
         <div class="container">
             <div class="section-title" data-aos="fade-up">
                 <h2>Contact Me</h2>
-                <p>Get in Touch for Collaboration</p>
+                <p>Open to AI/ML roles, internships, and project collaborations</p>
             </div>
             <div class="contact-wrapper" data-aos="fade-up" data-aos-delay="200">
                 <div class="contact-info">
@@ -2418,7 +2485,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                         </div>
                         <div class="contact-text">
                             <h3>Phone</h3>
-                            <p>6203758304</p>
+                            <p>+91 6203758304</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -2427,7 +2494,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                         </div>
                         <div class="contact-text">
                             <h3>Email</h3>
-                            <p>shubmrj@gmail.com</p>
+                            <p>shubham4312raj@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -2435,8 +2502,8 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                             <i class="fas fa-globe"></i>
                         </div>
                         <div class="contact-text">
-                            <h3>Website</h3>
-                            <p>https://shubhmrj.pythonanywhere.com/</p>
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/shubham-raj-899572314</p>
                         </div>
                     </div>
                 </div>
@@ -2476,19 +2543,19 @@ My work extends beyond the screen — exploring the potential of Extensible Real
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <a href="index.html">Portfolio</a>
+                    <a href="#home">Shubham Raj</a>
                 </div>
                 <div class="footer-social">
                     <a href="https://github.com/shubhmrj" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/shubham-raj-899572314" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://leetcode.com/u/shubhmrj/" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i></a>
-                    <a href="mailto:shubmrj@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:shubham4312raj@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
                 <div class="footer-menu">
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
+                        <li><a href="#services">Expertise</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#resume">Resume</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -2524,7 +2591,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
     <script src="js/main.js"></script>
     
     <!-- Image Optimization JS -->
-    <script src="static/js/image-optimization.js"></script>
+    <script src="js/image-optimization.js"></script>
     <script src="js/section-animations.js"></script>
 
     <!-- Custom Script for Smooth Scrolling and Section Transitions -->
@@ -2569,7 +2636,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
         document.addEventListener('DOMContentLoaded', function() {
             if (typeof Typed !== 'undefined') {
                 new Typed('.typed-text', {
-                    strings: ["Data Scientist", "ML Engineer", "Python Developer"],
+                    strings: ["AI/ML Engineer", "Data Analyst", "Python Developer"],
                     typeSpeed: 80,
                     backSpeed: 50,
                     loop: true,

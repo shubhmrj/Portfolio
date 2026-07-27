@@ -75,6 +75,10 @@ def index():
     # logger.info('Home page accessed')
     return render_template('index.html')
 
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')
+
 
 def send_email(name, email, subject, message):
     try:
@@ -151,8 +155,13 @@ def contact():
 def download_resume():
     """Serve resume download"""
     try:
-        resume_path = os.path.join('files', 'resume.pdf')
-        if not os.path.exists(resume_path):
+        candidates = [
+            Path('images') / 'Shubham_Raj_Resume.pdf',
+            Path('static') / 'files' / 'resume.pdf',
+        ]
+        resume_path = next((path for path in candidates if path.exists()), None)
+
+        if resume_path is None:
             # logger.warning('Resume file not found')
             abort(404)
             
@@ -210,7 +219,7 @@ def serve_images(filename):
 @app.route('/files/<path:filename>')
 def serve_files(filename):
     # logger.info(f'Serving file: {filename}')
-    return send_from_directory('files', filename)
+    return send_from_directory(Path('static') / 'files', filename)
 
 @app.route('/static/<path:filename>')
 def serve_static(filename):

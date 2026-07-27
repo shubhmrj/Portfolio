@@ -72,8 +72,6 @@ function initSkillBars() {
 
 // Initialize contact form animations and functionality
 function initContactForm() {
-    const contactForm = document.getElementById('contactForm');
-    const formSuccess = document.getElementById('formSuccess');
     const formInputs = document.querySelectorAll('.form-group input, .form-group textarea');
     
     // Add focus animations to form inputs
@@ -95,35 +93,6 @@ function initContactForm() {
         }
     });
     
-    // Form submission with animation
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Animate button on submit
-            const submitButton = this.querySelector('button[type="submit"]');
-            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-            submitButton.disabled = true;
-            
-            // Simulate form submission (replace with actual form submission)
-            setTimeout(() => {
-                formSuccess.classList.add('show');
-                submitButton.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
-                submitButton.disabled = false;
-                
-                // Reset form after successful submission
-                contactForm.reset();
-                formInputs.forEach(input => {
-                    input.parentElement.classList.remove('focused');
-                });
-                
-                // Hide success message after 3 seconds
-                setTimeout(() => {
-                    formSuccess.classList.remove('show');
-                }, 3000);
-            }, 1500);
-        });
-    }
 }
 
 // Initialize timeline animation
@@ -221,12 +190,14 @@ $(document).ready(function() {
     });
 
     // Initialize AOS Animation Library with performance optimizations
-    AOS.init({
-        duration: 1000,
-        once: true,
-        mirror: false,
-        disable: 'mobile' // Disable animations on mobile for better performance
-    });
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: false,
+            disable: 'mobile'
+        });
+    }
 
     // Initialize lazy loading
     lazyLoadImages();
@@ -246,19 +217,19 @@ $(document).ready(function() {
     // Scroll Progress Indicator
     const scrollProgress = document.getElementById('scrollProgress');
     
-    window.addEventListener('scroll', () => {
-        const totalHeight = document.body.scrollHeight - window.innerHeight;
-        const progress = (window.pageYOffset / totalHeight) * 100;
-        scrollProgress.style.width = `${progress}%`;
-        
-        // Add glow effect when scrolling
-        if (progress > 0) {
-            scrollProgress.style.boxShadow = `0 0 10px rgba(33, 150, 243, ${0.5 + (progress/200)})`;
-        }
-        
-        // Update navigation indicator
-        updateNavIndicator();
-    });
+    if (scrollProgress) {
+        window.addEventListener('scroll', () => {
+            const totalHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (window.pageYOffset / totalHeight) * 100;
+            scrollProgress.style.width = `${progress}%`;
+            
+            if (progress > 0) {
+                scrollProgress.style.boxShadow = `0 0 10px rgba(33, 150, 243, ${0.5 + (progress/200)})`;
+            }
+            
+            updateNavIndicator();
+        }, { passive: true });
+    }
     
     // Cursor Trail Effect
     function createCursorTrail() {
@@ -391,20 +362,22 @@ $(document).ready(function() {
     });
 
     // Initialize Typed.js for dynamic text rotation
-    var typed = new Typed('.typing-text', {
-        strings: [
-            'Software Developer',
-            'Game Development Expert',
-            'Data Analyst'
-        ],
-        typeSpeed: 80,
-        backSpeed: 40,
-        backDelay: 1500,
-        startDelay: 1000,
-        loop: true,
-        showCursor: true,
-        cursorChar: '|'
-    });
+    if (typeof Typed !== 'undefined' && document.querySelector('.typing-text')) {
+        new Typed('.typing-text', {
+            strings: [
+                'Software Developer',
+                'Game Development Expert',
+                'Data Analyst'
+            ],
+            typeSpeed: 80,
+            backSpeed: 40,
+            backDelay: 1500,
+            startDelay: 1000,
+            loop: true,
+            showCursor: true,
+            cursorChar: '|'
+        });
+    }
 
     // Preloader
     $(window).on('load', function() {
@@ -522,17 +495,17 @@ $(document).ready(function() {
         const projectCounter = document.getElementById('projectCounter');
         
         if (projectCounter) {
-            const projectTarget = 241;
+            const projectTarget = 7;
             let projectCount = 0;
-            const projectSpeed = 10;
+            const projectSpeed = 120;
             
             const projectTimer = setInterval(() => {
-                projectCount += 5;
-                projectCounter.textContent = projectCount + ' Projects';
+                projectCount += 1;
+                projectCounter.textContent = projectCount + ' Datasets';
                 
                 if (projectCount >= projectTarget) {
                     clearInterval(projectTimer);
-                    projectCounter.textContent = projectTarget + ' Projects';
+                    projectCounter.textContent = projectTarget + ' Datasets';
                 }
             }, projectSpeed);
         }
@@ -572,38 +545,6 @@ $(document).ready(function() {
         return false;
     });
 
-    // Contact Form Submission with backend integration
-    $('#contactForm').on('submit', function (e) {
-        e.preventDefault();
-        const $form = $(this);
-        const formData = new FormData(this);
-
-        // Show sending spinner
-        $form.find('.form-button').html('<div class="sending-msg"><i class="fas fa-spinner fa-spin"></i> Sending message...</div>');
-
-        fetch('/contact', {
-            method: 'POST',
-            body: formData,
-            headers: { 'X-Requested-With': 'XMLHttpRequest' }
-        })
-            .then(resp => resp.json())
-            .then(data => {
-                if (data.success) {
-                    $form.find('.form-button').html(`<div class="success-msg animate__animated animate__fadeIn">${data.message}</div>`);
-                    $form.trigger('reset');
-                    // Replace with default button after delay
-                    setTimeout(() => {
-                        $form.find('.form-button').html('<button type="submit" class="btn primary-btn">Send Message</button>');
-                    }, 3000);
-                } else {
-                    $form.find('.form-button').html(`<div class="error-msg animate__animated animate__fadeIn">${data.message}</div>`);
-                }
-            })
-            .catch(err => {
-                console.error('Contact form error:', err);
-                $form.find('.form-button').html('<div class="error-msg animate__animated animate__fadeIn">An error occurred. Please try again later.</div>');
-            });
-    });
 });
 
 // Add custom ease functions for smoother animations
