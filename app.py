@@ -212,6 +212,12 @@ def serve_files(filename):
     # logger.info(f'Serving file: {filename}')
     return send_from_directory('files', filename)
 
+@app.route('/static/<path:filename>')
+def serve_static(filename):
+    response = send_from_directory('static', filename)
+    response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+    return response
+
 if __name__ == '__main__':
     try:
         # Check if directories exist

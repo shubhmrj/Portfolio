@@ -88,25 +88,6 @@ document.addEventListener('DOMContentLoaded', function() {
         styleTag.textContent = `.portfolio-overlay.show{opacity:1 !important;transform:translateY(0)!important}`;
         document.head.appendChild(styleTag);
     }
-    
-    // Handle portfolio item click to show details
-    portfolioItems.forEach(item => {
-        item.addEventListener('click', function(e) {
-            // Only trigger if not clicking on a link
-            if (!e.target.closest('a')) {
-                const portfolioIdEl = this.querySelector('[data-portfolio-id]');
-                if (portfolioIdEl) {
-                    const portfolioId = portfolioIdEl.getAttribute('data-portfolio-id');
-                    console.log(`Portfolio item ${portfolioId} clicked`);
-                }
-                // Simulate click on the view project button if present
-                const viewBtn = this.querySelector('.btn-view-project');
-                if (viewBtn) {
-                    viewBtn.click();
-                }
-            }
-        });
-    });
 });
 
 // Add smooth transition styles for filtering

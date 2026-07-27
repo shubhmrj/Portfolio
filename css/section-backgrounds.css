@@ -1,0 +1,19 @@
+/* Section background accents */
+.about-section,
+.skills-section,
+.portfolio-section,
+.resume-section,
+.services-section,
+.contact-section {
+    position: relative;
+}
+
+.about-section::before,
+.skills-section::before,
+.portfolio-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at 20% 20%, rgba(33, 150, 243, 0.06), transparent 45%);
+}

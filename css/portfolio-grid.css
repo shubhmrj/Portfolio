@@ -36,8 +36,6 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    /* Remove debug outline */
-    outline: 2px solid red;
 }
 
 .portfolio-item:hover {
@@ -132,6 +130,21 @@
 
 .btn-view-project:hover {
     background-color: #177172;
+}
+
+.portfolio-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.btn-view-project.btn-demo {
+    background-color: #673AB7;
+}
+
+.btn-view-project.btn-demo:hover {
+    background-color: #512DA8;
 }
 
 /* Portfolio info section */

@@ -112,6 +112,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Call async submit
             submitForm(formData);
         });
+    }
+
     // Submit form data to server
     function submitForm(formData) {
         fetch('/contact', {

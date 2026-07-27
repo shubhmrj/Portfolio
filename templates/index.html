@@ -1210,7 +1210,7 @@
     <link rel="stylesheet" href="css/section-animations.css">
     <link rel="stylesheet" href="css/services-section.css">
     <link rel="stylesheet" href="css/header.css">
-    <script src="static/js/header.js" defer></script>
+    <script src="js/header.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="js/hero-animations.js" defer></script>
     <script src="js/interactive.js" defer></script>
@@ -1421,20 +1421,20 @@
         <div class="container">
             <div class="stats-wrapper" data-aos="fade-up" data-aos-duration="800">
                 <div class="stat-item">
-                    <h3></h3>
-                    <p>Years of Experience</p>
+                    <h3>12+</h3>
+                    <p>ML Projects</p>
                 </div>
                 <div class="stat-item">
-                    <h3>Python Projects</h3>
-                    <p>30+ Projects</p>
+                    <h3>30+</h3>
+                    <p>Python Projects</p>
                 </div>
                 <div class="stat-item">
-                    <h3>Data Science</h3>
-                    <p>3 Projects</p>
+                    <h3>8+</h3>
+                    <p>Live Deployments</p>
                 </div>
                 <div class="stat-item">
-                    <h3>Augmented Reality</h3>
-                    <p>2 Projects</p>
+                    <h3>2</h3>
+                    <p>XR Projects</p>
                 </div>
             </div>
         </div>
@@ -1502,7 +1502,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
     <div class="section-divider">
         <div class="divider-wave"></div>
         <div class="divider-content">
-            <div class="divider-icon" onclick="scrollToSection('skill')">
+            <div class="divider-icon" onclick="scrollToSection('skills')">
                 <i class="fas fa-cog"></i>
             </div>
         </div>
@@ -1596,183 +1596,316 @@ My work extends beyond the screen — exploring the potential of Extensible Real
             <div class="portfolio-filter">
                 <ul>
                     <li data-filter="all" class="active">All</li>
-                    <li data-filter="design">Python</li>
-                    <li data-filter="branding">Data Science</li>
-                    <li data-filter="development">Machine Learning</li>
-                    <li data-filter="marketing">Deep Learning</li>
+                    <li data-filter="ml">Machine Learning</li>
+                    <li data-filter="dl">Deep Learning</li>
+                    <li data-filter="nlp">NLP &amp; GenAI</li>
+                    <li data-filter="web">Web Apps</li>
                 </ul>
             </div>
             <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="200">
-                
-                <!-- Portfolio Item 1 -->
-                <div class="portfolio-item" data-category="branding">
+
+                <!-- Project 1: Android Banking Malware Detection -->
+                <div class="portfolio-item" data-category="ml">
                     <div class="portfolio-image">
-                        <img src="/images/portfolio-2.jpg" alt="Workout App" class="portfolio-img">
+                        <img src="images/portfolio-1.jpg" alt="Android Banking Malware Detection" class="portfolio-img" loading="lazy">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-category">Augmented</span>
-                            <h3>Extensible Reality</h3>
-                            <p>Mobile app for perform chemistry Experiments in an augmented reality environment.</p>
-                            <a href="https://github.com/shubhmrj/XR-Lab" class="btn-view-project">
-                                <i class="fas fa-eye"></i> View Code
-                            </a>
+                            <span class="portfolio-category">Machine Learning</span>
+                            <h3>Android Banking Malware Detection</h3>
+                            <p>Detects malicious banking APKs using 50 features with 96% precision and SHAP explainability.</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/shubhmrj/Fake-Mobile-Application-Detection" class="btn-view-project" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://shubmrj-bankshield.hf.space/" class="btn-view-project btn-demo" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Android Banking Malware Detection</h4>
+                        <p>ML system analyzing APK permissions &amp; API calls with XGBoost and SHAP explanations.</p>
+                        <div class="portfolio-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">XGBoost</span>
+                                <span class="portfolio-tag">SHAP</span>
+                                <span class="portfolio-tag">Security</span>
+                            </div>
+                            <a href="https://github.com/shubhmrj/Fake-Mobile-Application-Detection" class="portfolio-link-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Medical Research Assistant (RAG) -->
+                <div class="portfolio-item" data-category="nlp">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-2.jpg" alt="Medical Research Assistant RAG Chatbot" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">NLP &amp; GenAI</span>
+                            <h3>Medical Research Assistant</h3>
+                            <p>RAG chatbot answering from medical papers with cited sources, reducing hallucinations by 41%.</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/shubhmrj/rag-pdf-chatbot" class="btn-view-project" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://shubmrj-rag-pdf-chatbot.hf.space/" class="btn-view-project btn-demo" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Medical Research Assistant (RAG)</h4>
+                        <p>Semantic search with ChromaDB, LangChain, and Groq for grounded medical Q&amp;A.</p>
+                        <div class="portfolio-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">LangChain</span>
+                                <span class="portfolio-tag">ChromaDB</span>
+                                <span class="portfolio-tag">RAG</span>
+                            </div>
+                            <a href="https://github.com/shubhmrj/rag-pdf-chatbot" class="portfolio-link-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Image Captioning & Story Generation -->
+                <div class="portfolio-item" data-category="dl">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-3.jpg" alt="Image Captioning and Story Generation" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Deep Learning</span>
+                            <h3>Image-to-Story Platform</h3>
+                            <p>BLIP captioning + GPT-2 story generation pipeline trained on 180K+ image-story pairs.</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/shubhmrj/image-to-storyand-caption" class="btn-view-project" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://shubmrj-imagetostory.hf.space/" class="btn-view-project btn-demo" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Multi-modal Image Captioning</h4>
+                        <p>Two-model AI pipeline turning photos into coherent stories via BLIP and GPT-2.</p>
+                        <div class="portfolio-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">BLIP</span>
+                                <span class="portfolio-tag">GPT-2</span>
+                                <span class="portfolio-tag">PyTorch</span>
+                            </div>
+                            <a href="https://github.com/shubhmrj/image-to-storyand-caption" class="portfolio-link-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Customer Churn Prediction -->
+                <div class="portfolio-item" data-category="ml">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-4.jpg" alt="Customer Churn Prediction" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Machine Learning</span>
+                            <h3>Customer Churn Prediction</h3>
+                            <p>ANN model predicting bank customer churn with ~86% accuracy on 10K records.</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/shubhmrj/Customer_Churn" class="btn-view-project" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://shubmrj-customer-churn-prediction.hf.space/" class="btn-view-project btn-demo" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Customer Churn Prediction</h4>
+                        <p>Streamlit app with TensorFlow/Keras ANN for real-time churn probability.</p>
+                        <div class="portfolio-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">TensorFlow</span>
+                                <span class="portfolio-tag">ANN</span>
+                                <span class="portfolio-tag">Streamlit</span>
+                            </div>
+                            <a href="https://github.com/shubhmrj/Customer_Churn" class="portfolio-link-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Next Word Prediction -->
+                <div class="portfolio-item" data-category="nlp">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-5.jpg" alt="Next Word Prediction Shakespeare" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">NLP &amp; GenAI</span>
+                            <h3>Next Word Prediction</h3>
+                            <p>Shakespeare Hamlet text model predicting the next word in literary sequences.</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/shubhmrj/Next-word-prediction-with-Shakespeare-s-Hamlet" class="btn-view-project" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://shubmrj-next-word-prediction-with-shakespeare-s-ham-app-7ysm9u.streamlit.app/" class="btn-view-project btn-demo" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Shakespeare Next Word Prediction</h4>
+                        <p>NLP model trained on Hamlet for interactive next-word suggestions.</p>
+                        <div class="portfolio-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">NLP</span>
+                                <span class="portfolio-tag">LSTM</span>
+                                <span class="portfolio-tag">Streamlit</span>
+                            </div>
+                            <a href="https://github.com/shubhmrj/Next-word-prediction-with-Shakespeare-s-Hamlet" class="portfolio-link-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Student Performance Predictor -->
+                <div class="portfolio-item" data-category="ml web">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-6.jpg" alt="Student Performance Predictor" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Machine Learning</span>
+                            <h3>Student Performance Predictor</h3>
+                            <p>Predicts maths scores from reading/writing scores and demographics, deployed on AWS.</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/shubhmrj/Student_Performance_On_Mathematics" class="btn-view-project" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="http://studentperform-env.eba-ufyc6i3j.eu-north-1.elasticbeanstalk.com/predictdata" class="btn-view-project btn-demo" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Student Exam Performance Predictor</h4>
+                        <p>Flask ML app deployed on AWS Elastic Beanstalk with CI/CD pipeline.</p>
+                        <div class="portfolio-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Flask</span>
+                                <span class="portfolio-tag">AWS</span>
+                                <span class="portfolio-tag">Regression</span>
+                            </div>
+                            <a href="https://github.com/shubhmrj/Student_Performance_On_Mathematics" class="portfolio-link-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Car Price Prediction -->
+                <div class="portfolio-item" data-category="ml web">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-1.jpg" alt="Car Price Prediction" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Machine Learning</span>
+                            <h3>Car Price Prediction</h3>
+                            <p>Regression model with premium showroom UI for vehicle price estimation.</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/shubhmrj/car-price-prediction" class="btn-view-project" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>CarValue Price Predictor</h4>
+                        <p>Flask app with intelligent car-name mapping and market verdict insights.</p>
+                        <div class="portfolio-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Flask</span>
+                                <span class="portfolio-tag">Regression</span>
+                                <span class="portfolio-tag">UI/UX</span>
+                            </div>
+                            <a href="https://github.com/shubhmrj/car-price-prediction" class="portfolio-link-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Heart Disease Prediction -->
+                <div class="portfolio-item" data-category="ml web">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-2.jpg" alt="Heart Disease Prediction" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Machine Learning</span>
+                            <h3>Heart Disease Prediction</h3>
+                            <p>Logistic Regression model on UCI Cleveland dataset with ~81% accuracy.</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/shubhmrj/Heart_Attack_Prediction" class="btn-view-project" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://heart-disease-prediction-system-six.vercel.app/" class="btn-view-project btn-demo" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Heart Attack Risk Predictor</h4>
+                        <p>Flask web app assessing heart disease risk from 14 clinical features.</p>
+                        <div class="portfolio-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Logistic Regression</span>
+                                <span class="portfolio-tag">Healthcare</span>
+                                <span class="portfolio-tag">Flask</span>
+                            </div>
+                            <a href="https://github.com/shubhmrj/Heart_Attack_Prediction" class="portfolio-link-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9: Forest Fire Prediction -->
+                <div class="portfolio-item" data-category="ml">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-3.jpg" alt="Forest Fire Prediction" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Machine Learning</span>
+                            <h3>Forest Fire Prediction</h3>
+                            <p>Ridge Regression predicting Fire Weather Index from Algerian forest fire data.</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/shubhmrj/Predict-forest-fire" class="btn-view-project" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Algerian Forest Fire Prediction</h4>
+                        <p>FWI prediction with risk bands (Low to Extreme) via Flask interface.</p>
+                        <div class="portfolio-meta">
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Ridge Regression</span>
+                                <span class="portfolio-tag">Flask</span>
+                                <span class="portfolio-tag">R² 0.98</span>
+                            </div>
+                            <a href="https://github.com/shubhmrj/Predict-forest-fire" class="portfolio-link-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 10: Extensible Reality -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-4.jpg" alt="Extensible Reality XR Lab" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Web Apps</span>
+                            <h3>Extensible Reality (XR Lab)</h3>
+                            <p>Mobile app for performing chemistry experiments in augmented reality.</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/shubhmrj/XR-Lab" class="btn-view-project" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
                         </div>
                     </div>
                     <div class="portfolio-info">
                         <h4>Extensible Reality</h4>
-                        <p>Mobile app for perform chemistry Experiments in an augmented reality environment.</p>
+                        <p>Mixed reality chemistry lab for immersive learning experiences.</p>
                         <div class="portfolio-meta">
                             <div class="portfolio-tags">
                                 <span class="portfolio-tag">Mixed Reality</span>
                                 <span class="portfolio-tag">Chemistry</span>
-
                             </div>
-                            <a href="https://github.com/shubhmrj/XR-Lab" class="portfolio-link-icon">
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
+                            <a href="https://github.com/shubhmrj/XR-Lab" class="portfolio-link-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Portfolio Item 2 -->
-                <div class="portfolio-item" data-category="development">
+
+                <!-- Project 11: PhotoGenic -->
+                <div class="portfolio-item" data-category="web">
                     <div class="portfolio-image">
-                        <img src="/images/portfolio-3.jpg" alt="Business Analytics" class="portfolio-img">
+                        <img src="images/portfolio-5.jpg" alt="PhotoGenic AI Image App" class="portfolio-img" loading="lazy">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-category">Development</span>
+                            <span class="portfolio-category">Web Apps</span>
                             <h3>PhotoGenic</h3>
-                            <p>Web application for collecting, sharing, generating, and editing images using AI</p>
-                            <a href="#" class="btn-view-project">
-                                <i class="fas fa-eye"></i> View Project
-                            </a>
+                            <p>Web app for collecting, sharing, generating, and editing images using AI.</p>
+                            <div class="portfolio-links">
+                                <a href="https://photogenic-hq3h.onrender.com/" class="btn-view-project btn-demo" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
                         </div>
                     </div>
                     <div class="portfolio-info">
                         <h4>PhotoGenic</h4>
-                        <p>Automated files for collecting, sharing, generating, and editing images using AI</p>
+                        <p>AI-powered image collection, generation, and editing platform.</p>
                         <div class="portfolio-meta">
                             <div class="portfolio-tags">
                                 <span class="portfolio-tag">Python</span>
-                                <span class="portfolio-tag">Data Science</span>
+                                <span class="portfolio-tag">AI</span>
                             </div>
-                            <a href="#" class="portfolio-link-icon">
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 3 -->
-                <div class="portfolio-item" data-category="development">
-                    <div class="portfolio-image">
-                        <img src="/images/portfolio-5.jpg" alt="E-commerce Platform" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-category">Development</span>
-                            <h3>Vehicle Fraud & Echalan</h3>
-                            <p>Send mail to friends on their birthdays</p>
-                            <a href="https://github.com/shubhmrj/pythonproject" class="btn-view-project">
-                                <i class="fas fa-eye"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Vehicle Fraud & Echalan</h4>
-                        <p>Send mail to friends on their birthdays</p>
-                        <div class="portfolio-meta">
-                            <div class="portfolio-tags">
-                                <span class="portfolio-tag">Python</span>
-                                <span class="portfolio-tag">Data Science</span>
-                            </div>
-                            <a href="https://github.com/shubhmrj/pythonproject" class="portfolio-link-icon">
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Portfolio Item 4 -->
-                <div class="portfolio-item" data-category="marketing">
-                    <div class="portfolio-image">
-                        <img src="/images/portfolio-4.jpg" alt="Marketing Campaign" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-category">API</span>
-                            <h3>Weather Info.</h3>
-                            <p>API for fetching and displaying weather information and send weather info to you on whatapps Daily.</p>
-                            <a href="https://github.com/shubhmrj/pythonproject" class="btn-view-project">
-                                <i class="fas fa-eye"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Weather Info.</h4>
-                        <p>API for fetching and displaying weather information and send weather info to you on whatapps.</p>
-                        <div class="portfolio-meta">
-                            <div class="portfolio-tags">
-                                <span class="portfolio-tag">API</span>
-                                <span class="portfolio-tag">Weather</span>
-
-                            </div>
-                            <a href="https://github.com/shubhmrj/pythonproject" class="portfolio-link-icon">
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
+                            <a href="https://photogenic-hq3h.onrender.com/" class="portfolio-link-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Portfolio Item 5 -->
-                <div class="portfolio-item" data-category="design">
-                    <div class="portfolio-image">
-                        <img src="/images/portfolio-1.jpg" alt="SAAS Website" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-category">Design</span>
-                            
-                            <h3>PortFolio</h3>
-                            <p>A modern portfolio website with a clean design</p>
-                            <a href="#" class="btn-view-project">
-                                <i class="fas fa-eye"></i> View Project
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>PortFolio</h4>
-                        <p>A modern portfolio website with a clean design</p>
-                        <div class="portfolio-meta">
-                            <div class="portfolio-tags">
-                                <span class="portfolio-tag">Python</span>
-                                <span class="portfolio-tag">Data Science</span>
-                            </div>
-                            <a href="#" class="portfolio-link-icon">
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 6 -->
-                <div class="portfolio-item" data-category="branding">
-                    <div class="portfolio-image">
-                        <img src="/images/portfolio-6.jpg" alt="Brand Identity" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-category">API</span>
-                            <h3>API GGenerator</h3>
-                            <p>Generate RESTful APIs quickly and easily</p>
-                            <a href="https://github.com/shubhmrj/pythonproject" class="btn-view-project">
-                                <i class="fas fa-eye"></i> View Project
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>API Generator</h4>
-                        <p>Generate RESTful APIs quickly and easily</p>
-                        <div class="portfolio-meta">
-                            <div class="portfolio-tags">
-                                <span class="portfolio-tag">API</span>
-                                <span class="portfolio-tag">Python</span>
-                            </div>
-                            <a href="https://github.com/shubhmrj/pythonproject" class="portfolio-link-icon">
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div>
                 <p style="padding: 50px 0; text-align: center;">For Download My Resume click on resume icon. <a href="images/Shubham_Raj_Resume.pdf" download="Shubham_Raj_Resume.pdf">Click Here</a> </p>
@@ -2346,10 +2479,10 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                     <a href="index.html">Portfolio</a>
                 </div>
                 <div class="footer-social">
-                    <a href="#"><i class="fab fa-python"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/shubhmrj" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shubham-raj-899572314" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://leetcode.com/u/shubhmrj/" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i></a>
+                    <a href="mailto:shubmrj@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
                 <div class="footer-menu">
                     <ul>
@@ -2362,7 +2495,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
                     </ul>
                 </div>
                 <div class="footer-copyright">
-                    <p>&copy; 2025 Portfolio. All Rights Reserved.</p>
+                    <p>&copy; {{ current_year }} Shubham Raj. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
@@ -2387,7 +2520,6 @@ My work extends beyond the screen — exploring the potential of Extensible Real
     
     <!-- Add your scripts here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/portfolio.js"></script>
     <script src="js/main.js"></script>
     
@@ -2435,22 +2567,22 @@ My work extends beyond the screen — exploring the potential of Extensible Real
         // Typed.js initialization for hero section
 
         document.addEventListener('DOMContentLoaded', function() {
-            const typed = new Typed('.typed-text', {
-                strings: ["Data Scientist"],
-                typeSpeed: 100,
-                backSpeed: 100,
-                loop: false,
-                cursorChar: '',
-                autoInsertCss: false,
-            });
+            if (typeof Typed !== 'undefined') {
+                new Typed('.typed-text', {
+                    strings: ["Data Scientist", "ML Engineer", "Python Developer"],
+                    typeSpeed: 80,
+                    backSpeed: 50,
+                    loop: true,
+                    cursorChar: '|',
+                });
+            }
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
     // Create floating particles
     function createParticles() {
         const particlesContainer = document.querySelector('.particles');
-        for (let i = 0; i < 5000; i++) {
+        for (let i = 0; i < 50; i++) {
             const particle = document.createElement('div');
             particle.className = 'particle';
             particle.style.left = Math.random() * 100 + '%';
@@ -2510,7 +2642,7 @@ My work extends beyond the screen — exploring the potential of Extensible Real
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    animateCounter(document.getElementById('experienceCounter'), 40);
+                    animateCounter(document.getElementById('experienceCounter'), 12);
                     observer.unobserve(entry.target);
                 }
             });
