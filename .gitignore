@@ -64,3 +64,28 @@ Thumbs.db
 
 # Local Netlify folder
 .netlify
+
+app.log
+
+cleanup.sh
+
+# Logs
+*.log
+
+# Scripts
+*.sh
+
+# Environment variables
+.env
+env/
+
+# Python
+__pycache__/
+*.pyc
+.gitignore
+.gitattributes
+.github/workflows
+venv
+E:\Portfolio\venv
+# Virtual Environment
+venv/

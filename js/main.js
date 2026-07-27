@@ -1,12 +1,3 @@
-/*
-===================================
-    Portfolio Website JavaScript
-    Based on Modern Portfolio Template
-    Author: Portfolio Developer
-    Date: June 1, 2025
-===================================
-*/
-
 // Preloader Functionality - Optimized for faster loading
 const preloader = document.getElementById('preloader');
 
@@ -223,6 +214,11 @@ function deferNonCriticalJS() {
 // Document Ready Function
 $(document).ready(function() {
     'use strict';
+
+    // Add data-shadow attribute to each section title for shadow text effect
+    document.querySelectorAll('.section-title h2').forEach(el => {
+        el.setAttribute('data-shadow', el.textContent.trim());
+    });
 
     // Initialize AOS Animation Library with performance optimizations
     AOS.init({
@@ -576,23 +572,37 @@ $(document).ready(function() {
         return false;
     });
 
-    // Contact Form Submission with enhanced feedback
-    $('#contactForm').on('submit', function(e) {
+    // Contact Form Submission with backend integration
+    $('#contactForm').on('submit', function (e) {
         e.preventDefault();
-        // Form validation and submission logic
-        // This would typically send data to a backend server
-        
-        // Show success message with animation
-        $(this).find('.form-button').html('<div class="sending-msg">Sending message...</div>');
-        
-        setTimeout(function() {
-            $('#contactForm').find('.form-button').html('<div class="success-msg animate__animated animate__fadeIn">Message sent successfully!</div>');
-            $('#contactForm').trigger('reset');
-            
-            setTimeout(function() {
-                $('#contactForm').find('.form-button').html('<button type="submit" class="btn primary-btn">Send Message</button>');
-            }, 3000);
-        }, 1500);
+        const $form = $(this);
+        const formData = new FormData(this);
+
+        // Show sending spinner
+        $form.find('.form-button').html('<div class="sending-msg"><i class="fas fa-spinner fa-spin"></i> Sending message...</div>');
+
+        fetch('/contact', {
+            method: 'POST',
+            body: formData,
+            headers: { 'X-Requested-With': 'XMLHttpRequest' }
+        })
+            .then(resp => resp.json())
+            .then(data => {
+                if (data.success) {
+                    $form.find('.form-button').html(`<div class="success-msg animate__animated animate__fadeIn">${data.message}</div>`);
+                    $form.trigger('reset');
+                    // Replace with default button after delay
+                    setTimeout(() => {
+                        $form.find('.form-button').html('<button type="submit" class="btn primary-btn">Send Message</button>');
+                    }, 3000);
+                } else {
+                    $form.find('.form-button').html(`<div class="error-msg animate__animated animate__fadeIn">${data.message}</div>`);
+                }
+            })
+            .catch(err => {
+                console.error('Contact form error:', err);
+                $form.find('.form-button').html('<div class="error-msg animate__animated animate__fadeIn">An error occurred. Please try again later.</div>');
+            });
     });
 });
 
